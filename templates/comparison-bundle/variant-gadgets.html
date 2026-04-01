@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Essentials Bundle — Everything You Need</title>
+  <link rel="stylesheet" href="../shared/base.css">
+  <style>
+    :root { --accent: #2563eb; }
+    body { background: #f8fafc; }
+    .hero { background: linear-gradient(135deg, #0f172a, #1e293b); color: #fff; padding: 80px 0; }
+    .hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+    .hero h1 span { color: #60a5fa; }
+    .bundle-visual { display: flex; flex-wrap: wrap; gap: 16px; justify-content: center; align-items: center; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 24px; padding: 32px; }
+    .bundle-item { text-align: center; width: 120px; }
+    .bundle-item img { width: 100px; height: 100px; object-fit: cover; border-radius: 12px; margin-bottom: 8px; }
+    .bundle-item .name { font-size: 0.8rem; color: #94a3b8; }
+    .bundle-plus { font-size: 2rem; color: #60a5fa; font-weight: 800; }
+    .tier-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .tier { background: #fff; border-radius: 20px; padding: 32px; text-align: center; border: 3px solid #e5e7eb; position: relative; }
+    .tier.best { border-color: #2563eb; box-shadow: 0 20px 40px rgba(37,99,235,0.15); }
+    .tier.best::before { content: 'Best Value'; position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: #2563eb; color: #fff; padding: 4px 16px; border-radius: 20px; font-size: 0.75rem; font-weight: 700; }
+    .tier-price { font-size: 2.25rem; font-weight: 800; color: #2563eb; margin: 16px 0 8px; }
+    .tier-list { text-align: left; margin: 20px 0; }
+    .tier-list li { padding: 8px 0; display: flex; align-items: center; gap: 8px; font-size: 0.9rem; }
+    .tier-list li .check { color: #059669; }
+    .tier-list li .cross { color: #d1d5db; }
+    .individual-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+    .ind-card { background: #fff; border-radius: 16px; padding: 20px; text-align: center; }
+    .ind-card img { width: 120px; height: 120px; object-fit: cover; border-radius: 12px; margin: 0 auto 12px; }
+    @media (max-width: 768px) { .hero-grid, .tier-grid { grid-template-columns: 1fr; } .individual-grid { grid-template-columns: repeat(2, 1fr); } }
+  </style>
+  <script>var SHOPIFY_DOMAIN = 'your-store.myshopify.com';</script>
+</head>
+<body>
+
+  <div class="announce-bar" style="background:#1e40af;">
+    Bundle & save up to 40% | <strong>Free expedited shipping on all bundles</strong>
+  </div>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="animate-fade-up">
+          <span class="badge mb-md" style="background:rgba(37,99,235,0.2); color:#60a5fa;">Bundle Deals</span>
+          <h1>The Ultimate <span>Tech Bundle</span></h1>
+          <p style="color:#94a3b8; font-size:1.1rem; margin:20px 0 32px;">Why buy separately when you can save up to 40%? Our expertly curated bundles pair the perfect gadgets together at unbeatable prices.</p>
+          <a href="#bundles" class="btn btn-primary btn-lg btn-pill">See All Bundles</a>
+        </div>
+        <div class="animate-fade-up delay-2">
+          <div class="bundle-visual">
+            <div class="bundle-item"><img src="https://placehold.co/100x100/1e293b/60a5fa?text=Earbuds" alt="Earbuds"><div class="name">Earbuds</div></div>
+            <span class="bundle-plus">+</span>
+            <div class="bundle-item"><img src="https://placehold.co/100x100/1e293b/8b5cf6?text=Charger" alt="Charger"><div class="name">Charger</div></div>
+            <span class="bundle-plus">+</span>
+            <div class="bundle-item"><img src="https://placehold.co/100x100/1e293b/22c55e?text=Case" alt="Case"><div class="name">Case</div></div>
+            <span class="bundle-plus">+</span>
+            <div class="bundle-item"><img src="https://placehold.co/100x100/1e293b/f59e0b?text=Stand" alt="Stand"><div class="name">Stand</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bundles -->
+  <section class="section" id="bundles">
+    <div class="container">
+      <h2 class="text-center mb-xl">Choose Your Bundle</h2>
+      <div class="tier-grid">
+        <div class="tier">
+          <h3>Starter Pack</h3>
+          <p class="text-sm text-muted">Essential accessories</p>
+          <div class="tier-price">$49.99</div>
+          <div class="price-original">$69.97</div>
+          <span class="price-save">Save 29%</span>
+          <ul class="tier-list">
+            <li><span class="check">&#10003;</span> Wireless Earbuds</li>
+            <li><span class="check">&#10003;</span> USB-C Fast Charger</li>
+            <li><span class="check">&#10003;</span> Cable Organizer</li>
+            <li><span class="cross">&#10007;</span> Wireless Charging Pad</li>
+            <li><span class="cross">&#10007;</span> Laptop Stand</li>
+            <li><span class="cross">&#10007;</span> Webcam</li>
+          </ul>
+          <a href="#" class="btn btn-block btn-pill" style="background:#2563eb; color:#fff;" data-shopify-cart data-items="00000000000:1,00000000001:1,00000000002:1">Get Starter</a>
+        </div>
+        <div class="tier best">
+          <h3>Pro Bundle</h3>
+          <p class="text-sm text-muted">Complete desk setup</p>
+          <div class="tier-price">$89.99</div>
+          <div class="price-original">$149.95</div>
+          <span class="price-save">Save 40%</span>
+          <ul class="tier-list">
+            <li><span class="check">&#10003;</span> Wireless Earbuds</li>
+            <li><span class="check">&#10003;</span> USB-C Fast Charger</li>
+            <li><span class="check">&#10003;</span> Cable Organizer</li>
+            <li><span class="check">&#10003;</span> Wireless Charging Pad</li>
+            <li><span class="check">&#10003;</span> Laptop Stand</li>
+            <li><span class="cross">&#10007;</span> Webcam</li>
+          </ul>
+          <a href="#" class="btn btn-block btn-pill" style="background:#2563eb; color:#fff;" data-shopify-cart data-items="00000000000:1,00000000001:1,00000000002:1,00000000003:1,00000000004:1">Get Pro Bundle</a>
+        </div>
+        <div class="tier">
+          <h3>Ultimate Setup</h3>
+          <p class="text-sm text-muted">The whole office</p>
+          <div class="tier-price">$129.99</div>
+          <div class="price-original">$209.94</div>
+          <span class="price-save">Save 38%</span>
+          <ul class="tier-list">
+            <li><span class="check">&#10003;</span> Wireless Earbuds</li>
+            <li><span class="check">&#10003;</span> USB-C Fast Charger</li>
+            <li><span class="check">&#10003;</span> Cable Organizer</li>
+            <li><span class="check">&#10003;</span> Wireless Charging Pad</li>
+            <li><span class="check">&#10003;</span> Laptop Stand</li>
+            <li><span class="check">&#10003;</span> HD Webcam</li>
+          </ul>
+          <a href="#" class="btn btn-block btn-pill" style="background:#2563eb; color:#fff;" data-shopify-cart data-items="00000000000:1,00000000001:1,00000000002:1,00000000003:1,00000000004:1,00000000005:1">Get Ultimate</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Individual Products -->
+  <section class="section bg-light">
+    <div class="container">
+      <h2 class="text-center mb-md">Or Buy Individually</h2>
+      <p class="text-center text-muted mb-xl">Every item also available separately</p>
+      <div class="individual-grid">
+        <div class="ind-card card">
+          <img src="https://placehold.co/120x120/eff6ff/2563eb?text=Earbuds" alt="Wireless earbuds">
+          <h3 style="font-size:0.95rem;">Wireless Earbuds</h3>
+          <p class="product-price mt-md" style="font-size:1rem;">$29.99</p>
+          <a href="#" class="btn btn-sm btn-pill btn-block mt-md" style="background:#2563eb; color:#fff;" data-shopify-checkout data-variant="00000000000">Add</a>
+        </div>
+        <div class="ind-card card">
+          <img src="https://placehold.co/120x120/ecfdf5/059669?text=Charger" alt="USB-C charger">
+          <h3 style="font-size:0.95rem;">USB-C Fast Charger</h3>
+          <p class="product-price mt-md" style="font-size:1rem;">$19.99</p>
+          <a href="#" class="btn btn-sm btn-pill btn-block mt-md" style="background:#2563eb; color:#fff;" data-shopify-checkout data-variant="00000000000">Add</a>
+        </div>
+        <div class="ind-card card">
+          <img src="https://placehold.co/120x120/fef3c7/d97706?text=Stand" alt="Laptop stand">
+          <h3 style="font-size:0.95rem;">Laptop Stand</h3>
+          <p class="product-price mt-md" style="font-size:1rem;">$39.99</p>
+          <a href="#" class="btn btn-sm btn-pill btn-block mt-md" style="background:#2563eb; color:#fff;" data-shopify-checkout data-variant="00000000000">Add</a>
+        </div>
+        <div class="ind-card card">
+          <img src="https://placehold.co/120x120/f3e8ff/7c3aed?text=Webcam" alt="HD webcam">
+          <h3 style="font-size:0.95rem;">HD Webcam</h3>
+          <p class="product-price mt-md" style="font-size:1rem;">$59.99</p>
+          <a href="#" class="btn btn-sm btn-pill btn-block mt-md" style="background:#2563eb; color:#fff;" data-shopify-checkout data-variant="00000000000">Add</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:#1e40af; color:#fff; text-align:center;">
+    <div class="container">
+      <h2 class="mb-md">Save More, Get More</h2>
+      <p style="opacity:0.85; max-width:450px; margin:0 auto 32px;">Free expedited shipping on all bundles. 30-day hassle-free returns.</p>
+      <a href="#bundles" class="btn btn-lg btn-pill" style="background:#fff; color:#1e40af;">Choose Your Bundle</a>
+    </div>
+  </section>
+
+  <footer class="section-sm bg-dark"><div class="container text-center"><p class="text-muted text-sm">&copy; 2025 YourBrand Tech. All rights reserved.</p></div></footer>
+
+  <script src="../shared/shopify-integration.js"></script>
+</body>
+</html>

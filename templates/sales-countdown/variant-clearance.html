@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clearance Event — Everything Must Go</title>
+  <link rel="stylesheet" href="../shared/base.css">
+  <style>
+    :root { --accent: #ea580c; }
+    .hero { background: #18181b; color: #fff; padding: 60px 0; text-align: center; border-bottom: 4px solid #ea580c; }
+    .hero h1 { font-size: clamp(2.5rem, 7vw, 4rem); font-weight: 900; text-transform: uppercase; }
+    .hero h1 span { color: #ea580c; }
+    .tier-section { margin-bottom: 48px; }
+    .tier-header { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; padding-bottom: 12px; border-bottom: 2px solid #e5e7eb; }
+    .tier-badge { background: #ea580c; color: #fff; padding: 8px 20px; border-radius: 8px; font-weight: 800; font-size: 1.25rem; }
+    .clearance-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+    .cl-card { background: #fff; border-radius: 12px; overflow: hidden; position: relative; }
+    .cl-card img { aspect-ratio: 1; object-fit: cover; width: 100%; }
+    .cl-body { padding: 14px; }
+    .cl-discount { position: absolute; top: 0; left: 0; background: #ea580c; color: #fff; padding: 6px 14px; font-weight: 800; font-size: 0.85rem; border-radius: 0 0 12px 0; }
+    .final-cta { background: repeating-linear-gradient(45deg, #ea580c, #ea580c 10px, #dc2626 10px, #dc2626 20px); padding: 4px; }
+    .final-cta-inner { background: #18181b; color: #fff; padding: 48px; text-align: center; }
+    @media (max-width: 768px) { .clearance-grid { grid-template-columns: repeat(2, 1fr); } }
+  </style>
+  <script>var SHOPIFY_DOMAIN = 'your-store.myshopify.com';</script>
+</head>
+<body>
+
+  <div class="announce-bar" style="background:#ea580c; font-weight:700;">
+    &#128680; CLEARANCE EVENT — UP TO 80% OFF — FINAL MARKDOWNS &#128680;
+  </div>
+
+  <section class="hero">
+    <div class="container">
+      <p class="animate-fade-up" style="color:#ea580c; font-weight:700; text-transform:uppercase; letter-spacing:2px;">Final Markdowns</p>
+      <h1 class="animate-fade-up">EVERYTHING <span>MUST GO</span></h1>
+      <p class="animate-fade-up delay-1" style="color:#a1a1aa; font-size:1.1rem; max-width:500px; margin:16px auto 24px;">Up to 80% off across all categories. Once it's gone, it's gone. No restocks.</p>
+      <div style="max-width:400px; margin:0 auto 24px;" class="animate-fade-up delay-2">
+        <div data-countdown="2025-12-31T23:59:59"></div>
+      </div>
+      <a href="#deals" class="btn btn-lg btn-pill animate-fade-up delay-3" style="background:#ea580c; color:#fff;">Shop Clearance</a>
+    </div>
+  </section>
+
+  <section class="section" id="deals">
+    <div class="container">
+
+      <!-- Tier: 80% Off -->
+      <div class="tier-section">
+        <div class="tier-header">
+          <span class="tier-badge">80% OFF</span>
+          <h2>Deepest Discounts</h2>
+        </div>
+        <div class="clearance-grid">
+          <div class="cl-card card">
+            <span class="cl-discount">-80%</span>
+            <img src="https://placehold.co/300x300/fff7ed/ea580c?text=Item+1" alt="Clearance item">
+            <div class="cl-body">
+              <p><strong>Summer Dress</strong></p>
+              <div class="flex items-center gap-sm"><span class="price-sale" style="font-weight:700;">$11.99</span><span class="price-original text-sm">$59.99</span></div>
+              <a href="#" class="btn btn-sm btn-block mt-md" style="background:#ea580c; color:#fff; border-radius:8px;" data-shopify-checkout data-variant="00000000000">Add to Cart</a>
+            </div>
+          </div>
+          <div class="cl-card card">
+            <span class="cl-discount">-80%</span>
+            <img src="https://placehold.co/300x300/fef2f2/dc2626?text=Item+2" alt="Clearance item">
+            <div class="cl-body">
+              <p><strong>Canvas Sneakers</strong></p>
+              <div class="flex items-center gap-sm"><span class="price-sale" style="font-weight:700;">$15.99</span><span class="price-original text-sm">$79.99</span></div>
+              <a href="#" class="btn btn-sm btn-block mt-md" style="background:#ea580c; color:#fff; border-radius:8px;" data-shopify-checkout data-variant="00000000000">Add to Cart</a>
+            </div>
+          </div>
+          <div class="cl-card card">
+            <span class="cl-discount">-80%</span>
+            <img src="https://placehold.co/300x300/f3e8ff/7c3aed?text=Item+3" alt="Clearance item">
+            <div class="cl-body">
+              <p><strong>Linen Shorts</strong></p>
+              <div class="flex items-center gap-sm"><span class="price-sale" style="font-weight:700;">$8.99</span><span class="price-original text-sm">$44.99</span></div>
+              <a href="#" class="btn btn-sm btn-block mt-md" style="background:#ea580c; color:#fff; border-radius:8px;" data-shopify-checkout data-variant="00000000000">Add to Cart</a>
+            </div>
+          </div>
+          <div class="cl-card card">
+            <span class="cl-discount">-80%</span>
+            <img src="https://placehold.co/300x300/dbeafe/2563eb?text=Item+4" alt="Clearance item">
+            <div class="cl-body">
+              <p><strong>Graphic Tee</strong></p>
+              <div class="flex items-center gap-sm"><span class="price-sale" style="font-weight:700;">$5.99</span><span class="price-original text-sm">$29.99</span></div>
+              <a href="#" class="btn btn-sm btn-block mt-md" style="background:#ea580c; color:#fff; border-radius:8px;" data-shopify-checkout data-variant="00000000000">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tier: 60% Off -->
+      <div class="tier-section">
+        <div class="tier-header">
+          <span class="tier-badge" style="background:#d97706;">60% OFF</span>
+          <h2>Great Value</h2>
+        </div>
+        <div class="clearance-grid">
+          <div class="cl-card card">
+            <span class="cl-discount" style="background:#d97706;">-60%</span>
+            <img src="https://placehold.co/300x300/ecfdf5/059669?text=Item+5" alt="Clearance item">
+            <div class="cl-body">
+              <p><strong>Denim Jacket</strong></p>
+              <div class="flex items-center gap-sm"><span class="price-sale" style="font-weight:700;">$35.99</span><span class="price-original text-sm">$89.99</span></div>
+              <a href="#" class="btn btn-sm btn-block mt-md" style="background:#d97706; color:#fff; border-radius:8px;" data-shopify-checkout data-variant="00000000000">Add to Cart</a>
+            </div>
+          </div>
+          <div class="cl-card card">
+            <span class="cl-discount" style="background:#d97706;">-60%</span>
+            <img src="https://placehold.co/300x300/fce7f3/be185d?text=Item+6" alt="Clearance item">
+            <div class="cl-body">
+              <p><strong>Crossbody Bag</strong></p>
+              <div class="flex items-center gap-sm"><span class="price-sale" style="font-weight:700;">$23.99</span><span class="price-original text-sm">$59.99</span></div>
+              <a href="#" class="btn btn-sm btn-block mt-md" style="background:#d97706; color:#fff; border-radius:8px;" data-shopify-checkout data-variant="00000000000">Add to Cart</a>
+            </div>
+          </div>
+          <div class="cl-card card">
+            <span class="cl-discount" style="background:#d97706;">-60%</span>
+            <img src="https://placehold.co/300x300/fef9c3/713f12?text=Item+7" alt="Clearance item">
+            <div class="cl-body">
+              <p><strong>Knit Sweater</strong></p>
+              <div class="flex items-center gap-sm"><span class="price-sale" style="font-weight:700;">$27.99</span><span class="price-original text-sm">$69.99</span></div>
+              <a href="#" class="btn btn-sm btn-block mt-md" style="background:#d97706; color:#fff; border-radius:8px;" data-shopify-checkout data-variant="00000000000">Add to Cart</a>
+            </div>
+          </div>
+          <div class="cl-card card">
+            <span class="cl-discount" style="background:#d97706;">-60%</span>
+            <img src="https://placehold.co/300x300/d1fae5/064e3b?text=Item+8" alt="Clearance item">
+            <div class="cl-body">
+              <p><strong>Jogger Pants</strong></p>
+              <div class="flex items-center gap-sm"><span class="price-sale" style="font-weight:700;">$19.99</span><span class="price-original text-sm">$49.99</span></div>
+              <a href="#" class="btn btn-sm btn-block mt-md" style="background:#d97706; color:#fff; border-radius:8px;" data-shopify-checkout data-variant="00000000000">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <div class="final-cta">
+    <div class="final-cta-inner">
+      <h2 class="mb-md">Last Chance — No Restocks</h2>
+      <div style="max-width:400px; margin:0 auto 24px;"><div data-countdown="2025-12-31T23:59:59"></div></div>
+      <a href="#deals" class="btn btn-lg btn-pill" style="background:#ea580c; color:#fff;">Shop All Clearance</a>
+    </div>
+  </div>
+
+  <footer class="section-sm bg-dark"><div class="container text-center"><p class="text-muted text-sm">&copy; 2025 YourBrand. All sales final on clearance items.</p></div></footer>
+
+  <script src="../shared/shopify-integration.js"></script>
+</body>
+</html>

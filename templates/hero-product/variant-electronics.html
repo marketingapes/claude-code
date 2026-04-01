@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Next-Gen Smart Device — Redefine Your Experience</title>
+  <link rel="stylesheet" href="../shared/base.css">
+  <style>
+    :root { --accent: #2563eb; --accent-light: #eff6ff; }
+    .hero { background: linear-gradient(160deg, #0f172a 0%, #1e293b 50%, #0f172a 100%); color: #fff; padding: 80px 0 100px; overflow: hidden; position: relative; }
+    .hero::after { content: ''; position: absolute; top: -50%; right: -20%; width: 600px; height: 600px; background: radial-gradient(circle, rgba(37,99,235,0.15), transparent 70%); border-radius: 50%; }
+    .hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+    .hero h1 span { background: linear-gradient(90deg, #60a5fa, #a78bfa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .spec-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+    .spec-card { text-align: center; padding: 32px 20px; background: #f8fafc; border-radius: 16px; }
+    .spec-num { font-size: 2.5rem; font-weight: 800; color: var(--accent); line-height: 1; }
+    .spec-label { color: #6b7280; font-size: 0.875rem; margin-top: 8px; }
+    .feature-row { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; padding: 60px 0; }
+    .feature-row:nth-child(even) { direction: rtl; }
+    .feature-row:nth-child(even) > * { direction: ltr; }
+    .feature-img { border-radius: 20px; box-shadow: 0 30px 60px rgba(0,0,0,0.1); }
+    .color-picker { display: flex; gap: 12px; margin: 20px 0; }
+    .color-dot { width: 32px; height: 32px; border-radius: 50%; cursor: pointer; border: 3px solid transparent; transition: border-color 0.2s; }
+    .color-dot:hover, .color-dot.active { border-color: var(--accent); }
+    .comparison-table { width: 100%; border-collapse: collapse; }
+    .comparison-table th, .comparison-table td { padding: 16px 20px; text-align: left; border-bottom: 1px solid #e5e7eb; }
+    .comparison-table th { background: #f8fafc; font-weight: 600; }
+    .comparison-table .highlight { background: #eff6ff; }
+    @media (max-width: 768px) { .hero-grid, .spec-grid, .feature-row, .feature-row:nth-child(even) { grid-template-columns: 1fr; direction: ltr; } }
+  </style>
+  <script>
+    var SHOPIFY_DOMAIN = 'your-store.myshopify.com';
+  </script>
+</head>
+<body>
+
+  <div class="announce-bar">
+    Launch Special: <strong>$50 OFF</strong> + Free Express Shipping | Ends Sunday
+  </div>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="animate-fade-up">
+          <span class="badge badge-new mb-md">Just Launched</span>
+          <h1>The Future of <span>Smart Living</span></h1>
+          <p style="color:#94a3b8; font-size:1.125rem; margin-bottom:24px;">Experience lightning-fast performance, all-day battery life, and a design that turns heads. Engineered for those who demand excellence.</p>
+          <div class="flex items-center gap-md mb-md">
+            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <span style="color:#94a3b8;" class="text-sm">2,341 reviews</span>
+          </div>
+          <div class="color-picker">
+            <div class="color-dot active" style="background:#0f172a;" title="Midnight Black"></div>
+            <div class="color-dot" style="background:#e5e7eb;" title="Silver"></div>
+            <div class="color-dot" style="background:#1e40af;" title="Ocean Blue"></div>
+            <div class="color-dot" style="background:#9333ea;" title="Cosmic Purple"></div>
+          </div>
+          <div class="flex items-center gap-md mb-lg">
+            <span class="price" style="color:#fff;">$249.99</span>
+            <span class="price-original">$299.99</span>
+            <span class="price-save">Save $50</span>
+          </div>
+          <div class="flex gap-md">
+            <a href="#" class="btn btn-primary btn-lg btn-pill" data-shopify-checkout data-variant="00000000000" data-qty="1">Order Now</a>
+            <a href="#specs" class="btn btn-secondary btn-lg btn-pill" style="border-color:rgba(255,255,255,0.3); color:#fff;">View Specs</a>
+          </div>
+        </div>
+        <div class="animate-fade-up delay-2" style="text-align:center;">
+          <img src="https://placehold.co/550x550/1e293b/60a5fa?text=Smart+Device" alt="Smart device product image" style="border-radius:24px; filter: drop-shadow(0 30px 60px rgba(37,99,235,0.3));">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Specs -->
+  <section class="section" id="specs">
+    <div class="container">
+      <h2 class="text-center mb-xl">Built Different. Built Better.</h2>
+      <div class="spec-grid">
+        <div class="spec-card"><div class="spec-num">72h</div><div class="spec-label">Battery Life</div></div>
+        <div class="spec-card"><div class="spec-num">5nm</div><div class="spec-label">Next-Gen Chip</div></div>
+        <div class="spec-card"><div class="spec-num">120Hz</div><div class="spec-label">AMOLED Display</div></div>
+        <div class="spec-card"><div class="spec-num">IP68</div><div class="spec-label">Water Resistant</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="feature-row">
+        <div>
+          <span class="badge badge-new mb-md">Performance</span>
+          <h2>Speed That Sets Records</h2>
+          <p class="text-muted">Our proprietary 5nm chipset delivers desktop-class performance in the palm of your hand. Run demanding apps, multitask effortlessly, and never experience lag again.</p>
+          <ul style="margin-top:16px;">
+            <li class="flex items-center gap-sm mb-sm"><span style="color:#059669;">&#10003;</span> 40% faster than previous gen</li>
+            <li class="flex items-center gap-sm mb-sm"><span style="color:#059669;">&#10003;</span> 12GB LPDDR5 RAM</li>
+            <li class="flex items-center gap-sm mb-sm"><span style="color:#059669;">&#10003;</span> 256GB/512GB storage options</li>
+          </ul>
+        </div>
+        <img src="https://placehold.co/500x400/e0e7ff/2563eb?text=Performance" alt="Performance benchmark" class="feature-img">
+      </div>
+      <div class="feature-row">
+        <div>
+          <span class="badge badge-hot mb-md">Camera</span>
+          <h2>Pro-Grade Photography</h2>
+          <p class="text-muted">Triple lens system with 108MP main sensor, ultra-wide, and 10x optical zoom. Night mode AI makes every low-light shot stunning.</p>
+          <ul style="margin-top:16px;">
+            <li class="flex items-center gap-sm mb-sm"><span style="color:#059669;">&#10003;</span> 108MP Main Sensor</li>
+            <li class="flex items-center gap-sm mb-sm"><span style="color:#059669;">&#10003;</span> 8K Video Recording</li>
+            <li class="flex items-center gap-sm mb-sm"><span style="color:#059669;">&#10003;</span> AI Night Mode</li>
+          </ul>
+        </div>
+        <img src="https://placehold.co/500x400/fef3c7/d97706?text=Camera+System" alt="Camera system" class="feature-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison Table -->
+  <section class="section">
+    <div class="container container-sm">
+      <h2 class="text-center mb-xl">See How We Compare</h2>
+      <table class="comparison-table">
+        <thead><tr><th>Feature</th><th class="highlight">Our Device</th><th>Competitor A</th><th>Competitor B</th></tr></thead>
+        <tbody>
+          <tr><td>Battery Life</td><td class="highlight"><strong>72 hours</strong></td><td>48 hours</td><td>36 hours</td></tr>
+          <tr><td>Display</td><td class="highlight"><strong>120Hz AMOLED</strong></td><td>90Hz LCD</td><td>60Hz AMOLED</td></tr>
+          <tr><td>Camera</td><td class="highlight"><strong>108MP Triple</strong></td><td>64MP Dual</td><td>48MP Triple</td></tr>
+          <tr><td>Price</td><td class="highlight"><strong>$249.99</strong></td><td>$349.99</td><td>$299.99</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section bg-light">
+    <div class="container">
+      <h2 class="text-center mb-xl">What Tech Experts Say</h2>
+      <div class="grid grid-3">
+        <div class="testimonial">
+          <p class="testimonial-text">"Best device in its price range. Period. The battery life alone is worth the upgrade."</p>
+          <p class="testimonial-author">TechRadar</p>
+          <div class="stars mt-md">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        </div>
+        <div class="testimonial">
+          <p class="testimonial-text">"The camera system punches way above its weight. Photos rival devices costing twice as much."</p>
+          <p class="testimonial-author">The Verge</p>
+          <div class="stars mt-md">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+        </div>
+        <div class="testimonial">
+          <p class="testimonial-text">"Finally, a device that delivers on its promises. Fast, gorgeous, and built to last."</p>
+          <p class="testimonial-author">CNET</p>
+          <div class="stars mt-md">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section bg-dark">
+    <div class="container text-center">
+      <h2 class="mb-md">Ready to Upgrade?</h2>
+      <p style="color:#94a3b8; max-width:500px; margin:0 auto 32px;">Launch special: $50 off + free express shipping. 1-year warranty included.</p>
+      <a href="#" class="btn btn-primary btn-lg btn-pill animate-pulse" data-shopify-checkout data-variant="00000000000" data-qty="1">Order Now — $249.99</a>
+      <div class="trust-bar" style="margin-top:24px;">
+        <span class="trust-item" style="color:#94a3b8;">&#10003; Free 2-Day Shipping</span>
+        <span class="trust-item" style="color:#94a3b8;">&#10003; 30-Day Returns</span>
+        <span class="trust-item" style="color:#94a3b8;">&#10003; 1-Year Warranty</span>
+      </div>
+    </div>
+  </section>
+
+  <footer class="section-sm bg-dark" style="border-top:1px solid rgba(255,255,255,0.1);">
+    <div class="container text-center">
+      <p class="text-muted text-sm">&copy; 2025 YourBrand. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div data-sticky-bar>
+    <div class="container flex items-center justify-between">
+      <div class="flex items-center gap-md">
+        <strong>Smart Device Pro</strong>
+        <span class="price-sale" style="font-weight:700;">$249.99</span>
+        <span class="price-original text-sm">$299.99</span>
+      </div>
+      <a href="#" class="btn btn-primary btn-pill" data-shopify-checkout data-variant="00000000000" data-qty="1">Order Now</a>
+    </div>
+  </div>
+
+  <script src="../shared/shopify-integration.js"></script>
+</body>
+</html>

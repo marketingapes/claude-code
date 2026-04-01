@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Little Explorers — Fun, Safe Kids' Products</title>
+  <link rel="stylesheet" href="../shared/base.css">
+  <style>
+    :root { --accent: #ea580c; }
+    body { background: #fff7ed; }
+    .hero { background: linear-gradient(135deg, #fed7aa, #fdba74, #fb923c); padding: 80px 0; border-radius: 0 0 60px 60px; }
+    .hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+    .hero h1 { color: #7c2d12; }
+    .age-selector { display: flex; gap: 12px; justify-content: center; margin-bottom: 40px; }
+    .age-btn { padding: 10px 24px; border-radius: 50px; font-weight: 700; cursor: pointer; background: #fff; border: 2px solid #fdba74; transition: all 0.2s; }
+    .age-btn:hover, .age-btn.active { background: #ea580c; color: #fff; border-color: #ea580c; }
+    .product-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+    .kid-card { background: #fff; border-radius: 20px; overflow: hidden; text-align: center; border: 2px solid transparent; transition: border-color 0.3s; }
+    .kid-card:hover { border-color: #fb923c; }
+    .kid-card img { aspect-ratio: 1; object-fit: cover; width: 100%; }
+    .kid-body { padding: 16px; }
+    .safety-bar { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; text-align: center; }
+    .safety-icon { font-size: 2.5rem; margin-bottom: 8px; }
+    @media (max-width: 768px) { .hero-grid { grid-template-columns: 1fr; } .product-grid, .safety-bar { grid-template-columns: repeat(2, 1fr); } }
+  </style>
+  <script>var SHOPIFY_DOMAIN = 'your-store.myshopify.com';</script>
+</head>
+<body>
+
+  <div class="announce-bar" style="background:#ea580c;">
+    Free shipping on orders $50+ | <strong>Every product safety-tested</strong>
+  </div>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="animate-fade-up">
+          <span class="badge mb-md" style="background:#7c2d12; color:#fff;">Ages 0-12</span>
+          <h1>Where Play Meets Learning</h1>
+          <p style="color:#9a3412; font-size:1.1rem;">Award-winning toys, educational kits, and imaginative play sets that spark curiosity and creativity. 100% safe, 100% fun.</p>
+          <a href="#shop" class="btn btn-lg btn-pill mt-lg" style="background:#ea580c; color:#fff;">Shop by Age</a>
+        </div>
+        <div class="animate-fade-up delay-2">
+          <img src="https://placehold.co/500x400/fff7ed/ea580c?text=Kids+Playing" alt="Children playing with toys" style="border-radius:24px;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shop by Age -->
+  <section class="section" id="shop">
+    <div class="container">
+      <h2 class="text-center mb-md">Shop by Age Group</h2>
+      <div class="age-selector">
+        <span class="age-btn active">All Ages</span>
+        <span class="age-btn">0-2 yrs</span>
+        <span class="age-btn">3-5 yrs</span>
+        <span class="age-btn">6-8 yrs</span>
+        <span class="age-btn">9-12 yrs</span>
+      </div>
+      <div class="product-grid">
+        <div class="kid-card card">
+          <img src="https://placehold.co/300x300/fef3c7/ea580c?text=Building+Blocks" alt="Wooden building blocks">
+          <div class="kid-body">
+            <span class="badge badge-hot mb-sm">Ages 2+</span>
+            <h3 style="font-size:1rem;">Wooden Building Blocks (50pc)</h3>
+            <div class="stars text-sm">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="product-price mt-md" style="font-size:1.1rem;">$29.99</p>
+            <a href="#" class="btn btn-sm btn-pill btn-block mt-md" style="background:#ea580c; color:#fff;" data-shopify-checkout data-variant="00000000000">Add to Cart</a>
+          </div>
+        </div>
+        <div class="kid-card card">
+          <img src="https://placehold.co/300x300/dbeafe/2563eb?text=Science+Kit" alt="Science experiment kit">
+          <div class="kid-body">
+            <span class="badge badge-new mb-sm">Ages 6+</span>
+            <h3 style="font-size:1rem;">Science Experiment Kit</h3>
+            <div class="stars text-sm">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="product-price mt-md" style="font-size:1.1rem;">$44.99</p>
+            <a href="#" class="btn btn-sm btn-pill btn-block mt-md" style="background:#ea580c; color:#fff;" data-shopify-checkout data-variant="00000000000">Add to Cart</a>
+          </div>
+        </div>
+        <div class="kid-card card">
+          <img src="https://placehold.co/300x300/fce7f3/be185d?text=Art+Set" alt="Premium art set">
+          <div class="kid-body">
+            <span class="badge badge-limited mb-sm">Ages 4+</span>
+            <h3 style="font-size:1rem;">Deluxe Art Set (120pc)</h3>
+            <div class="stars text-sm">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+            <p class="product-price mt-md" style="font-size:1.1rem;">$36.99</p>
+            <a href="#" class="btn btn-sm btn-pill btn-block mt-md" style="background:#ea580c; color:#fff;" data-shopify-checkout data-variant="00000000000">Add to Cart</a>
+          </div>
+        </div>
+        <div class="kid-card card">
+          <img src="https://placehold.co/300x300/d1fae5/059669?text=Plush+Toy" alt="Organic plush animal">
+          <div class="kid-body">
+            <span class="badge badge-hot mb-sm">Ages 0+</span>
+            <h3 style="font-size:1rem;">Organic Cotton Plush Bear</h3>
+            <div class="stars text-sm">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="product-price mt-md" style="font-size:1.1rem;">$24.99</p>
+            <a href="#" class="btn btn-sm btn-pill btn-block mt-md" style="background:#ea580c; color:#fff;" data-shopify-checkout data-variant="00000000000">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Safety -->
+  <section class="section bg-light">
+    <div class="container">
+      <h2 class="text-center mb-xl">Safety First. Always.</h2>
+      <div class="safety-bar">
+        <div><div class="safety-icon">&#128737;</div><strong>CPSC Certified</strong><p class="text-sm text-muted">Meets all US safety standards</p></div>
+        <div><div class="safety-icon">&#127807;</div><strong>Non-Toxic</strong><p class="text-sm text-muted">BPA, lead & phthalate free</p></div>
+        <div><div class="safety-icon">&#9851;</div><strong>Sustainable</strong><p class="text-sm text-muted">Eco-friendly materials</p></div>
+        <div><div class="safety-icon">&#128150;</div><strong>Parent Approved</strong><p class="text-sm text-muted">Tested by real families</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section class="section">
+    <div class="container">
+      <h2 class="text-center mb-xl">Parents Love Us</h2>
+      <div class="grid grid-3">
+        <div class="testimonial" style="background:#fff7ed;">
+          <p class="testimonial-text">"My 4-year-old hasn't put down the building blocks since they arrived. Quality is incredible — these will last for years."</p>
+          <p class="testimonial-author">Sarah M.</p><p class="testimonial-role">Mom of 2</p>
+          <div class="stars mt-md">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        </div>
+        <div class="testimonial" style="background:#fff7ed;">
+          <p class="testimonial-text">"The science kit turned screen time into experiment time. My kids beg to do 'one more experiment' every evening."</p>
+          <p class="testimonial-author">David L.</p><p class="testimonial-role">Dad of 3</p>
+          <div class="stars mt-md">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        </div>
+        <div class="testimonial" style="background:#fff7ed;">
+          <p class="testimonial-text">"As a preschool teacher, I recommend these to all parents. Educational, safe, and genuinely engaging for kids."</p>
+          <p class="testimonial-author">Emily T.</p><p class="testimonial-role">Preschool Educator</p>
+          <div class="stars mt-md">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="section-sm" style="background:#9a3412; color:#fff;">
+    <div class="container text-center"><p class="text-sm" style="opacity:0.6;">&copy; 2025 Little Explorers. Making childhood magical.</p></div>
+  </footer>
+
+  <script src="../shared/shopify-integration.js"></script>
+  <script>
+    document.querySelectorAll('.age-btn').forEach(function(b) {
+      b.addEventListener('click', function() {
+        document.querySelectorAll('.age-btn').forEach(function(x) { x.classList.remove('active'); });
+        b.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>

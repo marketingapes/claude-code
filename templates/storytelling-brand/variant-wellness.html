@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mindful Living — Holistic Wellness Products</title>
+  <link rel="stylesheet" href="../shared/base.css">
+  <style>
+    :root { --accent: #7c3aed; }
+    body { background: #faf5ff; }
+    .hero { background: linear-gradient(180deg, #f5f3ff, #ede9fe, #ddd6fe); padding: 100px 0 80px; text-align: center; }
+    .hero h1 { color: #4c1d95; font-weight: 300; font-size: clamp(2.5rem, 6vw, 4rem); }
+    .hero h1 strong { font-weight: 700; }
+    .hero-img { max-width: 600px; margin: 40px auto 0; border-radius: 200px 200px 24px 24px; overflow: hidden; }
+    .pillar-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+    .pillar { background: #fff; border-radius: 20px; padding: 32px 24px; text-align: center; border: 2px solid transparent; transition: all 0.3s; }
+    .pillar:hover { border-color: #7c3aed; transform: translateY(-4px); }
+    .pillar-icon { font-size: 2.5rem; margin-bottom: 12px; }
+    .routine-section { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+    .routine-img { border-radius: 24px; }
+    .ritual-step { display: flex; gap: 16px; margin-bottom: 24px; }
+    .ritual-time { min-width: 80px; color: #7c3aed; font-weight: 700; font-size: 0.9rem; padding-top: 2px; }
+    .product-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+    .well-card { background: #fff; border-radius: 20px; overflow: hidden; }
+    .well-card img { aspect-ratio: 1; object-fit: cover; width: 100%; }
+    .well-body { padding: 20px; text-align: center; }
+    @media (max-width: 768px) { .pillar-grid { grid-template-columns: repeat(2, 1fr); } .routine-section, .product-grid { grid-template-columns: 1fr; } }
+  </style>
+  <script>var SHOPIFY_DOMAIN = 'your-store.myshopify.com';</script>
+</head>
+<body>
+
+  <div class="announce-bar" style="background:#4c1d95;">
+    Take 15% off your first order with code MINDFUL15 | Free wellness guide included
+  </div>
+
+  <section class="hero">
+    <div class="container">
+      <span class="badge mb-md" style="background:#ede9fe; color:#7c3aed;">Holistic Wellness</span>
+      <h1 class="animate-fade-up">Nurture Your <strong>Mind, Body & Soul</strong></h1>
+      <p class="animate-fade-up delay-1" style="color:#6b21a8; font-size:1.15rem; max-width:550px; margin:20px auto 0;">Thoughtfully formulated wellness products rooted in ancient wisdom and backed by modern science. Your journey to balance starts here.</p>
+      <div class="hero-img animate-fade-up delay-2">
+        <img src="https://placehold.co/600x400/ede9fe/4c1d95?text=Wellness+Lifestyle" alt="Peaceful wellness scene">
+      </div>
+    </div>
+  </section>
+
+  <!-- Pillars -->
+  <section class="section">
+    <div class="container">
+      <h2 class="text-center mb-xl">The Four Pillars of Wellness</h2>
+      <div class="pillar-grid">
+        <div class="pillar">
+          <div class="pillar-icon">&#129504;</div>
+          <h3>Mind</h3>
+          <p class="text-sm text-muted">Adaptogens & nootropics for mental clarity and calm</p>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon">&#128170;</div>
+          <h3>Body</h3>
+          <p class="text-sm text-muted">Plant-based nutrition for strength and vitality</p>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon">&#128156;</div>
+          <h3>Spirit</h3>
+          <p class="text-sm text-muted">Aromatherapy & rituals for inner peace</p>
+        </div>
+        <div class="pillar">
+          <div class="pillar-icon">&#128564;</div>
+          <h3>Rest</h3>
+          <p class="text-sm text-muted">Sleep support for deep, restorative nights</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Daily Ritual -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="routine-section">
+        <div>
+          <span class="badge badge-limited mb-md">Daily Ritual</span>
+          <h2>A Wellness Routine That Actually Works</h2>
+          <p class="text-muted mb-lg">Simple, intentional moments throughout your day that compound into transformative results.</p>
+          <div class="ritual-step">
+            <div class="ritual-time">Morning</div>
+            <div><strong>Clarity Drops</strong><p class="text-sm text-muted">Lion's Mane + Rhodiola for focused energy without jitters</p></div>
+          </div>
+          <div class="ritual-step">
+            <div class="ritual-time">Midday</div>
+            <div><strong>Balance Blend</strong><p class="text-sm text-muted">Ashwagandha + Reishi to manage stress and stay centered</p></div>
+          </div>
+          <div class="ritual-step">
+            <div class="ritual-time">Evening</div>
+            <div><strong>Calm Ritual</strong><p class="text-sm text-muted">Lavender aromatherapy + magnesium glycinate for deep rest</p></div>
+          </div>
+        </div>
+        <img src="https://placehold.co/500x500/ede9fe/4c1d95?text=Daily+Ritual" alt="Wellness ritual" class="routine-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section class="section" id="shop">
+    <div class="container">
+      <h2 class="text-center mb-md">Shop Wellness</h2>
+      <p class="text-center text-muted mb-xl">Plant-based. Third-party tested. Always transparent.</p>
+      <div class="product-grid">
+        <div class="well-card card">
+          <img src="https://placehold.co/400x400/ede9fe/4c1d95?text=Clarity+Drops" alt="Clarity drops">
+          <div class="well-body">
+            <span class="badge badge-hot mb-sm">Best Seller</span>
+            <h3 style="font-size:1.1rem;">Clarity Drops</h3>
+            <p class="text-sm text-muted">Lion's Mane + Rhodiola + B12</p>
+            <div class="stars text-sm mt-md">&#9733;&#9733;&#9733;&#9733;&#9733; <span class="rating-count">(2,341)</span></div>
+            <p class="product-price mt-md" style="color:#7c3aed;">$38.00</p>
+            <a href="#" class="btn btn-sm btn-pill btn-block mt-md" style="background:#7c3aed; color:#fff;" data-shopify-checkout data-variant="00000000000">Add to Cart</a>
+          </div>
+        </div>
+        <div class="well-card card">
+          <img src="https://placehold.co/400x400/fce7f3/be185d?text=Balance+Blend" alt="Balance blend">
+          <div class="well-body">
+            <h3 style="font-size:1.1rem;">Balance Blend</h3>
+            <p class="text-sm text-muted">Ashwagandha + Reishi + Holy Basil</p>
+            <div class="stars text-sm mt-md">&#9733;&#9733;&#9733;&#9733;&#9733; <span class="rating-count">(1,876)</span></div>
+            <p class="product-price mt-md" style="color:#7c3aed;">$34.00</p>
+            <a href="#" class="btn btn-sm btn-pill btn-block mt-md" style="background:#7c3aed; color:#fff;" data-shopify-checkout data-variant="00000000000">Add to Cart</a>
+          </div>
+        </div>
+        <div class="well-card card">
+          <img src="https://placehold.co/400x400/dbeafe/2563eb?text=Calm+Kit" alt="Calm ritual kit">
+          <div class="well-body">
+            <span class="badge badge-new mb-sm">New</span>
+            <h3 style="font-size:1.1rem;">Calm Ritual Kit</h3>
+            <p class="text-sm text-muted">Lavender oil + magnesium + sleep tea</p>
+            <div class="stars text-sm mt-md">&#9733;&#9733;&#9733;&#9733;&#9734; <span class="rating-count">(943)</span></div>
+            <p class="product-price mt-md" style="color:#7c3aed;">$52.00</p>
+            <a href="#" class="btn btn-sm btn-pill btn-block mt-md" style="background:#7c3aed; color:#fff;" data-shopify-checkout data-variant="00000000000">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section bg-light">
+    <div class="container">
+      <h2 class="text-center mb-xl">Stories of Transformation</h2>
+      <div class="grid grid-3">
+        <div class="testimonial" style="background:#f5f3ff;">
+          <p class="testimonial-text">"The Clarity Drops changed my mornings. I went from groggy coffee-dependent to genuinely alert and focused by 7am."</p>
+          <p class="testimonial-author">Amy W.</p><p class="testimonial-role">Yoga Instructor</p>
+          <div class="stars mt-md">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        </div>
+        <div class="testimonial" style="background:#f5f3ff;">
+          <p class="testimonial-text">"As someone with chronic anxiety, the Balance Blend has been life-changing. I feel calmer without feeling sedated."</p>
+          <p class="testimonial-author">Marcus L.</p><p class="testimonial-role">Therapist</p>
+          <div class="stars mt-md">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        </div>
+        <div class="testimonial" style="background:#f5f3ff;">
+          <p class="testimonial-text">"The Calm Kit is my nightly ritual now. Best sleep I've had in years. My partner noticed the difference before I did."</p>
+          <p class="testimonial-author">Sarah P.</p><p class="testimonial-role">Verified Buyer</p>
+          <div class="stars mt-md">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:linear-gradient(135deg, #4c1d95, #7c3aed); color:#fff; text-align:center;">
+    <div class="container">
+      <h2 class="mb-md">Begin Your Wellness Journey</h2>
+      <p style="opacity:0.85; max-width:450px; margin:0 auto 32px;">15% off your first order with code MINDFUL15. Free wellness guide included.</p>
+      <a href="#shop" class="btn btn-lg btn-pill" style="background:#fff; color:#7c3aed;">Shop Now</a>
+    </div>
+  </section>
+
+  <footer class="section-sm" style="background:#4c1d95; color:#fff;">
+    <div class="container text-center"><p class="text-sm" style="opacity:0.4;">&copy; 2025 Mindful Living. Plant-powered wellness.</p></div>
+  </footer>
+
+  <script src="../shared/shopify-integration.js"></script>
+</body>
+</html>

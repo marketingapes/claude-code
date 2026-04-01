@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NexTech — Innovation That Changes Everything</title>
+  <link rel="stylesheet" href="../shared/base.css">
+  <style>
+    :root { --accent: #2563eb; }
+    body { background: #0f172a; color: #e2e8f0; }
+    .hero { min-height: 90vh; display: flex; align-items: center; position: relative; overflow: hidden; padding: 80px 0; }
+    .hero-bg-grid { position: absolute; inset: 0; background-image: linear-gradient(rgba(37,99,235,0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(37,99,235,0.1) 1px, transparent 1px); background-size: 60px 60px; }
+    .hero .container { position: relative; z-index: 1; }
+    .hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+    .hero h1 { font-size: clamp(2.5rem, 6vw, 4rem); font-weight: 800; color: #fff; }
+    .hero h1 span { background: linear-gradient(90deg, #3b82f6, #8b5cf6); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .metric-row { display: flex; gap: 32px; margin: 24px 0; }
+    .metric { text-align: center; }
+    .metric-num { font-size: 1.75rem; font-weight: 800; color: #3b82f6; }
+    .metric-label { font-size: 0.8rem; color: #64748b; }
+    .vision-text { font-size: 1.5rem; line-height: 1.7; text-align: center; max-width: 700px; margin: 0 auto; color: #94a3b8; }
+    .vision-text strong { color: #fff; }
+    .tech-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .tech-card { background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 16px; padding: 32px; transition: all 0.3s; }
+    .tech-card:hover { background: rgba(37,99,235,0.1); border-color: rgba(37,99,235,0.3); }
+    .tech-icon { font-size: 2rem; margin-bottom: 16px; }
+    .tech-card h3 { color: #fff; margin-bottom: 8px; }
+    .team-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+    .team-member { text-align: center; }
+    .team-member img { width: 120px; height: 120px; border-radius: 50%; margin: 0 auto 12px; object-fit: cover; }
+    .team-member h3 { color: #fff; font-size: 1rem; margin-bottom: 2px; }
+    .product-hero { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 24px; padding: 48px; }
+    @media (max-width: 768px) { .hero-grid, .tech-grid, .product-hero { grid-template-columns: 1fr; } .team-grid { grid-template-columns: repeat(2, 1fr); } .metric-row { flex-wrap: wrap; } }
+  </style>
+  <script>var SHOPIFY_DOMAIN = 'your-store.myshopify.com';</script>
+</head>
+<body>
+
+  <div class="announce-bar" style="background:#2563eb;">
+    &#128640; Series B: $42M raised to accelerate innovation | <strong>Pre-order now</strong>
+  </div>
+
+  <section class="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="container">
+      <div class="hero-grid">
+        <div class="animate-fade-up">
+          <span class="badge mb-md" style="background:rgba(37,99,235,0.2); color:#60a5fa; border:1px solid rgba(37,99,235,0.3);">Backed by Y Combinator</span>
+          <h1>The Future of <span>Smart Living</span> Starts Here</h1>
+          <p style="color:#94a3b8; font-size:1.1rem; margin:20px 0;">We're building the operating system for your home. One device, infinite possibilities. Powered by AI that actually understands you.</p>
+          <div class="metric-row">
+            <div class="metric"><div class="metric-num">50K+</div><div class="metric-label">Pre-orders</div></div>
+            <div class="metric"><div class="metric-num">4.9</div><div class="metric-label">Beta rating</div></div>
+            <div class="metric"><div class="metric-num">$42M</div><div class="metric-label">Funded</div></div>
+          </div>
+          <a href="#product" class="btn btn-primary btn-lg btn-pill">Pre-Order Now — $299</a>
+        </div>
+        <div class="text-center animate-fade-up delay-2">
+          <img src="https://placehold.co/500x400/1e293b/3b82f6?text=Smart+Hub" alt="NexTech smart hub device" style="border-radius:20px; filter:drop-shadow(0 30px 60px rgba(37,99,235,0.3));">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vision -->
+  <section class="section" style="border-top:1px solid rgba(255,255,255,0.05);">
+    <div class="container">
+      <div class="vision-text">
+        <p>We believe technology should <strong>disappear into the background</strong> of your life — quietly making everything better, anticipating your needs, and <strong>giving you back your most precious resource: time</strong>.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Technology -->
+  <section class="section">
+    <div class="container">
+      <h2 class="text-center mb-xl" style="color:#fff;">Our Technology Stack</h2>
+      <div class="tech-grid">
+        <div class="tech-card">
+          <div class="tech-icon">&#129302;</div>
+          <h3>On-Device AI</h3>
+          <p style="color:#94a3b8;">Custom neural engine processes everything locally. Your data never leaves your home.</p>
+        </div>
+        <div class="tech-card">
+          <div class="tech-icon">&#128274;</div>
+          <h3>Privacy-First</h3>
+          <p style="color:#94a3b8;">End-to-end encryption, no cloud dependency. Open-source security audited by Trail of Bits.</p>
+        </div>
+        <div class="tech-card">
+          <div class="tech-icon">&#9889;</div>
+          <h3>Instant Response</h3>
+          <p style="color:#94a3b8;">Sub-100ms latency. Local processing means no waiting for cloud roundtrips.</p>
+        </div>
+        <div class="tech-card">
+          <div class="tech-icon">&#128279;</div>
+          <h3>Universal Compatibility</h3>
+          <p style="color:#94a3b8;">Works with 10,000+ smart home devices. Matter, Zigbee, Z-Wave, WiFi, Thread.</p>
+        </div>
+        <div class="tech-card">
+          <div class="tech-icon">&#127760;</div>
+          <h3>OTA Updates</h3>
+          <p style="color:#94a3b8;">Gets smarter every month. New features and integrations deployed automatically.</p>
+        </div>
+        <div class="tech-card">
+          <div class="tech-icon">&#128736;</div>
+          <h3>Developer API</h3>
+          <p style="color:#94a3b8;">Open API and SDK. Build custom automations or integrate with your own systems.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product -->
+  <section class="section" id="product">
+    <div class="container">
+      <div class="product-hero">
+        <div>
+          <span class="badge mb-md" style="background:rgba(37,99,235,0.2); color:#60a5fa;">Pre-Order</span>
+          <h2 style="color:#fff;">NexTech Hub Pro</h2>
+          <p style="color:#94a3b8; margin:16px 0;">The brain of your smart home. Manages all your devices, learns your preferences, and automates your daily routines — all processed locally on our custom AI chip.</p>
+          <ul style="margin:20px 0;">
+            <li style="color:#94a3b8; padding:6px 0;">&#10003; Custom NX-1 AI processor</li>
+            <li style="color:#94a3b8; padding:6px 0;">&#10003; 8-microphone array with noise cancellation</li>
+            <li style="color:#94a3b8; padding:6px 0;">&#10003; 5.5" touchscreen display</li>
+            <li style="color:#94a3b8; padding:6px 0;">&#10003; Thread border router built-in</li>
+          </ul>
+          <div class="flex items-center gap-md mb-lg">
+            <span class="price" style="color:#fff; font-size:2rem;">$299.00</span>
+            <span style="color:#94a3b8;">Ships Q2 2026</span>
+          </div>
+          <a href="#" class="btn btn-primary btn-lg btn-pill" data-shopify-checkout data-variant="00000000000">Pre-Order — $299</a>
+        </div>
+        <div class="text-center">
+          <img src="https://placehold.co/450x350/1e293b/3b82f6?text=Hub+Pro" alt="NexTech Hub Pro" style="border-radius:16px;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section class="section" style="border-top:1px solid rgba(255,255,255,0.05);">
+    <div class="container">
+      <h2 class="text-center mb-xl" style="color:#fff;">Built by Experts</h2>
+      <div class="team-grid">
+        <div class="team-member">
+          <img src="https://placehold.co/120x120/1e293b/3b82f6?text=CEO" alt="CEO">
+          <h3>Alex Rivera</h3>
+          <p class="text-sm" style="color:#64748b;">CEO · Ex-Google AI</p>
+        </div>
+        <div class="team-member">
+          <img src="https://placehold.co/120x120/1e293b/8b5cf6?text=CTO" alt="CTO">
+          <h3>Priya Sharma</h3>
+          <p class="text-sm" style="color:#64748b;">CTO · Ex-Apple Hardware</p>
+        </div>
+        <div class="team-member">
+          <img src="https://placehold.co/120x120/1e293b/22c55e?text=VP" alt="VP Design">
+          <h3>Marcus Chen</h3>
+          <p class="text-sm" style="color:#64748b;">VP Design · Ex-Tesla</p>
+        </div>
+        <div class="team-member">
+          <img src="https://placehold.co/120x120/1e293b/f59e0b?text=Head" alt="Head of AI">
+          <h3>Dr. Sarah Kim</h3>
+          <p class="text-sm" style="color:#64748b;">Head of AI · Stanford PhD</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="section-sm" style="border-top:1px solid rgba(255,255,255,0.05);">
+    <div class="container text-center"><p class="text-sm" style="color:#475569;">&copy; 2025 NexTech Inc. San Francisco, CA.</p></div>
+  </footer>
+
+  <div data-sticky-bar style="background:rgba(15,23,42,0.95); backdrop-filter:blur(10px); border-top:1px solid rgba(255,255,255,0.1);">
+    <div class="container flex items-center justify-between" style="color:#fff;">
+      <div class="flex items-center gap-md"><strong>NexTech Hub Pro</strong> <span style="color:#3b82f6;">$299</span> <span class="text-sm" style="color:#64748b;">Ships Q2 2026</span></div>
+      <a href="#" class="btn btn-primary btn-pill" data-shopify-checkout data-variant="00000000000">Pre-Order</a>
+    </div>
+  </div>
+
+  <script src="../shared/shopify-integration.js"></script>
+</body>
+</html>

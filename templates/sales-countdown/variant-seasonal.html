@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Holiday Gift Guide — Perfect Presents for Everyone</title>
+  <link rel="stylesheet" href="../shared/base.css">
+  <style>
+    :root { --accent: #059669; }
+    body { background: #f0fdf4; }
+    .hero { background: linear-gradient(135deg, #064e3b 0%, #059669 50%, #047857 100%); color: #fff; padding: 80px 0; text-align: center; position: relative; overflow: hidden; }
+    .hero::before { content: ''; position: absolute; inset: 0; background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M30 30l15-15v30l-15-15zm-30 0l15-15v30L0 30z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
+    .hero .container { position: relative; z-index: 1; }
+    .hero h1 { font-size: clamp(2.5rem, 6vw, 4rem); }
+    .gift-categories { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+    .gift-cat { background: #fff; border-radius: 20px; padding: 32px 20px; text-align: center; cursor: pointer; transition: all 0.3s; border: 2px solid transparent; }
+    .gift-cat:hover { border-color: #059669; transform: translateY(-4px); }
+    .gift-cat-icon { font-size: 3rem; margin-bottom: 12px; }
+    .gift-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+    .gift-card { background: #fff; border-radius: 16px; overflow: hidden; }
+    .gift-card img { aspect-ratio: 1; object-fit: cover; width: 100%; }
+    .gift-body { padding: 20px; }
+    .gift-for { display: inline-block; background: #ecfdf5; color: #059669; padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: 600; margin-bottom: 8px; }
+    .promo-banner { background: linear-gradient(135deg, #dc2626, #b91c1c); color: #fff; border-radius: 16px; padding: 32px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    @media (max-width: 768px) { .gift-categories, .gift-grid { grid-template-columns: repeat(2, 1fr); } .promo-banner { flex-direction: column; text-align: center; } }
+  </style>
+  <script>var SHOPIFY_DOMAIN = 'your-store.myshopify.com';</script>
+</head>
+<body>
+
+  <div class="announce-bar" style="background:#064e3b;">
+    &#127876; Holiday Sale: <strong>25% OFF sitewide</strong> with code HOLIDAY25 | Free gift wrapping
+  </div>
+
+  <section class="hero">
+    <div class="container">
+      <span class="badge mb-md" style="background:rgba(255,255,255,0.2); color:#fff;">Holiday 2025</span>
+      <h1 class="animate-fade-up">The Gift Guide</h1>
+      <p class="animate-fade-up delay-1" style="font-size:1.2rem; max-width:500px; margin:16px auto 24px; opacity:0.9;">Find the perfect present for everyone on your list. Curated collections, free wrapping, guaranteed delivery.</p>
+      <div style="max-width:400px; margin:0 auto 32px;" class="animate-fade-up delay-2">
+        <p style="font-size:0.85rem; opacity:0.7; margin-bottom:8px;">Order by Dec 20 for guaranteed delivery:</p>
+        <div data-countdown="2025-12-20T23:59:59"></div>
+      </div>
+      <a href="#gifts" class="btn btn-lg btn-pill animate-fade-up delay-3" style="background:#fff; color:#064e3b;">Shop Gift Guide</a>
+    </div>
+  </section>
+
+  <!-- Gift Categories -->
+  <section class="section" id="gifts">
+    <div class="container">
+      <h2 class="text-center mb-xl">Shop by Recipient</h2>
+      <div class="gift-categories">
+        <div class="gift-cat"><div class="gift-cat-icon">&#128105;</div><h3>For Her</h3><p class="text-sm text-muted">Beauty, accessories & more</p></div>
+        <div class="gift-cat"><div class="gift-cat-icon">&#128104;</div><h3>For Him</h3><p class="text-sm text-muted">Tech, grooming & gear</p></div>
+        <div class="gift-cat"><div class="gift-cat-icon">&#128118;</div><h3>For Kids</h3><p class="text-sm text-muted">Toys, games & learning</p></div>
+        <div class="gift-cat"><div class="gift-cat-icon">&#127968;</div><h3>For Home</h3><p class="text-sm text-muted">Decor, candles & kitchen</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Promo -->
+  <section class="section-sm">
+    <div class="container">
+      <div class="promo-banner">
+        <div>
+          <h3 style="margin-bottom:4px;">Holiday Special: 25% OFF Everything</h3>
+          <p style="opacity:0.9; margin:0;">Use code <strong>HOLIDAY25</strong> at checkout. Valid through Dec 25.</p>
+        </div>
+        <a href="#featured" class="btn btn-pill" style="background:#fff; color:#dc2626; white-space:nowrap;">Shop Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Gifts -->
+  <section class="section bg-light" id="featured">
+    <div class="container">
+      <h2 class="text-center mb-md">Editor's Picks</h2>
+      <p class="text-center text-muted mb-xl">Our team's top gift recommendations</p>
+      <div class="gift-grid">
+        <div class="gift-card card">
+          <img src="https://placehold.co/400x400/fce7f3/be185d?text=Skincare+Set" alt="Luxury skincare set">
+          <div class="gift-body">
+            <span class="gift-for">For Her</span>
+            <h3 style="font-size:1.1rem;">Luxury Skincare Gift Set</h3>
+            <p class="text-sm text-muted">Cleanser, serum, moisturizer & eye cream in gift box</p>
+            <div class="flex items-center gap-sm mt-md">
+              <span class="product-price">$89.99</span>
+              <span class="price-original text-sm">$119.99</span>
+            </div>
+            <a href="#" class="btn btn-sm btn-success btn-pill btn-block mt-md" data-shopify-checkout data-variant="00000000000">Add to Cart</a>
+          </div>
+        </div>
+        <div class="gift-card card">
+          <img src="https://placehold.co/400x400/dbeafe/2563eb?text=Tech+Bundle" alt="Tech essentials bundle">
+          <div class="gift-body">
+            <span class="gift-for">For Him</span>
+            <h3 style="font-size:1.1rem;">Tech Essentials Bundle</h3>
+            <p class="text-sm text-muted">Wireless charger, earbuds case & cable organizer</p>
+            <div class="flex items-center gap-sm mt-md">
+              <span class="product-price">$64.99</span>
+              <span class="price-original text-sm">$86.99</span>
+            </div>
+            <a href="#" class="btn btn-sm btn-success btn-pill btn-block mt-md" data-shopify-checkout data-variant="00000000000">Add to Cart</a>
+          </div>
+        </div>
+        <div class="gift-card card">
+          <img src="https://placehold.co/400x400/fef3c7/92400e?text=Candle+Set" alt="Artisan candle collection">
+          <div class="gift-body">
+            <span class="gift-for">For Home</span>
+            <h3 style="font-size:1.1rem;">Artisan Candle Trio</h3>
+            <p class="text-sm text-muted">3 hand-poured soy candles in holiday scents</p>
+            <div class="flex items-center gap-sm mt-md">
+              <span class="product-price">$44.99</span>
+              <span class="price-original text-sm">$59.99</span>
+            </div>
+            <a href="#" class="btn btn-sm btn-success btn-pill btn-block mt-md" data-shopify-checkout data-variant="00000000000">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shipping Guarantee -->
+  <section class="section">
+    <div class="container">
+      <div class="grid grid-3" style="text-align:center;">
+        <div><div style="font-size:2.5rem; margin-bottom:8px;">&#127873;</div><strong>Free Gift Wrapping</strong><p class="text-sm text-muted">Beautiful presentation, no extra charge</p></div>
+        <div><div style="font-size:2.5rem; margin-bottom:8px;">&#128666;</div><strong>Guaranteed Delivery</strong><p class="text-sm text-muted">Order by Dec 20 for Christmas delivery</p></div>
+        <div><div style="font-size:2.5rem; margin-bottom:8px;">&#128257;</div><strong>Easy Returns</strong><p class="text-sm text-muted">Extended 60-day holiday return policy</p></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="section-sm" style="background:#064e3b; color:#fff;">
+    <div class="container text-center"><p class="text-sm" style="opacity:0.6;">&copy; 2025 YourBrand. Happy holidays!</p></div>
+  </footer>
+
+  <div data-sticky-bar style="background:#064e3b; color:#fff;">
+    <div class="container flex items-center justify-between">
+      <strong>&#127876; 25% OFF with code HOLIDAY25</strong>
+      <a href="#featured" class="btn btn-pill" style="background:#fff; color:#064e3b;">Shop Gifts</a>
+    </div>
+  </div>
+
+  <script src="../shared/shopify-integration.js"></script>
+</body>
+</html>

@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Summit Gear — Adventure-Ready Equipment</title>
+  <link rel="stylesheet" href="../shared/base.css">
+  <style>
+    :root { --accent: #16a34a; }
+    .hero { background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.6)), url('https://placehold.co/1400x700/1a1a2e/fff?text=') center/cover; color: #fff; padding: 120px 0; text-align: center; }
+    .hero h1 { font-size: clamp(2.5rem, 6vw, 4.5rem); }
+    .activity-bar { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; margin-bottom: 48px; }
+    .activity-chip { display: flex; align-items: center; gap: 8px; padding: 12px 24px; background: #fff; border-radius: 50px; font-weight: 600; cursor: pointer; border: 2px solid #e5e7eb; transition: all 0.2s; }
+    .activity-chip:hover, .activity-chip.active { border-color: #16a34a; background: #f0fdf4; color: #16a34a; }
+    .gear-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+    .gear-card { background: #fff; border-radius: 16px; overflow: hidden; }
+    .gear-card img { aspect-ratio: 4/3; object-fit: cover; width: 100%; }
+    .gear-body { padding: 20px; }
+    .gear-rating { display: flex; align-items: center; gap: 6px; margin: 8px 0; }
+    .banner-split { display: grid; grid-template-columns: 1fr 1fr; min-height: 400px; }
+    .banner-content { display: flex; flex-direction: column; justify-content: center; padding: 60px; }
+    .banner-img { background: url('https://placehold.co/700x400/064e3b/fff?text=Adventure') center/cover; }
+    @media (max-width: 768px) { .gear-grid { grid-template-columns: 1fr; } .banner-split { grid-template-columns: 1fr; } .banner-img { min-height: 250px; } }
+  </style>
+  <script>var SHOPIFY_DOMAIN = 'your-store.myshopify.com';</script>
+</head>
+<body>
+
+  <div class="announce-bar" style="background:#15803d;">
+    Free shipping on all orders | <strong>Lifetime warranty on all gear</strong>
+  </div>
+
+  <section class="hero">
+    <div class="container">
+      <h1 class="animate-fade-up">Gear Up for<br>Your Next Adventure</h1>
+      <p class="animate-fade-up delay-1" style="font-size:1.2rem; max-width:550px; margin:16px auto 32px; color:rgba(255,255,255,0.85);">Professional-grade outdoor equipment tested in the world's harshest conditions. Built to last a lifetime.</p>
+      <a href="#gear" class="btn btn-success btn-lg btn-pill animate-fade-up delay-2">Shop All Gear</a>
+    </div>
+  </section>
+
+  <!-- Activity Filter -->
+  <section class="section" id="gear">
+    <div class="container">
+      <div class="activity-bar">
+        <span class="activity-chip active">&#127956; All Gear</span>
+        <span class="activity-chip">&#9968; Hiking</span>
+        <span class="activity-chip">&#127956; Camping</span>
+        <span class="activity-chip">&#127935; Climbing</span>
+        <span class="activity-chip">&#127946; Water Sports</span>
+      </div>
+      <div class="gear-grid">
+        <div class="gear-card card">
+          <img src="https://placehold.co/400x300/d1fae5/064e3b?text=Backpack" alt="Trail backpack 65L">
+          <div class="gear-body">
+            <span class="badge badge-hot">Best Seller</span>
+            <h3 style="font-size:1.1rem; margin-top:8px;">Trail Pro Backpack 65L</h3>
+            <div class="gear-rating"><span class="stars text-sm">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="text-sm text-muted">(847)</span></div>
+            <p class="text-sm text-muted">Ultralight ripstop nylon, rain cover included</p>
+            <div class="flex items-center justify-between mt-md">
+              <span class="product-price" style="font-size:1.25rem;">$189.00</span>
+              <a href="#" class="btn btn-sm btn-success btn-pill" data-shopify-checkout data-variant="00000000000">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="gear-card card">
+          <img src="https://placehold.co/400x300/dbeafe/1e40af?text=Tent" alt="Summit tent 2P">
+          <div class="gear-body">
+            <span class="badge badge-new">New</span>
+            <h3 style="font-size:1.1rem; margin-top:8px;">Summit Tent 2-Person</h3>
+            <div class="gear-rating"><span class="stars text-sm">&#9733;&#9733;&#9733;&#9733;&#9734;</span><span class="text-sm text-muted">(392)</span></div>
+            <p class="text-sm text-muted">4-season, freestanding, 3.2 lbs packed</p>
+            <div class="flex items-center justify-between mt-md">
+              <span class="product-price" style="font-size:1.25rem;">$329.00</span>
+              <a href="#" class="btn btn-sm btn-success btn-pill" data-shopify-checkout data-variant="00000000000">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="gear-card card">
+          <img src="https://placehold.co/400x300/fef3c7/92400e?text=Sleeping+Bag" alt="Down sleeping bag">
+          <div class="gear-body">
+            <h3 style="font-size:1.1rem; margin-top:8px;">Expedition Down Bag -20F</h3>
+            <div class="gear-rating"><span class="stars text-sm">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="text-sm text-muted">(621)</span></div>
+            <p class="text-sm text-muted">800-fill goose down, water-resistant shell</p>
+            <div class="flex items-center justify-between mt-md">
+              <span class="product-price" style="font-size:1.25rem;">$249.00</span>
+              <a href="#" class="btn btn-sm btn-success btn-pill" data-shopify-checkout data-variant="00000000000">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="gear-card card">
+          <img src="https://placehold.co/400x300/e0e7ff/3730a3?text=Jacket" alt="Alpine shell jacket">
+          <div class="gear-body">
+            <span class="badge badge-limited">Limited</span>
+            <h3 style="font-size:1.1rem; margin-top:8px;">Alpine Shell Jacket</h3>
+            <div class="gear-rating"><span class="stars text-sm">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="text-sm text-muted">(1,203)</span></div>
+            <p class="text-sm text-muted">3-layer Gore-Tex, fully seam-sealed</p>
+            <div class="flex items-center justify-between mt-md">
+              <span class="product-price" style="font-size:1.25rem;">$275.00</span>
+              <a href="#" class="btn btn-sm btn-success btn-pill" data-shopify-checkout data-variant="00000000000">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="gear-card card">
+          <img src="https://placehold.co/400x300/f3e8ff/7c3aed?text=Headlamp" alt="Rechargeable headlamp">
+          <div class="gear-body">
+            <h3 style="font-size:1.1rem; margin-top:8px;">Beacon Headlamp 1000lm</h3>
+            <div class="gear-rating"><span class="stars text-sm">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="text-sm text-muted">(554)</span></div>
+            <p class="text-sm text-muted">USB-C rechargeable, red night mode</p>
+            <div class="flex items-center justify-between mt-md">
+              <span class="product-price" style="font-size:1.25rem;">$59.00</span>
+              <a href="#" class="btn btn-sm btn-success btn-pill" data-shopify-checkout data-variant="00000000000">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="gear-card card">
+          <img src="https://placehold.co/400x300/fce7f3/be185d?text=Water+Bottle" alt="Insulated water bottle">
+          <div class="gear-body">
+            <h3 style="font-size:1.1rem; margin-top:8px;">Summit Insulated Bottle 32oz</h3>
+            <div class="gear-rating"><span class="stars text-sm">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span class="text-sm text-muted">(2,891)</span></div>
+            <p class="text-sm text-muted">24hr cold, 12hr hot, lifetime warranty</p>
+            <div class="flex items-center justify-between mt-md">
+              <span class="product-price" style="font-size:1.25rem;">$38.00</span>
+              <a href="#" class="btn btn-sm btn-success btn-pill" data-shopify-checkout data-variant="00000000000">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Split Banner -->
+  <div class="banner-split">
+    <div class="banner-content bg-dark">
+      <h2>Lifetime Warranty.<br>No Questions Asked.</h2>
+      <p style="color:#a1a1aa; margin-top:12px;">Every product we sell comes with our ironclad lifetime guarantee. If it breaks, we replace it. Period.</p>
+      <a href="#gear" class="btn btn-success btn-pill mt-lg" style="align-self:flex-start;">Shop With Confidence</a>
+    </div>
+    <div class="banner-img"></div>
+  </div>
+
+  <footer class="section-sm bg-dark"><div class="container text-center"><p class="text-muted text-sm">&copy; 2025 Summit Gear Co. Built for the wild.</p></div></footer>
+
+  <script src="../shared/shopify-integration.js"></script>
+  <script>
+    document.querySelectorAll('.activity-chip').forEach(function(c) {
+      c.addEventListener('click', function() {
+        document.querySelectorAll('.activity-chip').forEach(function(x) { x.classList.remove('active'); });
+        c.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>

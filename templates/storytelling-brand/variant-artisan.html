@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Handcrafted With Heart — Our Story</title>
+  <link rel="stylesheet" href="../shared/base.css">
+  <style>
+    :root { --accent: #92400e; }
+    body { font-family: Georgia, 'Times New Roman', serif; color: #44403c; }
+    h1, h2, h3, .btn { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    .hero { position: relative; min-height: 80vh; display: flex; align-items: center; background: url('https://placehold.co/1400x800/78350f/fef3c7?text=') center/cover; }
+    .hero::after { content: ''; position: absolute; inset: 0; background: linear-gradient(135deg, rgba(120,53,15,0.85), rgba(146,64,14,0.7)); }
+    .hero .container { position: relative; z-index: 1; color: #fff; max-width: 700px; }
+    .hero p.lead { font-size: 1.3rem; line-height: 1.8; font-style: italic; }
+    .story-section { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+    .story-section:nth-child(even) { direction: rtl; }
+    .story-section:nth-child(even) > * { direction: ltr; }
+    .story-img { border-radius: 16px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+    .story-text { font-size: 1.1rem; line-height: 1.9; }
+    .story-quote { font-size: 1.5rem; font-style: italic; color: #92400e; border-left: 4px solid #d97706; padding-left: 24px; margin: 32px 0; line-height: 1.6; }
+    .values-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
+    .value-item { text-align: center; }
+    .value-icon { width: 80px; height: 80px; background: #fffbeb; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 16px; font-size: 2rem; }
+    .process-timeline { position: relative; padding-left: 40px; }
+    .process-timeline::before { content: ''; position: absolute; left: 15px; top: 0; bottom: 0; width: 2px; background: #d97706; }
+    .process-step { position: relative; margin-bottom: 40px; }
+    .process-step::before { content: ''; position: absolute; left: -33px; top: 4px; width: 16px; height: 16px; background: #d97706; border-radius: 50%; border: 3px solid #fffbeb; }
+    .product-showcase { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+    .showcase-card { background: #fff; border-radius: 16px; overflow: hidden; }
+    .showcase-card img { aspect-ratio: 1; object-fit: cover; width: 100%; }
+    .showcase-body { padding: 20px; text-align: center; }
+    @media (max-width: 768px) { .story-section, .story-section:nth-child(even), .values-grid, .product-showcase { grid-template-columns: 1fr; direction: ltr; } }
+  </style>
+  <script>var SHOPIFY_DOMAIN = 'your-store.myshopify.com';</script>
+</head>
+<body>
+
+  <div class="announce-bar" style="background:#78350f;">
+    Every piece handcrafted to order | Free shipping on orders $75+
+  </div>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="container animate-fade-up">
+      <span class="badge mb-md" style="background:rgba(255,255,255,0.2); color:#fff;">Est. 2018</span>
+      <h1>Crafted With Intention, Made to Last</h1>
+      <p class="lead" style="margin:24px 0 32px;">In a world of mass production, we chose a different path. Every piece that leaves our workshop carries the warmth of human hands and the promise of enduring quality.</p>
+      <a href="#story" class="btn btn-lg btn-pill" style="background:#d97706; color:#fff;">Our Story</a>
+    </div>
+  </section>
+
+  <!-- Origin Story -->
+  <section class="section" id="story">
+    <div class="container">
+      <div class="story-section" style="margin-bottom:80px;">
+        <div>
+          <span class="badge badge-limited mb-md">The Beginning</span>
+          <h2>It Started in a Garage</h2>
+          <p class="story-text">In 2018, founder Maria Chen left her corporate design job with a simple conviction: people deserve products made with care. Armed with her grandmother's leather-working tools and a relentless attention to detail, she began crafting bags from a 200-square-foot garage.</p>
+          <p class="story-text">Word spread. Each bag told a story — of late nights perfecting stitches, of sourcing leather from family-owned tanneries in Tuscany, of refusing to cut corners even when no one would notice.</p>
+        </div>
+        <img src="https://placehold.co/500x400/fef3c7/78350f?text=Workshop+Origin" alt="Original garage workshop" class="story-img">
+      </div>
+
+      <div class="story-section" style="margin-bottom:80px;">
+        <div>
+          <span class="badge badge-new mb-md">Today</span>
+          <h2>Still Handmade. Still Honest.</h2>
+          <p class="story-text">Today, our team of 12 artisans works from a sunlit studio in Portland. We've grown, but our values haven't changed. Every product is still cut, stitched, and finished by hand. We know our makers by name, and we know their families.</p>
+          <blockquote class="story-quote">"The moment you hold something truly handmade, you feel the difference. That feeling is what we live for."</blockquote>
+          <p class="story-text">— Maria Chen, Founder</p>
+        </div>
+        <img src="https://placehold.co/500x400/d7ccc8/3e2723?text=Workshop+Today" alt="Current studio" class="story-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- Values -->
+  <section class="section bg-light">
+    <div class="container">
+      <h2 class="text-center mb-xl">What We Stand For</h2>
+      <div class="values-grid">
+        <div class="value-item">
+          <div class="value-icon">&#128588;</div>
+          <h3>Handcrafted</h3>
+          <p class="text-muted">Every product made by hand, start to finish. No assembly lines, no shortcuts.</p>
+        </div>
+        <div class="value-item">
+          <div class="value-icon">&#127807;</div>
+          <h3>Sustainable</h3>
+          <p class="text-muted">Responsibly sourced materials. Zero-waste production. Carbon-neutral shipping.</p>
+        </div>
+        <div class="value-item">
+          <div class="value-icon">&#9203;</div>
+          <h3>Built to Last</h3>
+          <p class="text-muted">Lifetime warranty on every product. We repair, never replace. Buy once, use forever.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section class="section">
+    <div class="container container-sm">
+      <h2 class="text-center mb-xl">Our Process</h2>
+      <div class="process-timeline">
+        <div class="process-step">
+          <h3>1. Source</h3>
+          <p class="text-muted">Premium full-grain leather from three family-owned tanneries we've partnered with since day one.</p>
+        </div>
+        <div class="process-step">
+          <h3>2. Cut</h3>
+          <p class="text-muted">Each piece hand-cut by our master craftspeople. No two hides are alike, and we embrace that.</p>
+        </div>
+        <div class="process-step">
+          <h3>3. Stitch</h3>
+          <p class="text-muted">Saddle-stitched by hand with waxed linen thread. Stronger than machine stitching, with character only hands can give.</p>
+        </div>
+        <div class="process-step">
+          <h3>4. Finish</h3>
+          <p class="text-muted">Edges burnished, hardware fitted, final inspection. Every piece must pass Maria's quality check before shipping.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product Showcase -->
+  <section class="section bg-light">
+    <div class="container">
+      <h2 class="text-center mb-md">Shop the Collection</h2>
+      <p class="text-center text-muted mb-xl">Each piece made to order in 5-7 business days</p>
+      <div class="product-showcase">
+        <div class="showcase-card card">
+          <img src="https://placehold.co/400x400/d7ccc8/3e2723?text=Tote+Bag" alt="Heritage tote bag">
+          <div class="showcase-body">
+            <h3>Heritage Tote</h3>
+            <p class="text-sm text-muted">Full-grain leather, brass hardware</p>
+            <p class="product-price mt-md">$189.00</p>
+            <a href="#" class="btn btn-sm btn-pill btn-block mt-md" style="background:#92400e; color:#fff;" data-shopify-checkout data-variant="00000000000">Shop Now</a>
+          </div>
+        </div>
+        <div class="showcase-card card">
+          <img src="https://placehold.co/400x400/e8d5b7/3e2723?text=Crossbody" alt="City crossbody">
+          <div class="showcase-body">
+            <h3>City Crossbody</h3>
+            <p class="text-sm text-muted">Vegetable-tanned, adjustable strap</p>
+            <p class="product-price mt-md">$145.00</p>
+            <a href="#" class="btn btn-sm btn-pill btn-block mt-md" style="background:#92400e; color:#fff;" data-shopify-checkout data-variant="00000000000">Shop Now</a>
+          </div>
+        </div>
+        <div class="showcase-card card">
+          <img src="https://placehold.co/400x400/fef3c7/78350f?text=Wallet" alt="Slim wallet">
+          <div class="showcase-body">
+            <h3>Slim Bifold Wallet</h3>
+            <p class="text-sm text-muted">Minimalist design, RFID-blocking</p>
+            <p class="product-price mt-md">$79.00</p>
+            <a href="#" class="btn btn-sm btn-pill btn-block mt-md" style="background:#92400e; color:#fff;" data-shopify-checkout data-variant="00000000000">Shop Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:#78350f; color:#fff; text-align:center;">
+    <div class="container">
+      <h2 class="mb-md">Own Something Meaningful</h2>
+      <p style="opacity:0.8; max-width:500px; margin:0 auto 32px;">Handcrafted. Sustainable. Built to last a lifetime. Free shipping on orders over $75.</p>
+      <a href="#" class="btn btn-lg btn-pill" style="background:#d97706; color:#fff;" data-shopify-product data-handle="collections/all">Shop the Collection</a>
+    </div>
+  </section>
+
+  <footer class="section-sm" style="background:#78350f; color:#fff; border-top:1px solid rgba(255,255,255,0.1);">
+    <div class="container text-center"><p class="text-sm" style="opacity:0.5;">&copy; 2025 YourBrand Workshop. Handcrafted in Portland, OR.</p></div>
+  </footer>
+
+  <script src="../shared/shopify-integration.js"></script>
+</body>
+</html>

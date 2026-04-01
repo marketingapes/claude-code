@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Paws — Premium Pet Supplies</title>
+  <link rel="stylesheet" href="../shared/base.css">
+  <style>
+    :root { --accent: #7c3aed; }
+    body { background: #faf5ff; }
+    .hero { background: linear-gradient(135deg, #7c3aed, #a855f7); color: #fff; padding: 80px 0; border-radius: 0 0 40px 40px; }
+    .hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+    .hero-img { border-radius: 24px; }
+    .pet-tabs { display: flex; gap: 8px; justify-content: center; margin-bottom: 40px; }
+    .pet-tab { padding: 10px 24px; border-radius: 50px; cursor: pointer; font-weight: 600; background: #fff; border: 2px solid #e5e7eb; transition: all 0.2s; }
+    .pet-tab:hover, .pet-tab.active { background: #7c3aed; color: #fff; border-color: #7c3aed; }
+    .product-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+    .pet-card { background: #fff; border-radius: 20px; overflow: hidden; text-align: center; }
+    .pet-card img { aspect-ratio: 1; object-fit: cover; width: 100%; }
+    .pet-card-body { padding: 16px; }
+    .subscription-box { background: linear-gradient(135deg, #7c3aed, #6d28d9); border-radius: 24px; padding: 48px; color: #fff; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+    .sub-features li { padding: 8px 0; display: flex; align-items: center; gap: 10px; }
+    @media (max-width: 768px) { .hero-grid, .subscription-box { grid-template-columns: 1fr; } .product-grid { grid-template-columns: repeat(2, 1fr); } }
+  </style>
+  <script>var SHOPIFY_DOMAIN = 'your-store.myshopify.com';</script>
+</head>
+<body>
+
+  <div class="announce-bar" style="background:#6d28d9;">
+    Subscribe & Save 20% on every order | <strong>Free treat with first purchase</strong>
+  </div>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="animate-fade-up">
+          <h1>Everything Your Pet Deserves</h1>
+          <p style="color:rgba(255,255,255,0.85); font-size:1.1rem; margin-bottom:24px;">Vet-approved nutrition, eco-friendly toys, and grooming essentials. Because they're family.</p>
+          <div class="flex gap-md">
+            <a href="#shop" class="btn btn-lg btn-pill" style="background:#fff; color:#7c3aed;">Shop Dogs</a>
+            <a href="#shop" class="btn btn-lg btn-pill" style="background:transparent; color:#fff; border:2px solid rgba(255,255,255,0.5);">Shop Cats</a>
+          </div>
+        </div>
+        <div class="animate-fade-up delay-2">
+          <img src="https://placehold.co/500x400/a855f7/fff?text=Happy+Pets" alt="Happy dog and cat" class="hero-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section class="section" id="shop">
+    <div class="container">
+      <h2 class="text-center mb-md">Best Sellers</h2>
+      <div class="pet-tabs">
+        <span class="pet-tab active">All</span>
+        <span class="pet-tab">Dogs</span>
+        <span class="pet-tab">Cats</span>
+        <span class="pet-tab">Food</span>
+        <span class="pet-tab">Toys</span>
+      </div>
+      <div class="product-grid">
+        <div class="pet-card card">
+          <img src="https://placehold.co/300x300/faf5ff/7c3aed?text=Dog+Food" alt="Premium dog food">
+          <div class="pet-card-body">
+            <span class="badge badge-hot mb-sm">Best Seller</span>
+            <h3 style="font-size:1rem;">Grain-Free Chicken Kibble</h3>
+            <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="product-price mt-md">$49.99</p>
+            <a href="#" class="btn btn-sm btn-pill btn-block mt-md" style="background:#7c3aed; color:#fff;" data-shopify-checkout data-variant="00000000000">Add to Cart</a>
+          </div>
+        </div>
+        <div class="pet-card card">
+          <img src="https://placehold.co/300x300/ecfdf5/059669?text=Cat+Toy" alt="Interactive cat toy">
+          <div class="pet-card-body">
+            <span class="badge badge-new mb-sm">New</span>
+            <h3 style="font-size:1rem;">Interactive Feather Wand</h3>
+            <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9734;</div>
+            <p class="product-price mt-md">$18.99</p>
+            <a href="#" class="btn btn-sm btn-pill btn-block mt-md" style="background:#7c3aed; color:#fff;" data-shopify-checkout data-variant="00000000000">Add to Cart</a>
+          </div>
+        </div>
+        <div class="pet-card card">
+          <img src="https://placehold.co/300x300/fff7ed/ea580c?text=Dog+Bed" alt="Orthopedic dog bed">
+          <div class="pet-card-body">
+            <h3 style="font-size:1rem;">Orthopedic Memory Foam Bed</h3>
+            <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="product-price mt-md">$79.99</p>
+            <a href="#" class="btn btn-sm btn-pill btn-block mt-md" style="background:#7c3aed; color:#fff;" data-shopify-checkout data-variant="00000000000">Add to Cart</a>
+          </div>
+        </div>
+        <div class="pet-card card">
+          <img src="https://placehold.co/300x300/fef2f2/dc2626?text=Grooming+Kit" alt="Grooming kit">
+          <div class="pet-card-body">
+            <span class="badge badge-limited mb-sm">Limited</span>
+            <h3 style="font-size:1rem;">Complete Grooming Kit</h3>
+            <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+            <p class="product-price mt-md">$34.99</p>
+            <a href="#" class="btn btn-sm btn-pill btn-block mt-md" style="background:#7c3aed; color:#fff;" data-shopify-checkout data-variant="00000000000">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Subscription Box -->
+  <section class="section">
+    <div class="container">
+      <div class="subscription-box">
+        <div>
+          <span class="badge mb-md" style="background:rgba(255,255,255,0.2); color:#fff;">Save 20%</span>
+          <h2>Monthly Surprise Box</h2>
+          <p style="color:rgba(255,255,255,0.8);">Curated treats, toys, and essentials delivered monthly. Tailored to your pet's size and preferences.</p>
+          <ul class="sub-features" style="margin-top:20px;">
+            <li><span>&#10003;</span> 5-7 premium items per box</li>
+            <li><span>&#10003;</span> Customized to your pet</li>
+            <li><span>&#10003;</span> Cancel anytime</li>
+            <li><span>&#10003;</span> Free shipping always</li>
+          </ul>
+          <a href="#" class="btn btn-lg btn-pill mt-lg" style="background:#fff; color:#7c3aed;" data-shopify-checkout data-variant="00000000000">Subscribe — $39.99/mo</a>
+        </div>
+        <div class="text-center">
+          <img src="https://placehold.co/400x400/a855f7/fff?text=Surprise+Box" alt="Monthly pet surprise box" style="border-radius:20px;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section class="section bg-light">
+    <div class="container">
+      <h2 class="text-center mb-xl">Happy Pets, Happy Parents</h2>
+      <div class="grid grid-3">
+        <div class="testimonial" style="background:#faf5ff;">
+          <p class="testimonial-text">"My picky eater gobbles this food up! Finally found something healthy that he actually loves."</p>
+          <p class="testimonial-author">Jessica W.</p>
+          <p class="testimonial-role">Golden Retriever Mom</p>
+          <div class="stars mt-md">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        </div>
+        <div class="testimonial" style="background:#faf5ff;">
+          <p class="testimonial-text">"The subscription box is brilliant. My cats go wild every month when the package arrives."</p>
+          <p class="testimonial-author">Tom K.</p>
+          <p class="testimonial-role">Cat Dad x3</p>
+          <div class="stars mt-md">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        </div>
+        <div class="testimonial" style="background:#faf5ff;">
+          <p class="testimonial-text">"Quality products, fast shipping, and great customer service. My senior dog's joint health improved with their supplements."</p>
+          <p class="testimonial-author">Amanda R.</p>
+          <p class="testimonial-role">Verified Buyer</p>
+          <div class="stars mt-md">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="section-sm" style="background:#6d28d9; color:#fff;">
+    <div class="container text-center"><p class="text-sm" style="opacity:0.6;">&copy; 2025 Happy Paws. Made with love for pets everywhere.</p></div>
+  </footer>
+
+  <script src="../shared/shopify-integration.js"></script>
+  <script>
+    document.querySelectorAll('.pet-tab').forEach(function(tab) {
+      tab.addEventListener('click', function() {
+        document.querySelectorAll('.pet-tab').forEach(function(t) { t.classList.remove('active'); });
+        tab.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>

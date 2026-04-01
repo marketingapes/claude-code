@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Connoisseur — Find Your Perfect Roast</title>
+  <link rel="stylesheet" href="../shared/base.css">
+  <style>
+    :root { --accent: #78350f; }
+    body { background: #faf5ef; }
+    .hero { background: linear-gradient(160deg, #1c1917, #44403c); color: #fff; padding: 80px 0; }
+    .hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+    .hero h1 span { color: #d97706; }
+    .roast-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+    .roast-card { background: #fff; border-radius: 20px; overflow: hidden; border: 3px solid transparent; transition: all 0.3s; }
+    .roast-card:hover { border-color: #d97706; }
+    .roast-card img { aspect-ratio: 1; object-fit: cover; width: 100%; }
+    .roast-body { padding: 24px; }
+    .flavor-tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 12px 0; }
+    .flavor-tag { background: #fef3c7; color: #92400e; padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 600; }
+    .intensity-bar { display: flex; gap: 3px; margin: 8px 0; }
+    .intensity-dot { width: 20px; height: 6px; border-radius: 3px; background: #e5e7eb; }
+    .intensity-dot.filled { background: #d97706; }
+    .comparison { width: 100%; border-collapse: collapse; background: #fff; border-radius: 16px; overflow: hidden; }
+    .comparison th { padding: 16px; background: #fef3c7; text-align: center; }
+    .comparison td { padding: 14px; text-align: center; border-bottom: 1px solid #fef3c7; }
+    .comparison td:first-child { text-align: left; font-weight: 500; }
+    .subscription-tiers { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .sub-tier { background: #fff; border-radius: 20px; padding: 32px; text-align: center; border: 3px solid #e5e7eb; }
+    .sub-tier.featured { border-color: #d97706; position: relative; }
+    .sub-tier.featured::before { content: 'Best Value'; position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: #d97706; color: #fff; padding: 4px 16px; border-radius: 20px; font-size: 0.75rem; font-weight: 700; }
+    @media (max-width: 768px) { .hero-grid, .roast-cards, .subscription-tiers { grid-template-columns: 1fr; } }
+  </style>
+  <script>var SHOPIFY_DOMAIN = 'your-store.myshopify.com';</script>
+</head>
+<body>
+
+  <div class="announce-bar" style="background:#78350f;">
+    Freshly roasted & shipped within 24hrs | <strong>Subscribe & save 20%</strong>
+  </div>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="animate-fade-up">
+          <span class="badge mb-md" style="background:rgba(217,119,6,0.2); color:#fbbf24;">Single Origin</span>
+          <h1>Discover Your <span>Perfect Cup</span></h1>
+          <p style="color:#a8a29e; font-size:1.1rem; margin:20px 0 32px;">Ethically sourced, small-batch roasted, and shipped fresh. Compare our single-origin coffees and build your perfect subscription.</p>
+          <a href="#compare" class="btn btn-lg btn-pill" style="background:#d97706; color:#fff;">Compare Roasts</a>
+        </div>
+        <div class="animate-fade-up delay-2">
+          <img src="https://placehold.co/500x400/44403c/d97706?text=Coffee+Bags" alt="Coffee bag collection" style="border-radius:20px;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Roasts -->
+  <section class="section" id="compare">
+    <div class="container">
+      <h2 class="text-center mb-xl">Our Single-Origin Collection</h2>
+      <div class="roast-cards">
+        <div class="roast-card card">
+          <img src="https://placehold.co/400x400/fef3c7/78350f?text=Ethiopia" alt="Ethiopian coffee">
+          <div class="roast-body">
+            <h3>Ethiopia Yirgacheffe</h3>
+            <div class="flavor-tags">
+              <span class="flavor-tag">Blueberry</span>
+              <span class="flavor-tag">Jasmine</span>
+              <span class="flavor-tag">Citrus</span>
+            </div>
+            <p class="text-sm text-muted mb-sm">Light roast | Washed process</p>
+            <div>
+              <span class="text-sm" style="color:#92400e; font-weight:600;">Intensity:</span>
+              <div class="intensity-bar">
+                <div class="intensity-dot filled"></div>
+                <div class="intensity-dot filled"></div>
+                <div class="intensity-dot"></div>
+                <div class="intensity-dot"></div>
+                <div class="intensity-dot"></div>
+              </div>
+            </div>
+            <div class="flex items-center justify-between mt-md">
+              <span class="product-price">$18.99</span>
+              <a href="#" class="btn btn-sm btn-pill" style="background:#78350f; color:#fff;" data-shopify-checkout data-variant="00000000000">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="roast-card card">
+          <img src="https://placehold.co/400x400/d7ccc8/3e2723?text=Colombia" alt="Colombian coffee">
+          <div class="roast-body">
+            <span class="badge badge-hot" style="position:relative; margin-bottom:8px;">Best Seller</span>
+            <h3>Colombia Huila</h3>
+            <div class="flavor-tags">
+              <span class="flavor-tag">Caramel</span>
+              <span class="flavor-tag">Chocolate</span>
+              <span class="flavor-tag">Walnut</span>
+            </div>
+            <p class="text-sm text-muted mb-sm">Medium roast | Natural process</p>
+            <div>
+              <span class="text-sm" style="color:#92400e; font-weight:600;">Intensity:</span>
+              <div class="intensity-bar">
+                <div class="intensity-dot filled"></div>
+                <div class="intensity-dot filled"></div>
+                <div class="intensity-dot filled"></div>
+                <div class="intensity-dot"></div>
+                <div class="intensity-dot"></div>
+              </div>
+            </div>
+            <div class="flex items-center justify-between mt-md">
+              <span class="product-price">$17.99</span>
+              <a href="#" class="btn btn-sm btn-pill" style="background:#78350f; color:#fff;" data-shopify-checkout data-variant="00000000000">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="roast-card card">
+          <img src="https://placehold.co/400x400/292524/d97706?text=Sumatra" alt="Sumatran coffee">
+          <div class="roast-body">
+            <h3>Sumatra Mandheling</h3>
+            <div class="flavor-tags">
+              <span class="flavor-tag">Dark Chocolate</span>
+              <span class="flavor-tag">Earth</span>
+              <span class="flavor-tag">Spice</span>
+            </div>
+            <p class="text-sm text-muted mb-sm">Dark roast | Wet-hulled</p>
+            <div>
+              <span class="text-sm" style="color:#92400e; font-weight:600;">Intensity:</span>
+              <div class="intensity-bar">
+                <div class="intensity-dot filled"></div>
+                <div class="intensity-dot filled"></div>
+                <div class="intensity-dot filled"></div>
+                <div class="intensity-dot filled"></div>
+                <div class="intensity-dot filled"></div>
+              </div>
+            </div>
+            <div class="flex items-center justify-between mt-md">
+              <span class="product-price">$19.99</span>
+              <a href="#" class="btn btn-sm btn-pill" style="background:#78350f; color:#fff;" data-shopify-checkout data-variant="00000000000">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison Table -->
+  <section class="section bg-light">
+    <div class="container container-sm">
+      <h2 class="text-center mb-xl">Compare at a Glance</h2>
+      <table class="comparison shadow">
+        <thead><tr><th></th><th>Ethiopia</th><th>Colombia</th><th>Sumatra</th></tr></thead>
+        <tbody>
+          <tr><td>Roast Level</td><td>Light</td><td>Medium</td><td>Dark</td></tr>
+          <tr><td>Acidity</td><td>High</td><td>Medium</td><td>Low</td></tr>
+          <tr><td>Body</td><td>Light</td><td>Medium</td><td>Full</td></tr>
+          <tr><td>Best For</td><td>Pour Over</td><td>All Methods</td><td>French Press</td></tr>
+          <tr><td>Altitude</td><td>1,900-2,200m</td><td>1,600-1,800m</td><td>1,100-1,500m</td></tr>
+          <tr><td>Price / 12oz</td><td>$18.99</td><td>$17.99</td><td>$19.99</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Subscription -->
+  <section class="section">
+    <div class="container">
+      <h2 class="text-center mb-md">Never Run Out of Great Coffee</h2>
+      <p class="text-center text-muted mb-xl">Subscribe and save 20%. Cancel or change anytime.</p>
+      <div class="subscription-tiers">
+        <div class="sub-tier">
+          <h3>Explorer</h3>
+          <p class="text-sm text-muted mb-md">1 bag / month</p>
+          <div class="bundle-price" style="color:#78350f; font-size:2rem; font-weight:800;">$14.39</div>
+          <div class="text-sm text-muted">/month (save $3.60)</div>
+          <a href="#" class="btn btn-block btn-pill mt-lg" style="background:#78350f; color:#fff;" data-shopify-checkout data-variant="00000000000">Subscribe</a>
+        </div>
+        <div class="sub-tier featured">
+          <h3>Enthusiast</h3>
+          <p class="text-sm text-muted mb-md">2 bags / month</p>
+          <div class="bundle-price" style="color:#78350f; font-size:2rem; font-weight:800;">$27.19</div>
+          <div class="text-sm text-muted">/month (save $8.79)</div>
+          <a href="#" class="btn btn-block btn-pill mt-lg" style="background:#d97706; color:#fff;" data-shopify-checkout data-variant="00000000000">Subscribe</a>
+        </div>
+        <div class="sub-tier">
+          <h3>Connoisseur</h3>
+          <p class="text-sm text-muted mb-md">3 bags / month</p>
+          <div class="bundle-price" style="color:#78350f; font-size:2rem; font-weight:800;">$38.39</div>
+          <div class="text-sm text-muted">/month (save $18.58)</div>
+          <a href="#" class="btn btn-block btn-pill mt-lg" style="background:#78350f; color:#fff;" data-shopify-checkout data-variant="00000000000">Subscribe</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="grid grid-4 text-center">
+        <div><div style="font-size:2rem;">&#9749;</div><strong>Roasted Fresh</strong><p class="text-sm text-muted">Shipped within 24hrs of roasting</p></div>
+        <div><div style="font-size:2rem;">&#127793;</div><strong>Direct Trade</strong><p class="text-sm text-muted">Farmers paid 3x fair trade price</p></div>
+        <div><div style="font-size:2rem;">&#128230;</div><strong>Eco Packaging</strong><p class="text-sm text-muted">Compostable bags & boxes</p></div>
+        <div><div style="font-size:2rem;">&#128151;</div><strong>Satisfaction</strong><p class="text-sm text-muted">100% money-back guarantee</p></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="section-sm" style="background:#1c1917; color:#fff;">
+    <div class="container text-center"><p class="text-sm" style="opacity:0.4;">&copy; 2025 Coffee Connoisseur. Roasted with passion.</p></div>
+  </footer>
+
+  <script src="../shared/shopify-integration.js"></script>
+</body>
+</html>

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Gym Bundle — Your Complete Training Setup</title>
+  <link rel="stylesheet" href="../shared/base.css">
+  <style>
+    :root { --accent: #dc2626; }
+    .hero { background: linear-gradient(135deg, #18181b, #27272a); color: #fff; padding: 80px 0; }
+    .hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+    .hero h1 span { color: #ef4444; }
+    .bundle-compare { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .bc-card { background: #fff; border-radius: 20px; padding: 32px; text-align: center; border: 3px solid #e5e7eb; position: relative; }
+    .bc-card.hot { border-color: #dc2626; }
+    .bc-card.hot::before { content: 'Most Popular'; position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: #dc2626; color: #fff; padding: 4px 16px; border-radius: 20px; font-size: 0.75rem; font-weight: 700; }
+    .bc-price { font-size: 2.25rem; font-weight: 800; color: #dc2626; }
+    .bc-list { text-align: left; margin: 20px 0; }
+    .bc-list li { padding: 8px 0; display: flex; gap: 8px; font-size: 0.9rem; }
+    .bc-list .yes { color: #059669; }
+    .bc-list .no { color: #d1d5db; }
+    .equipment-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+    .equip-card { background: #fff; border-radius: 16px; overflow: hidden; text-align: center; }
+    .equip-card img { aspect-ratio: 1; object-fit: cover; width: 100%; }
+    .equip-body { padding: 16px; }
+    .workout-plans { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .plan-card { background: #fff; border-radius: 16px; padding: 24px; border-left: 4px solid #dc2626; }
+    .plan-card h3 { margin-bottom: 8px; }
+    @media (max-width: 768px) { .hero-grid, .bundle-compare, .workout-plans { grid-template-columns: 1fr; } .equipment-grid { grid-template-columns: repeat(2, 1fr); } }
+  </style>
+  <script>var SHOPIFY_DOMAIN = 'your-store.myshopify.com';</script>
+</head>
+<body>
+
+  <div class="announce-bar" style="background:#dc2626;">
+    Save up to 35% with bundles | <strong>Free delivery & assembly guide</strong>
+  </div>
+
+  <section class="hero" data-sticky-trigger>
+    <div class="container">
+      <div class="hero-grid">
+        <div class="animate-fade-up">
+          <span class="badge badge-hot mb-md">Home Gym</span>
+          <h1>Build Your <span>Dream Gym</span> at Home</h1>
+          <p style="color:#a1a1aa; font-size:1.1rem; margin:20px 0;">Commercial-grade equipment at consumer prices. Our bundles include everything you need to train like a pro — no gym membership required.</p>
+          <div class="flex items-center gap-lg mb-lg">
+            <div><span style="font-size:1.5rem; font-weight:800; color:#ef4444;">35%</span><br><span class="text-sm" style="color:#a1a1aa;">Max savings</span></div>
+            <div><span style="font-size:1.5rem; font-weight:800; color:#fff;">Free</span><br><span class="text-sm" style="color:#a1a1aa;">Delivery</span></div>
+            <div><span style="font-size:1.5rem; font-weight:800; color:#fff;">10yr</span><br><span class="text-sm" style="color:#a1a1aa;">Warranty</span></div>
+          </div>
+          <a href="#bundles" class="btn btn-danger btn-lg btn-pill">Compare Bundles</a>
+        </div>
+        <div class="animate-fade-up delay-2">
+          <img src="https://placehold.co/500x400/27272a/ef4444?text=Home+Gym" alt="Home gym setup" style="border-radius:20px;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bundles -->
+  <section class="section" id="bundles">
+    <div class="container">
+      <h2 class="text-center mb-xl">Choose Your Setup</h2>
+      <div class="bundle-compare">
+        <div class="bc-card">
+          <h3>Starter Gym</h3>
+          <p class="text-sm text-muted">Bodyweight & basics</p>
+          <div class="bc-price">$299</div>
+          <div class="price-original">$419</div>
+          <span class="price-save">Save 29%</span>
+          <ul class="bc-list">
+            <li><span class="yes">&#10003;</span> Resistance Band Set (5)</li>
+            <li><span class="yes">&#10003;</span> Yoga Mat Premium</li>
+            <li><span class="yes">&#10003;</span> Adjustable Dumbbells (5-25lb)</li>
+            <li><span class="yes">&#10003;</span> Jump Rope Speed</li>
+            <li><span class="no">&#10007;</span> Pull-Up Bar</li>
+            <li><span class="no">&#10007;</span> Kettlebell Set</li>
+            <li><span class="no">&#10007;</span> Bench</li>
+            <li><span class="no">&#10007;</span> Barbell Set</li>
+          </ul>
+          <a href="#" class="btn btn-block btn-pill" style="background:#dc2626; color:#fff;" data-shopify-cart data-items="00000000000:1,00000000001:1,00000000002:1,00000000003:1">Get Starter</a>
+        </div>
+        <div class="bc-card hot">
+          <h3>Complete Gym</h3>
+          <p class="text-sm text-muted">Full-body training</p>
+          <div class="bc-price">$699</div>
+          <div class="price-original">$1,079</div>
+          <span class="price-save">Save 35%</span>
+          <ul class="bc-list">
+            <li><span class="yes">&#10003;</span> Resistance Band Set (5)</li>
+            <li><span class="yes">&#10003;</span> Yoga Mat Premium</li>
+            <li><span class="yes">&#10003;</span> Adjustable Dumbbells (5-52lb)</li>
+            <li><span class="yes">&#10003;</span> Jump Rope Speed</li>
+            <li><span class="yes">&#10003;</span> Pull-Up Bar (doorway)</li>
+            <li><span class="yes">&#10003;</span> Kettlebell Set (15/25/35lb)</li>
+            <li><span class="no">&#10007;</span> Bench</li>
+            <li><span class="no">&#10007;</span> Barbell Set</li>
+          </ul>
+          <a href="#" class="btn btn-block btn-pill" style="background:#dc2626; color:#fff;" data-shopify-cart data-items="00000000000:1,00000000001:1,00000000002:1,00000000003:1,00000000004:1,00000000005:1">Get Complete</a>
+        </div>
+        <div class="bc-card">
+          <h3>Pro Gym</h3>
+          <p class="text-sm text-muted">Serious lifters</p>
+          <div class="bc-price">$1,299</div>
+          <div class="price-original">$1,929</div>
+          <span class="price-save">Save 33%</span>
+          <ul class="bc-list">
+            <li><span class="yes">&#10003;</span> Resistance Band Set (5)</li>
+            <li><span class="yes">&#10003;</span> Yoga Mat Premium</li>
+            <li><span class="yes">&#10003;</span> Adjustable Dumbbells (5-90lb)</li>
+            <li><span class="yes">&#10003;</span> Jump Rope Speed</li>
+            <li><span class="yes">&#10003;</span> Wall-Mount Pull-Up Station</li>
+            <li><span class="yes">&#10003;</span> Kettlebell Set (15/25/35/50lb)</li>
+            <li><span class="yes">&#10003;</span> Adjustable Bench</li>
+            <li><span class="yes">&#10003;</span> Olympic Barbell + 300lb Plates</li>
+          </ul>
+          <a href="#" class="btn btn-block btn-pill" style="background:#dc2626; color:#fff;" data-shopify-cart data-items="00000000000:1,00000000001:1,00000000002:1,00000000003:1,00000000004:1,00000000005:1,00000000006:1,00000000007:1">Get Pro</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Free Workout Plans -->
+  <section class="section bg-light">
+    <div class="container">
+      <h2 class="text-center mb-md">Free Workout Plans Included</h2>
+      <p class="text-center text-muted mb-xl">Every bundle comes with expert-designed programs</p>
+      <div class="workout-plans">
+        <div class="plan-card">
+          <h3>Beginner (8 weeks)</h3>
+          <p class="text-sm text-muted">3x/week full-body program. Build a foundation of strength and mobility. Video guides included.</p>
+        </div>
+        <div class="plan-card">
+          <h3>Intermediate (12 weeks)</h3>
+          <p class="text-sm text-muted">4x/week upper/lower split. Progressive overload for muscle gain and fat loss.</p>
+        </div>
+        <div class="plan-card">
+          <h3>Advanced (16 weeks)</h3>
+          <p class="text-sm text-muted">5x/week PPL program. Periodized for strength peaks. Nutrition guide included.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Individual Equipment -->
+  <section class="section">
+    <div class="container">
+      <h2 class="text-center mb-md">Shop Individual Equipment</h2>
+      <p class="text-center text-muted mb-xl">Build your own custom setup</p>
+      <div class="equipment-grid">
+        <div class="equip-card card">
+          <img src="https://placehold.co/300x300/fef2f2/dc2626?text=Dumbbells" alt="Adjustable dumbbells">
+          <div class="equip-body">
+            <h3 style="font-size:0.95rem;">Adjustable Dumbbells</h3>
+            <p class="product-price mt-md" style="font-size:1.1rem;">$249.99</p>
+            <a href="#" class="btn btn-sm btn-danger btn-pill btn-block mt-md" data-shopify-checkout data-variant="00000000000">Add to Cart</a>
+          </div>
+        </div>
+        <div class="equip-card card">
+          <img src="https://placehold.co/300x300/dbeafe/2563eb?text=Bench" alt="Adjustable bench">
+          <div class="equip-body">
+            <h3 style="font-size:0.95rem;">Adjustable Bench</h3>
+            <p class="product-price mt-md" style="font-size:1.1rem;">$199.99</p>
+            <a href="#" class="btn btn-sm btn-danger btn-pill btn-block mt-md" data-shopify-checkout data-variant="00000000000">Add to Cart</a>
+          </div>
+        </div>
+        <div class="equip-card card">
+          <img src="https://placehold.co/300x300/ecfdf5/059669?text=Kettlebells" alt="Kettlebell set">
+          <div class="equip-body">
+            <h3 style="font-size:0.95rem;">Kettlebell Set</h3>
+            <p class="product-price mt-md" style="font-size:1.1rem;">$179.99</p>
+            <a href="#" class="btn btn-sm btn-danger btn-pill btn-block mt-md" data-shopify-checkout data-variant="00000000000">Add to Cart</a>
+          </div>
+        </div>
+        <div class="equip-card card">
+          <img src="https://placehold.co/300x300/fef3c7/92400e?text=Barbell" alt="Olympic barbell set">
+          <div class="equip-body">
+            <h3 style="font-size:0.95rem;">Olympic Barbell Set</h3>
+            <p class="product-price mt-md" style="font-size:1.1rem;">$449.99</p>
+            <a href="#" class="btn btn-sm btn-danger btn-pill btn-block mt-md" data-shopify-checkout data-variant="00000000000">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section class="section bg-light">
+    <div class="container">
+      <h2 class="text-center mb-xl">Home Gym Heroes</h2>
+      <div class="grid grid-3">
+        <div class="testimonial">
+          <p class="testimonial-text">"Cancelled my $60/month gym membership. The Complete bundle paid for itself in under a year, and I train more consistently at home."</p>
+          <p class="testimonial-author">James R.</p><p class="testimonial-role">Complete Gym Bundle</p>
+          <div class="stars mt-md">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        </div>
+        <div class="testimonial">
+          <p class="testimonial-text">"The quality rivals commercial gym equipment. Adjustable dumbbells replaced an entire rack. Best investment I've made."</p>
+          <p class="testimonial-author">Maria S.</p><p class="testimonial-role">Pro Gym Bundle</p>
+          <div class="stars mt-md">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        </div>
+        <div class="testimonial">
+          <p class="testimonial-text">"Started with the Starter bundle as a new year's resolution. 6 months later I'm in the best shape of my life. The free workout plans were key."</p>
+          <p class="testimonial-author">Alex T.</p><p class="testimonial-role">Starter Gym Bundle</p>
+          <div class="stars mt-md">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:linear-gradient(135deg, #dc2626, #991b1b); color:#fff; text-align:center;">
+    <div class="container">
+      <h2 class="mb-md">Build Your Dream Gym Today</h2>
+      <p style="opacity:0.85; max-width:450px; margin:0 auto 32px;">Save up to 35%. Free delivery. 10-year warranty. 30-day returns.</p>
+      <a href="#bundles" class="btn btn-lg btn-pill" style="background:#fff; color:#dc2626;">Choose Your Bundle</a>
+    </div>
+  </section>
+
+  <footer class="section-sm bg-dark"><div class="container text-center"><p class="text-muted text-sm">&copy; 2025 YourBrand Fitness. Built to last.</p></div></footer>
+
+  <div data-sticky-bar>
+    <div class="container flex items-center justify-between">
+      <strong>Home Gym Bundles — Save up to 35%</strong>
+      <a href="#bundles" class="btn btn-danger btn-pill">Shop Bundles</a>
+    </div>
+  </div>
+
+  <script src="../shared/shopify-integration.js"></script>
+</body>
+</html>

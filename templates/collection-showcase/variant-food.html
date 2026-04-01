@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artisan Food Market — Handcrafted Gourmet Goods</title>
+  <link rel="stylesheet" href="../shared/base.css">
+  <style>
+    :root { --accent: #b45309; }
+    body { background: #faf5ef; }
+    .hero { background: url('https://placehold.co/1400x600/78350f/fef3c7?text=') center/cover; position: relative; padding: 120px 0; }
+    .hero::after { content: ''; position: absolute; inset: 0; background: rgba(120,53,15,0.7); }
+    .hero .container { position: relative; z-index: 1; color: #fff; text-align: center; }
+    .category-cards { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; }
+    .cat-card { text-align: center; background: #fff; border-radius: 16px; padding: 32px 20px; transition: all 0.3s; cursor: pointer; }
+    .cat-card:hover { transform: translateY(-4px); box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
+    .cat-icon { font-size: 3rem; margin-bottom: 12px; }
+    .product-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+    .food-card { background: #fff; border-radius: 16px; overflow: hidden; }
+    .food-card img { aspect-ratio: 1; object-fit: cover; width: 100%; }
+    .food-info { padding: 20px; }
+    .food-tag { display: inline-block; background: #fef3c7; color: #92400e; padding: 2px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 600; margin-bottom: 8px; }
+    @media (max-width: 768px) { .category-cards { grid-template-columns: repeat(2, 1fr); } .product-grid { grid-template-columns: 1fr; } }
+  </style>
+  <script>var SHOPIFY_DOMAIN = 'your-store.myshopify.com';</script>
+</head>
+<body>
+
+  <div class="announce-bar" style="background:#78350f;">
+    Same-day dispatch on orders before 2pm | <strong>Subscribe & save 15%</strong>
+  </div>
+
+  <section class="hero">
+    <div class="container">
+      <span class="badge mb-md" style="background:rgba(255,255,255,0.2); color:#fff;">Small-Batch Artisan</span>
+      <h1 class="animate-fade-up">Gourmet Goods,<br>Delivered to Your Door</h1>
+      <p style="color:rgba(255,255,255,0.8); font-size:1.15rem; max-width:550px; margin:16px auto 32px;">Discover hand-selected artisan foods from small producers around the world. Every bite tells a story.</p>
+      <a href="#products" class="btn btn-lg btn-pill" style="background:#fff; color:#78350f;">Explore the Market</a>
+    </div>
+  </section>
+
+  <!-- Categories -->
+  <section class="section">
+    <div class="container">
+      <h2 class="text-center mb-xl">Shop by Category</h2>
+      <div class="category-cards">
+        <div class="cat-card"><div class="cat-icon">&#127798;</div><h3>Sauces & Oils</h3><p class="text-sm text-muted">24 products</p></div>
+        <div class="cat-card"><div class="cat-icon">&#127851;</div><h3>Chocolates</h3><p class="text-sm text-muted">18 products</p></div>
+        <div class="cat-card"><div class="cat-icon">&#127855;</div><h3>Honey & Jams</h3><p class="text-sm text-muted">15 products</p></div>
+        <div class="cat-card"><div class="cat-icon">&#127862;</div><h3>Coffee & Tea</h3><p class="text-sm text-muted">21 products</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Products -->
+  <section class="section bg-light" id="products">
+    <div class="container">
+      <h2 class="text-center mb-md">Staff Picks</h2>
+      <p class="text-center text-muted mb-xl">Handpicked favorites from our curators</p>
+      <div class="product-grid">
+        <div class="food-card card">
+          <img src="https://placehold.co/400x400/fef3c7/78350f?text=Olive+Oil" alt="Tuscan olive oil">
+          <div class="food-info">
+            <span class="food-tag">Italy</span>
+            <h3 style="font-size:1.1rem;">Cold-Pressed Tuscan Olive Oil</h3>
+            <p class="text-sm text-muted">Single-estate, hand-harvested. 500ml bottle.</p>
+            <div class="flex items-center justify-between mt-md">
+              <span class="product-price">$34.00</span>
+              <a href="#" class="btn btn-sm btn-pill" style="background:#b45309; color:#fff;" data-shopify-checkout data-variant="00000000000">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="food-card card">
+          <img src="https://placehold.co/400x400/d7ccc8/3e2723?text=Chocolate+Box" alt="Belgian chocolate box">
+          <div class="food-info">
+            <span class="food-tag">Belgium</span>
+            <h3 style="font-size:1.1rem;">Artisan Dark Chocolate Collection</h3>
+            <p class="text-sm text-muted">12-piece assortment, 72% cacao minimum.</p>
+            <div class="flex items-center justify-between mt-md">
+              <span class="product-price">$42.00</span>
+              <a href="#" class="btn btn-sm btn-pill" style="background:#b45309; color:#fff;" data-shopify-checkout data-variant="00000000000">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="food-card card">
+          <img src="https://placehold.co/400x400/fff7ed/9a3412?text=Hot+Sauce+Set" alt="Hot sauce set">
+          <div class="food-info">
+            <span class="food-tag">Mexico</span>
+            <h3 style="font-size:1.1rem;">Small-Batch Hot Sauce Trio</h3>
+            <p class="text-sm text-muted">Mild, medium & fiery. Hand-fermented peppers.</p>
+            <div class="flex items-center justify-between mt-md">
+              <span class="product-price">$28.00</span>
+              <a href="#" class="btn btn-sm btn-pill" style="background:#b45309; color:#fff;" data-shopify-checkout data-variant="00000000000">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="food-card card">
+          <img src="https://placehold.co/400x400/fef9c3/713f12?text=Honey+Jar" alt="Raw manuka honey">
+          <div class="food-info">
+            <span class="food-tag">New Zealand</span>
+            <h3 style="font-size:1.1rem;">Raw Manuka Honey UMF 15+</h3>
+            <p class="text-sm text-muted">Certified monofloral. 250g glass jar.</p>
+            <div class="flex items-center justify-between mt-md">
+              <span class="product-price">$56.00</span>
+              <a href="#" class="btn btn-sm btn-pill" style="background:#b45309; color:#fff;" data-shopify-checkout data-variant="00000000000">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="food-card card">
+          <img src="https://placehold.co/400x400/e8d5b7/3e2723?text=Coffee+Beans" alt="Single origin coffee">
+          <div class="food-info">
+            <span class="food-tag">Ethiopia</span>
+            <h3 style="font-size:1.1rem;">Single-Origin Coffee Beans</h3>
+            <p class="text-sm text-muted">Light roast, floral notes. 340g bag.</p>
+            <div class="flex items-center justify-between mt-md">
+              <span class="product-price">$22.00</span>
+              <a href="#" class="btn btn-sm btn-pill" style="background:#b45309; color:#fff;" data-shopify-checkout data-variant="00000000000">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="food-card card">
+          <img src="https://placehold.co/400x400/d1fae5/064e3b?text=Tea+Collection" alt="Japanese tea set">
+          <div class="food-info">
+            <span class="food-tag">Japan</span>
+            <h3 style="font-size:1.1rem;">Ceremonial Matcha Gift Set</h3>
+            <p class="text-sm text-muted">Grade A matcha, bamboo whisk & bowl.</p>
+            <div class="flex items-center justify-between mt-md">
+              <span class="product-price">$68.00</span>
+              <a href="#" class="btn btn-sm btn-pill" style="background:#b45309; color:#fff;" data-shopify-checkout data-variant="00000000000">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust -->
+  <section class="section">
+    <div class="container">
+      <div class="grid grid-4">
+        <div class="text-center"><div style="font-size:2rem; margin-bottom:8px;">&#127758;</div><strong>30+ Countries</strong><p class="text-sm text-muted">Sourced worldwide</p></div>
+        <div class="text-center"><div style="font-size:2rem; margin-bottom:8px;">&#128230;</div><strong>Eco Packaging</strong><p class="text-sm text-muted">100% recyclable</p></div>
+        <div class="text-center"><div style="font-size:2rem; margin-bottom:8px;">&#128666;</div><strong>Fast Shipping</strong><p class="text-sm text-muted">2-4 day delivery</p></div>
+        <div class="text-center"><div style="font-size:2rem; margin-bottom:8px;">&#128151;</div><strong>Satisfaction</strong><p class="text-sm text-muted">100% guaranteed</p></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="section-sm" style="background:#78350f; color:#fff;">
+    <div class="container text-center"><p class="text-sm" style="opacity:0.6;">&copy; 2025 YourBrand Market. Artisan goods, ethically sourced.</p></div>
+  </footer>
+
+  <script src="../shared/shopify-integration.js"></script>
+</body>
+</html>

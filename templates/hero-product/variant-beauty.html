@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Luxe Beauty Serum — Radiant Skin Starts Here</title>
+  <link rel="stylesheet" href="../shared/base.css">
+  <style>
+    :root { --accent: #be185d; --accent-light: #fdf2f8; }
+    body { font-family: 'Georgia', serif; }
+    h1, h2, h3, .btn { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; }
+    .hero { background: linear-gradient(135deg, #fdf2f8 0%, #fce7f3 50%, #fbcfe8 100%); padding: 80px 0; }
+    .hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+    .hero h1 { color: #831843; }
+    .hero-img { border-radius: 50%; box-shadow: 0 30px 80px rgba(190,24,93,0.2); max-width: 450px; margin: 0 auto; }
+    .routine-steps { counter-reset: step; }
+    .routine-step { display: flex; gap: 24px; padding: 32px 0; border-bottom: 1px solid #fce7f3; align-items: flex-start; }
+    .routine-step::before { counter-increment: step; content: counter(step); min-width: 48px; height: 48px; background: var(--accent); color: #fff; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 1.25rem; font-family: sans-serif; }
+    .before-after { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; border-radius: 16px; overflow: hidden; }
+    .ingredient-pill { display: inline-block; background: #fdf2f8; color: #be185d; padding: 8px 20px; border-radius: 50px; font-size: 0.875rem; margin: 4px; font-family: sans-serif; }
+    @media (max-width: 768px) { .hero-grid { grid-template-columns: 1fr; } .hero-img { max-width: 300px; } }
+  </style>
+  <script>var SHOPIFY_DOMAIN = 'your-store.myshopify.com';</script>
+</head>
+<body>
+
+  <div class="announce-bar" style="background:#831843;">
+    Complimentary gift with every order over $75 | <strong>Free returns always</strong>
+  </div>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="animate-fade-up">
+          <span class="badge badge-limited mb-md">Dermatologist Recommended</span>
+          <h1>Your Skin Deserves This Glow</h1>
+          <p style="color:#6b7280; font-size:1.1rem;">Our award-winning Vitamin C + Hyaluronic Acid serum visibly reduces fine lines, brightens skin tone, and delivers deep hydration in just 14 days.</p>
+          <div class="flex items-center gap-md mb-md" style="margin-top:20px;">
+            <span class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+            <span class="text-sm text-muted">6,129 verified reviews</span>
+          </div>
+          <div class="flex flex-wrap gap-sm mb-lg">
+            <span class="ingredient-pill">20% Vitamin C</span>
+            <span class="ingredient-pill">Hyaluronic Acid</span>
+            <span class="ingredient-pill">Niacinamide</span>
+            <span class="ingredient-pill">Squalane</span>
+          </div>
+          <div class="flex items-center gap-md mb-lg">
+            <span class="price" style="color:#be185d;">$48.00</span>
+            <span class="price-original">$68.00</span>
+            <span class="price-save" style="background:#fdf2f8; color:#be185d;">Save 29%</span>
+          </div>
+          <a href="#" class="btn btn-lg btn-pill" style="background:#be185d; color:#fff;" data-shopify-checkout data-variant="00000000000" data-qty="1">Add to Bag — $48.00</a>
+          <div class="trust-bar" style="justify-content: flex-start; margin-top:20px;">
+            <span class="trust-item">&#10003; Cruelty-Free</span>
+            <span class="trust-item">&#10003; Vegan</span>
+            <span class="trust-item">&#10003; Paraben-Free</span>
+          </div>
+        </div>
+        <div class="animate-fade-up delay-2">
+          <img src="https://placehold.co/500x500/fce7f3/831843?text=Beauty+Serum" alt="Luxe beauty serum bottle" class="hero-img">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Before/After -->
+  <section class="section">
+    <div class="container text-center">
+      <h2 class="mb-md">See the Difference</h2>
+      <p class="text-muted mb-xl">Real results from our 14-day clinical trial (unretouched photos)</p>
+      <div class="before-after" style="max-width:700px; margin:0 auto;">
+        <img src="https://placehold.co/350x400/fce7f3/831843?text=Before" alt="Before using serum">
+        <img src="https://placehold.co/350x400/d1fae5/064e3b?text=After+14+Days" alt="After 14 days">
+      </div>
+      <div class="grid grid-3 mt-lg" style="max-width:700px; margin-left:auto; margin-right:auto; margin-top:32px;">
+        <div class="text-center"><div style="font-size:2rem; font-weight:800; color:#be185d;">94%</div><p class="text-sm text-muted">Saw brighter skin</p></div>
+        <div class="text-center"><div style="font-size:2rem; font-weight:800; color:#be185d;">89%</div><p class="text-sm text-muted">Reduced fine lines</p></div>
+        <div class="text-center"><div style="font-size:2rem; font-weight:800; color:#be185d;">97%</div><p class="text-sm text-muted">Would recommend</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How to Use -->
+  <section class="section bg-light">
+    <div class="container container-sm">
+      <h2 class="text-center mb-xl">Your Simple 3-Step Routine</h2>
+      <div class="routine-steps">
+        <div class="routine-step">
+          <div><h3>Cleanse</h3><p class="text-muted">Start with clean, damp skin. Pat dry gently.</p></div>
+        </div>
+        <div class="routine-step">
+          <div><h3>Apply Serum</h3><p class="text-muted">Dispense 3-4 drops and press into skin. Focus on areas of concern.</p></div>
+        </div>
+        <div class="routine-step">
+          <div><h3>Moisturize & Protect</h3><p class="text-muted">Follow with your favorite moisturizer. Use SPF in the morning.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section">
+    <div class="container">
+      <h2 class="text-center mb-xl">Loved by Thousands</h2>
+      <div class="grid grid-3">
+        <div class="testimonial" style="background:#fdf2f8;">
+          <p class="testimonial-text">"I was skeptical about another vitamin C serum, but this one actually delivered. My dark spots faded noticeably in two weeks."</p>
+          <p class="testimonial-author">Emma L.</p>
+          <p class="testimonial-role">Verified Buyer, Age 34</p>
+          <div class="stars mt-md">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        </div>
+        <div class="testimonial" style="background:#fdf2f8;">
+          <p class="testimonial-text">"Lightweight, absorbs quickly, and doesn't pill under makeup. My holy grail serum. On my 4th bottle now."</p>
+          <p class="testimonial-author">Priya K.</p>
+          <p class="testimonial-role">Verified Buyer, Age 28</p>
+          <div class="stars mt-md">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        </div>
+        <div class="testimonial" style="background:#fdf2f8;">
+          <p class="testimonial-text">"As an esthetician, I recommend this to all my clients. Clean ingredients, effective formulation, fair price."</p>
+          <p class="testimonial-author">Rachel S.</p>
+          <p class="testimonial-role">Licensed Esthetician</p>
+          <div class="stars mt-md">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section" style="background: linear-gradient(135deg, #831843, #be185d);">
+    <div class="container text-center">
+      <h2 style="color:#fff;" class="mb-md">Your Best Skin is 14 Days Away</h2>
+      <p style="color:rgba(255,255,255,0.8); max-width:500px; margin:0 auto 32px;">Join 50,000+ glowing customers. Risk-free with our 60-day return policy.</p>
+      <a href="#" class="btn btn-lg btn-pill" style="background:#fff; color:#be185d;" data-shopify-checkout data-variant="00000000000" data-qty="1">Shop Now — $48.00</a>
+    </div>
+  </section>
+
+  <footer class="section-sm bg-dark">
+    <div class="container text-center">
+      <p class="text-muted text-sm">&copy; 2025 YourBrand Beauty. Cruelty-free. Vegan. Clean beauty.</p>
+    </div>
+  </footer>
+
+  <div data-sticky-bar>
+    <div class="container flex items-center justify-between">
+      <div class="flex items-center gap-md"><strong>Luxe Glow Serum</strong> <span style="color:#be185d; font-weight:700;">$48.00</span> <span class="price-original text-sm">$68.00</span></div>
+      <a href="#" class="btn btn-pill" style="background:#be185d; color:#fff;" data-shopify-checkout data-variant="00000000000" data-qty="1">Add to Bag</a>
+    </div>
+  </div>
+
+  <script src="../shared/shopify-integration.js"></script>
+</body>
+</html>

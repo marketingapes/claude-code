@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Complete Skincare System — Build Your Routine</title>
+  <link rel="stylesheet" href="../shared/base.css">
+  <style>
+    :root { --accent: #be185d; }
+    body { background: #fdf2f8; }
+    .hero { background: linear-gradient(135deg, #fdf2f8, #fce7f3); padding: 80px 0; text-align: center; }
+    .hero h1 { color: #831843; }
+    .bundle-selector { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; max-width: 900px; margin: 0 auto; }
+    .bundle-card { background: #fff; border-radius: 20px; padding: 32px; text-align: center; border: 3px solid #e5e7eb; transition: all 0.3s; cursor: pointer; position: relative; }
+    .bundle-card:hover, .bundle-card.popular { border-color: #be185d; }
+    .bundle-card.popular::before { content: 'Most Popular'; position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: #be185d; color: #fff; padding: 4px 16px; border-radius: 20px; font-size: 0.75rem; font-weight: 700; }
+    .bundle-name { font-size: 1.25rem; font-weight: 700; margin-bottom: 8px; }
+    .bundle-products { text-align: left; margin: 16px 0; }
+    .bundle-products li { padding: 6px 0; display: flex; align-items: center; gap: 8px; font-size: 0.9rem; color: #6b7280; }
+    .bundle-products li::before { content: '\\2713'; color: #be185d; font-weight: 700; }
+    .bundle-price { font-size: 2rem; font-weight: 800; color: #be185d; }
+    .bundle-original { text-decoration: line-through; color: #9ca3af; font-size: 1rem; }
+    .compare-table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 16px; overflow: hidden; }
+    .compare-table th { padding: 16px; background: #fdf2f8; text-align: center; font-weight: 600; border-bottom: 2px solid #fce7f3; }
+    .compare-table td { padding: 14px 16px; text-align: center; border-bottom: 1px solid #fce7f3; }
+    .compare-table tr td:first-child { text-align: left; font-weight: 500; }
+    .check { color: #be185d; font-size: 1.25rem; }
+    .cross { color: #d1d5db; }
+    .routine-visual { display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap; margin: 40px 0; }
+    .routine-item { text-align: center; max-width: 120px; }
+    .routine-item img { width: 100px; height: 100px; border-radius: 16px; object-fit: cover; margin-bottom: 8px; }
+    .routine-arrow { font-size: 1.5rem; color: #be185d; }
+    @media (max-width: 768px) { .bundle-selector { grid-template-columns: 1fr; } .routine-visual { gap: 8px; } .routine-arrow { display: none; } }
+  </style>
+  <script>var SHOPIFY_DOMAIN = 'your-store.myshopify.com';</script>
+</head>
+<body>
+
+  <div class="announce-bar" style="background:#831843;">
+    Save up to 35% with bundles | <strong>Free skincare consultation included</strong>
+  </div>
+
+  <section class="hero">
+    <div class="container">
+      <span class="badge badge-limited mb-md">Build Your Routine</span>
+      <h1 class="animate-fade-up">The Complete Skincare System</h1>
+      <p class="animate-fade-up delay-1" style="color:#6b7280; font-size:1.15rem; max-width:550px; margin:16px auto 0;">Stop guessing. Our dermatologist-designed bundles give you everything you need — at a fraction of buying individually.</p>
+    </div>
+  </section>
+
+  <!-- Routine Visual -->
+  <section class="section-sm">
+    <div class="container">
+      <h2 class="text-center mb-md">Your 4-Step System</h2>
+      <div class="routine-visual">
+        <div class="routine-item">
+          <img src="https://placehold.co/100x100/fce7f3/be185d?text=1" alt="Cleanser">
+          <strong class="text-sm">Cleanser</strong>
+        </div>
+        <span class="routine-arrow">&#8594;</span>
+        <div class="routine-item">
+          <img src="https://placehold.co/100x100/ede9fe/7c3aed?text=2" alt="Serum">
+          <strong class="text-sm">Serum</strong>
+        </div>
+        <span class="routine-arrow">&#8594;</span>
+        <div class="routine-item">
+          <img src="https://placehold.co/100x100/dbeafe/2563eb?text=3" alt="Moisturizer">
+          <strong class="text-sm">Moisturizer</strong>
+        </div>
+        <span class="routine-arrow">&#8594;</span>
+        <div class="routine-item">
+          <img src="https://placehold.co/100x100/fef3c7/d97706?text=4" alt="SPF">
+          <strong class="text-sm">SPF</strong>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bundle Selector -->
+  <section class="section" id="bundles">
+    <div class="container">
+      <h2 class="text-center mb-xl">Choose Your Bundle</h2>
+      <div class="bundle-selector">
+        <div class="bundle-card">
+          <div class="bundle-name">Essentials</div>
+          <p class="text-sm text-muted">Perfect starter set</p>
+          <ul class="bundle-products">
+            <li>Gentle Cleanser</li>
+            <li>Daily Moisturizer</li>
+          </ul>
+          <div class="bundle-price">$45</div>
+          <div class="bundle-original">$56 if bought separately</div>
+          <span class="price-save mt-md" style="display:inline-block; background:#fdf2f8; color:#be185d;">Save 20%</span>
+          <a href="#" class="btn btn-block btn-pill mt-lg" style="background:#be185d; color:#fff;" data-shopify-cart data-items="00000000000:1,00000000001:1">Get Essentials</a>
+        </div>
+        <div class="bundle-card popular">
+          <div class="bundle-name">Complete</div>
+          <p class="text-sm text-muted">Full routine, best value</p>
+          <ul class="bundle-products">
+            <li>Gentle Cleanser</li>
+            <li>Vitamin C Serum</li>
+            <li>Daily Moisturizer</li>
+            <li>SPF 50 Sunscreen</li>
+          </ul>
+          <div class="bundle-price">$89</div>
+          <div class="bundle-original">$136 if bought separately</div>
+          <span class="price-save mt-md" style="display:inline-block; background:#fdf2f8; color:#be185d;">Save 35%</span>
+          <a href="#" class="btn btn-block btn-pill mt-lg" style="background:#be185d; color:#fff;" data-shopify-cart data-items="00000000000:1,00000000001:1,00000000002:1,00000000003:1">Get Complete</a>
+        </div>
+        <div class="bundle-card">
+          <div class="bundle-name">Premium</div>
+          <p class="text-sm text-muted">Advanced anti-aging</p>
+          <ul class="bundle-products">
+            <li>Gentle Cleanser</li>
+            <li>Vitamin C Serum</li>
+            <li>Retinol Night Cream</li>
+            <li>Eye Cream</li>
+            <li>SPF 50 Sunscreen</li>
+          </ul>
+          <div class="bundle-price">$129</div>
+          <div class="bundle-original">$195 if bought separately</div>
+          <span class="price-save mt-md" style="display:inline-block; background:#fdf2f8; color:#be185d;">Save 34%</span>
+          <a href="#" class="btn btn-block btn-pill mt-lg" style="background:#be185d; color:#fff;" data-shopify-cart data-items="00000000000:1,00000000001:1,00000000002:1,00000000003:1,00000000004:1">Get Premium</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Comparison Table -->
+  <section class="section bg-light">
+    <div class="container container-sm">
+      <h2 class="text-center mb-xl">Compare Bundles</h2>
+      <table class="compare-table shadow">
+        <thead>
+          <tr><th>Product</th><th>Essentials</th><th>Complete</th><th>Premium</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Gentle Cleanser</td><td><span class="check">&#10003;</span></td><td><span class="check">&#10003;</span></td><td><span class="check">&#10003;</span></td></tr>
+          <tr><td>Vitamin C Serum</td><td><span class="cross">&#10007;</span></td><td><span class="check">&#10003;</span></td><td><span class="check">&#10003;</span></td></tr>
+          <tr><td>Daily Moisturizer</td><td><span class="check">&#10003;</span></td><td><span class="check">&#10003;</span></td><td><span class="cross">&#10007;</span></td></tr>
+          <tr><td>SPF 50 Sunscreen</td><td><span class="cross">&#10007;</span></td><td><span class="check">&#10003;</span></td><td><span class="check">&#10003;</span></td></tr>
+          <tr><td>Retinol Night Cream</td><td><span class="cross">&#10007;</span></td><td><span class="cross">&#10007;</span></td><td><span class="check">&#10003;</span></td></tr>
+          <tr><td>Eye Cream</td><td><span class="cross">&#10007;</span></td><td><span class="cross">&#10007;</span></td><td><span class="check">&#10003;</span></td></tr>
+          <tr><td>Free Consultation</td><td><span class="cross">&#10007;</span></td><td><span class="check">&#10003;</span></td><td><span class="check">&#10003;</span></td></tr>
+          <tr style="font-weight:700;"><td>Price</td><td>$45</td><td style="color:#be185d;">$89</td><td>$129</td></tr>
+          <tr style="font-weight:700;"><td>You Save</td><td>$11</td><td style="color:#be185d;">$47</td><td>$66</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section class="section">
+    <div class="container">
+      <h2 class="text-center mb-xl">Bundle Buyers Love It</h2>
+      <div class="grid grid-3">
+        <div class="testimonial" style="background:#fdf2f8;">
+          <p class="testimonial-text">"The Complete bundle simplified my entire routine. Everything works together perfectly. My skin has never looked better."</p>
+          <p class="testimonial-author">Megan K.</p><p class="testimonial-role">Complete Bundle</p>
+          <div class="stars mt-md">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        </div>
+        <div class="testimonial" style="background:#fdf2f8;">
+          <p class="testimonial-text">"Started with Essentials, upgraded to Premium within a month. The retinol cream alone is worth the upgrade."</p>
+          <p class="testimonial-author">Diana L.</p><p class="testimonial-role">Premium Bundle</p>
+          <div class="stars mt-md">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        </div>
+        <div class="testimonial" style="background:#fdf2f8;">
+          <p class="testimonial-text">"Buying the bundle saved me so much compared to buying everything separately. The free consultation was a great bonus."</p>
+          <p class="testimonial-author">Rachel T.</p><p class="testimonial-role">Complete Bundle</p>
+          <div class="stars mt-md">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:linear-gradient(135deg, #831843, #be185d); color:#fff; text-align:center;">
+    <div class="container">
+      <h2 class="mb-md">Start Your Skin Transformation</h2>
+      <p style="opacity:0.85; max-width:450px; margin:0 auto 32px;">Free shipping on all bundles. 60-day money-back guarantee.</p>
+      <a href="#bundles" class="btn btn-lg btn-pill" style="background:#fff; color:#be185d;">Choose Your Bundle</a>
+    </div>
+  </section>
+
+  <footer class="section-sm" style="background:#831843; color:#fff;">
+    <div class="container text-center"><p class="text-sm" style="opacity:0.4;">&copy; 2025 YourBrand Skincare. Dermatologist designed. Cruelty free.</p></div>
+  </footer>
+
+  <script src="../shared/shopify-integration.js"></script>
+</body>
+</html>

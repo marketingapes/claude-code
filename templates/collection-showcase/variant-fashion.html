@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Season Collection — Curated Fashion</title>
+  <link rel="stylesheet" href="../shared/base.css">
+  <style>
+    :root { --accent: #18181b; }
+    .hero-banner { background: linear-gradient(135deg, #18181b, #3f3f46); color: #fff; padding: 100px 0; text-align: center; }
+    .hero-banner h1 { font-size: clamp(2.5rem, 6vw, 4rem); letter-spacing: -1px; }
+    .hero-banner p { color: #a1a1aa; font-size: 1.2rem; max-width: 600px; margin: 16px auto 32px; }
+    .filter-bar { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; margin-bottom: 40px; }
+    .filter-btn { padding: 8px 20px; border-radius: 50px; border: 1px solid #e5e7eb; cursor: pointer; background: #fff; font-size: 0.9rem; transition: all 0.2s; }
+    .filter-btn:hover, .filter-btn.active { background: #18181b; color: #fff; border-color: #18181b; }
+    .product-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+    .product-card { border-radius: 16px; overflow: hidden; background: #fff; }
+    .product-card img { aspect-ratio: 3/4; object-fit: cover; width: 100%; transition: transform 0.5s; }
+    .product-card:hover img { transform: scale(1.05); }
+    .product-card .img-wrap { overflow: hidden; position: relative; }
+    .product-card .quick-add { position: absolute; bottom: 16px; left: 16px; right: 16px; opacity: 0; transition: opacity 0.3s; }
+    .product-card:hover .quick-add { opacity: 1; }
+    .product-info { padding: 16px; }
+    .product-name { font-weight: 600; margin-bottom: 4px; }
+    .product-price { color: #18181b; font-weight: 700; }
+    .marquee { overflow: hidden; white-space: nowrap; background: #fafafa; padding: 16px 0; border-top: 1px solid #e5e7eb; border-bottom: 1px solid #e5e7eb; }
+    .marquee-track { display: inline-block; animation: marquee 30s linear infinite; }
+    .marquee-item { display: inline-block; padding: 0 40px; font-size: 0.9rem; color: #6b7280; text-transform: uppercase; letter-spacing: 2px; }
+    @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
+    .lookbook-grid { display: grid; grid-template-columns: 2fr 1fr 1fr; grid-template-rows: auto auto; gap: 16px; }
+    .lookbook-grid img { width: 100%; height: 100%; object-fit: cover; border-radius: 12px; }
+    .lookbook-grid .featured { grid-row: 1 / 3; }
+    @media (max-width: 768px) { .product-grid { grid-template-columns: repeat(2, 1fr); gap: 16px; } .lookbook-grid { grid-template-columns: 1fr; } .lookbook-grid .featured { grid-row: auto; } }
+  </style>
+  <script>var SHOPIFY_DOMAIN = 'your-store.myshopify.com';</script>
+</head>
+<body>
+
+  <div class="announce-bar">Free shipping on orders over $100 | New arrivals dropping weekly</div>
+
+  <!-- Hero Banner -->
+  <section class="hero-banner">
+    <div class="container">
+      <span class="badge badge-new mb-md" style="background:rgba(255,255,255,0.1); color:#fff;">Spring/Summer 2025</span>
+      <h1 class="animate-fade-up">The New Collection</h1>
+      <p class="animate-fade-up delay-1">Elevated essentials designed for the modern wardrobe. Sustainable fabrics, timeless silhouettes.</p>
+      <a href="#shop" class="btn btn-lg btn-pill animate-fade-up delay-2" style="background:#fff; color:#18181b;">Shop the Collection</a>
+    </div>
+  </section>
+
+  <!-- Brand Marquee -->
+  <div class="marquee">
+    <div class="marquee-track">
+      <span class="marquee-item">Organic Cotton</span>
+      <span class="marquee-item">&#8226;</span>
+      <span class="marquee-item">Ethically Made</span>
+      <span class="marquee-item">&#8226;</span>
+      <span class="marquee-item">Free Returns</span>
+      <span class="marquee-item">&#8226;</span>
+      <span class="marquee-item">Carbon Neutral</span>
+      <span class="marquee-item">&#8226;</span>
+      <span class="marquee-item">Designed in NYC</span>
+      <span class="marquee-item">&#8226;</span>
+      <span class="marquee-item">Organic Cotton</span>
+      <span class="marquee-item">&#8226;</span>
+      <span class="marquee-item">Ethically Made</span>
+      <span class="marquee-item">&#8226;</span>
+      <span class="marquee-item">Free Returns</span>
+      <span class="marquee-item">&#8226;</span>
+      <span class="marquee-item">Carbon Neutral</span>
+      <span class="marquee-item">&#8226;</span>
+      <span class="marquee-item">Designed in NYC</span>
+    </div>
+  </div>
+
+  <!-- Product Grid -->
+  <section class="section" id="shop">
+    <div class="container">
+      <div class="filter-bar">
+        <button class="filter-btn active">All</button>
+        <button class="filter-btn">Tops</button>
+        <button class="filter-btn">Bottoms</button>
+        <button class="filter-btn">Outerwear</button>
+        <button class="filter-btn">Accessories</button>
+      </div>
+      <div class="product-grid">
+        <div class="product-card">
+          <div class="img-wrap">
+            <img src="https://placehold.co/400x533/f5f5f4/18181b?text=Linen+Shirt" alt="Relaxed linen shirt">
+            <div class="quick-add"><a href="#" class="btn btn-dark btn-block btn-pill" data-shopify-checkout data-variant="00000000000">Quick Add — $65</a></div>
+          </div>
+          <div class="product-info">
+            <p class="product-name">Relaxed Linen Shirt</p>
+            <span class="product-price">$65.00</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="img-wrap">
+            <img src="https://placehold.co/400x533/e7e5e4/18181b?text=Wide+Leg+Pants" alt="Wide leg trousers">
+            <span class="badge badge-new" style="position:absolute; top:12px; left:12px;">New</span>
+            <div class="quick-add"><a href="#" class="btn btn-dark btn-block btn-pill" data-shopify-checkout data-variant="00000000000">Quick Add — $89</a></div>
+          </div>
+          <div class="product-info">
+            <p class="product-name">Wide Leg Trousers</p>
+            <span class="product-price">$89.00</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="img-wrap">
+            <img src="https://placehold.co/400x533/d6d3d1/18181b?text=Oversized+Blazer" alt="Oversized blazer">
+            <div class="quick-add"><a href="#" class="btn btn-dark btn-block btn-pill" data-shopify-checkout data-variant="00000000000">Quick Add — $145</a></div>
+          </div>
+          <div class="product-info">
+            <p class="product-name">Oversized Blazer</p>
+            <span class="product-price">$145.00</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="img-wrap">
+            <img src="https://placehold.co/400x533/fef3c7/18181b?text=Cotton+Tee" alt="Essential cotton tee">
+            <span class="badge badge-hot" style="position:absolute; top:12px; left:12px;">Best Seller</span>
+            <div class="quick-add"><a href="#" class="btn btn-dark btn-block btn-pill" data-shopify-checkout data-variant="00000000000">Quick Add — $35</a></div>
+          </div>
+          <div class="product-info">
+            <p class="product-name">Essential Cotton Tee</p>
+            <span class="product-price">$35.00</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="img-wrap">
+            <img src="https://placehold.co/400x533/dbeafe/18181b?text=Denim+Jacket" alt="Classic denim jacket">
+            <div class="quick-add"><a href="#" class="btn btn-dark btn-block btn-pill" data-shopify-checkout data-variant="00000000000">Quick Add — $120</a></div>
+          </div>
+          <div class="product-info">
+            <p class="product-name">Classic Denim Jacket</p>
+            <span class="product-price">$120.00</span>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="img-wrap">
+            <img src="https://placehold.co/400x533/fce7f3/18181b?text=Silk+Scarf" alt="Hand-printed silk scarf">
+            <span class="badge badge-limited" style="position:absolute; top:12px; left:12px;">Limited</span>
+            <div class="quick-add"><a href="#" class="btn btn-dark btn-block btn-pill" data-shopify-checkout data-variant="00000000000">Quick Add — $48</a></div>
+          </div>
+          <div class="product-info">
+            <p class="product-name">Hand-Printed Silk Scarf</p>
+            <span class="product-price">$48.00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lookbook -->
+  <section class="section bg-light">
+    <div class="container">
+      <h2 class="text-center mb-xl">The Lookbook</h2>
+      <div class="lookbook-grid">
+        <img class="featured" src="https://placehold.co/600x800/d6d3d1/18181b?text=Lookbook+1" alt="Lookbook feature">
+        <img src="https://placehold.co/300x390/e7e5e4/18181b?text=Lookbook+2" alt="Lookbook 2">
+        <img src="https://placehold.co/300x390/fef3c7/18181b?text=Lookbook+3" alt="Lookbook 3">
+        <img src="https://placehold.co/300x390/dbeafe/18181b?text=Lookbook+4" alt="Lookbook 4">
+        <img src="https://placehold.co/300x390/fce7f3/18181b?text=Lookbook+5" alt="Lookbook 5">
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="section bg-dark">
+    <div class="container text-center">
+      <h2 class="mb-md">Join the Community</h2>
+      <p style="color:#a1a1aa; max-width:450px; margin:0 auto 24px;">Get early access to new drops, exclusive discounts, and style inspiration.</p>
+      <form style="display:flex; gap:12px; max-width:450px; margin:0 auto;" onsubmit="return false;">
+        <input type="email" placeholder="Enter your email" style="flex:1; padding:14px 20px; border-radius:50px; background:#27272a; color:#fff; border:1px solid #3f3f46;">
+        <button class="btn btn-pill" style="background:#fff; color:#18181b;">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <footer class="section-sm bg-dark" style="border-top:1px solid #27272a;">
+    <div class="container text-center"><p class="text-muted text-sm">&copy; 2025 YourBrand. All rights reserved. Sustainably made.</p></div>
+  </footer>
+
+  <script src="../shared/shopify-integration.js"></script>
+  <script>
+    document.querySelectorAll('.filter-btn').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        document.querySelectorAll('.filter-btn').forEach(function(b) { b.classList.remove('active'); });
+        btn.classList.add('active');
+      });
+    });
+  </script>
+</body>
+</html>

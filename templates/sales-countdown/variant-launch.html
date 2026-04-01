@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Launch — Be First to Get It</title>
+  <link rel="stylesheet" href="../shared/base.css">
+  <style>
+    :root { --accent: #2563eb; }
+    body { background: #0f172a; color: #fff; }
+    .launch-hero { min-height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; position: relative; overflow: hidden; padding: 40px 20px; }
+    .launch-hero::before { content: ''; position: absolute; width: 600px; height: 600px; background: radial-gradient(circle, rgba(37,99,235,0.2), transparent 70%); top: 50%; left: 50%; transform: translate(-50%, -50%); border-radius: 50%; }
+    .launch-hero h1 { font-size: clamp(3rem, 8vw, 5rem); font-weight: 900; letter-spacing: -2px; position: relative; }
+    .launch-hero h1 span { background: linear-gradient(90deg, #60a5fa, #818cf8, #a78bfa); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .launch-date { display: inline-block; background: rgba(37,99,235,0.2); border: 1px solid rgba(37,99,235,0.4); border-radius: 50px; padding: 10px 28px; font-size: 1rem; margin: 20px 0 32px; }
+    .teaser-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .teaser-card { background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1); border-radius: 16px; padding: 32px; text-align: center; backdrop-filter: blur(10px); }
+    .teaser-card h3 { margin: 12px 0 8px; }
+    .teaser-card p { color: #94a3b8; }
+    .teaser-icon { font-size: 2.5rem; }
+    .reveal-img { max-width: 500px; margin: 0 auto; border-radius: 24px; box-shadow: 0 30px 80px rgba(37,99,235,0.3); }
+    .early-bird { background: linear-gradient(135deg, rgba(37,99,235,0.1), rgba(124,58,237,0.1)); border: 1px solid rgba(37,99,235,0.3); border-radius: 24px; padding: 48px; max-width: 600px; margin: 0 auto; text-align: center; }
+    .email-form { display: flex; gap: 12px; margin-top: 24px; }
+    .email-form input { flex: 1; padding: 14px 20px; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); border-radius: 50px; color: #fff; }
+    .email-form input::placeholder { color: #64748b; }
+    .waitlist-count { display: flex; align-items: center; justify-content: center; gap: 8px; margin-top: 16px; color: #94a3b8; font-size: 0.9rem; }
+    .waitlist-count .dot { width: 8px; height: 8px; background: #22c55e; border-radius: 50%; animation: pulse 2s infinite; }
+    @media (max-width: 768px) { .teaser-grid { grid-template-columns: 1fr; } .email-form { flex-direction: column; } }
+  </style>
+  <script>var SHOPIFY_DOMAIN = 'your-store.myshopify.com';</script>
+</head>
+<body>
+
+  <div class="announce-bar" style="background:#2563eb;">
+    &#128640; New product dropping soon — Join the waitlist for early access + 20% off
+  </div>
+
+  <!-- Hero -->
+  <section class="launch-hero">
+    <div class="container" style="position:relative; z-index:1;">
+      <span class="badge mb-md" style="background:rgba(255,255,255,0.1); color:#fff;">Coming Soon</span>
+      <h1 class="animate-fade-up">Something <span>Extraordinary</span><br>Is Coming</h1>
+      <div class="launch-date animate-fade-up delay-1">Launching January 15, 2026</div>
+      <div style="max-width:400px; margin:0 auto 32px;" class="animate-fade-up delay-2">
+        <p style="font-size:0.85rem; color:#94a3b8; margin-bottom:12px;">Countdown to launch:</p>
+        <div data-countdown="2026-01-15T00:00:00"></div>
+      </div>
+      <div class="animate-fade-up delay-3">
+        <img src="https://placehold.co/500x400/1e293b/60a5fa?text=Coming+Soon" alt="Product teaser" class="reveal-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- Teaser Features -->
+  <section class="section">
+    <div class="container">
+      <h2 class="text-center mb-xl">What to Expect</h2>
+      <div class="teaser-grid">
+        <div class="teaser-card">
+          <div class="teaser-icon">&#9889;</div>
+          <h3>Revolutionary Tech</h3>
+          <p>18 months of R&D packed into one groundbreaking product that will change everything.</p>
+        </div>
+        <div class="teaser-card">
+          <div class="teaser-icon">&#127775;</div>
+          <h3>Premium Quality</h3>
+          <p>Crafted with the finest materials and engineering precision. Built to exceed expectations.</p>
+        </div>
+        <div class="teaser-card">
+          <div class="teaser-icon">&#128176;</div>
+          <h3>Unbeatable Value</h3>
+          <p>Premium features at a price that makes sense. Early birds get an additional 20% off.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Early Bird Signup -->
+  <section class="section">
+    <div class="container">
+      <div class="early-bird">
+        <span class="badge mb-md" style="background:rgba(37,99,235,0.3); color:#60a5fa;">Early Access</span>
+        <h2>Get 20% Off at Launch</h2>
+        <p style="color:#94a3b8; max-width:400px; margin:12px auto 0;">Join the waitlist for exclusive early access, behind-the-scenes updates, and a 20% launch day discount.</p>
+        <form class="email-form" onsubmit="return false;">
+          <input type="email" placeholder="Enter your email address">
+          <button class="btn btn-primary btn-pill">Join Waitlist</button>
+        </form>
+        <div class="waitlist-count">
+          <span class="dot"></span>
+          <span>12,847 people already on the waitlist</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social Proof -->
+  <section class="section" style="border-top:1px solid rgba(255,255,255,0.1);">
+    <div class="container">
+      <h2 class="text-center mb-xl">Industry Buzz</h2>
+      <div class="grid grid-3">
+        <div class="testimonial" style="background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.1);">
+          <p class="testimonial-text" style="color:#e2e8f0;">"This is going to be the product of 2026. The early prototype blew us away."</p>
+          <p class="testimonial-author" style="color:#fff;">TechCrunch</p>
+        </div>
+        <div class="testimonial" style="background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.1);">
+          <p class="testimonial-text" style="color:#e2e8f0;">"If the final product matches what we've seen, competitors should be worried."</p>
+          <p class="testimonial-author" style="color:#fff;">The Verge</p>
+        </div>
+        <div class="testimonial" style="background:rgba(255,255,255,0.05); border:1px solid rgba(255,255,255,0.1);">
+          <p class="testimonial-text" style="color:#e2e8f0;">"A rare combination of innovation and practicality. Can't wait for launch day."</p>
+          <p class="testimonial-author" style="color:#fff;">Wired</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="section-sm" style="border-top:1px solid rgba(255,255,255,0.1);">
+    <div class="container text-center"><p style="color:#64748b;" class="text-sm">&copy; 2025 YourBrand. Big things coming.</p></div>
+  </footer>
+
+  <div data-sticky-bar style="background:rgba(15,23,42,0.95); backdrop-filter:blur(10px); border-top:1px solid rgba(255,255,255,0.1);">
+    <div class="container flex items-center justify-between" style="color:#fff;">
+      <strong>&#128640; Launch: Jan 15, 2026</strong>
+      <a href="#" class="btn btn-primary btn-pill" onclick="document.querySelector('.email-form input').focus(); return false;">Join Waitlist — 20% Off</a>
+    </div>
+  </div>
+
+  <script src="../shared/shopify-integration.js"></script>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chef's Kitchen Bundle — Cook Like a Pro</title>
+  <link rel="stylesheet" href="../shared/base.css">
+  <style>
+    :root { --accent: #b45309; }
+    body { background: #fffbeb; }
+    .hero { background: linear-gradient(160deg, #78350f, #92400e); color: #fff; padding: 80px 0; }
+    .hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+    .hero h1 span { color: #fbbf24; }
+    .bundle-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .bun-card { background: #fff; border-radius: 20px; padding: 32px; text-align: center; border: 3px solid #e5e7eb; position: relative; }
+    .bun-card.featured { border-color: #d97706; }
+    .bun-card.featured::before { content: "Chef's Pick"; position: absolute; top: -12px; left: 50%; transform: translateX(-50%); background: #d97706; color: #fff; padding: 4px 16px; border-radius: 20px; font-size: 0.75rem; font-weight: 700; }
+    .bun-price { font-size: 2.25rem; font-weight: 800; color: #92400e; margin: 16px 0 8px; }
+    .bun-list { text-align: left; margin: 20px 0; }
+    .bun-list li { padding: 8px 0; display: flex; gap: 8px; font-size: 0.9rem; }
+    .bun-list .yes { color: #059669; }
+    .bun-list .no { color: #d1d5db; }
+    .recipe-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .recipe-card { background: #fff; border-radius: 16px; overflow: hidden; }
+    .recipe-card img { aspect-ratio: 4/3; object-fit: cover; width: 100%; }
+    .recipe-body { padding: 16px; }
+    .recipe-meta { display: flex; gap: 16px; margin-top: 8px; }
+    .recipe-meta span { font-size: 0.8rem; color: #6b7280; }
+    .materials-bar { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; text-align: center; }
+    .mat-icon { font-size: 2.5rem; margin-bottom: 8px; }
+    @media (max-width: 768px) { .hero-grid, .bundle-cards, .recipe-grid { grid-template-columns: 1fr; } .materials-bar { grid-template-columns: repeat(2, 1fr); } }
+  </style>
+  <script>var SHOPIFY_DOMAIN = 'your-store.myshopify.com';</script>
+</head>
+<body>
+
+  <div class="announce-bar" style="background:#78350f;">
+    Save up to 30% with bundles | <strong>Free recipe book with every order</strong>
+  </div>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="animate-fade-up">
+          <span class="badge mb-md" style="background:rgba(251,191,36,0.2); color:#fbbf24;">Kitchen Essentials</span>
+          <h1>Cook Like a <span>Pro Chef</span></h1>
+          <p style="color:#d6d3d1; font-size:1.1rem; margin:20px 0;">Professional-grade cookware and tools used by Michelin-star chefs, now available for your home kitchen. Bundled for maximum savings.</p>
+          <div class="flex items-center gap-lg mb-lg">
+            <div><span style="font-size:1.5rem; font-weight:800; color:#fbbf24;">30%</span><br><span class="text-sm" style="color:#a8a29e;">Max savings</span></div>
+            <div><span style="font-size:1.5rem; font-weight:800; color:#fff;">Lifetime</span><br><span class="text-sm" style="color:#a8a29e;">Warranty</span></div>
+            <div><span style="font-size:1.5rem; font-weight:800; color:#fff;">Free</span><br><span class="text-sm" style="color:#a8a29e;">Recipe Book</span></div>
+          </div>
+          <a href="#bundles" class="btn btn-lg btn-pill" style="background:#d97706; color:#fff;">Shop Bundles</a>
+        </div>
+        <div class="animate-fade-up delay-2">
+          <img src="https://placehold.co/500x400/92400e/fbbf24?text=Kitchen+Set" alt="Professional kitchen set" style="border-radius:20px;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Materials -->
+  <section class="section">
+    <div class="container">
+      <h2 class="text-center mb-xl">Why Chefs Choose Us</h2>
+      <div class="materials-bar">
+        <div><div class="mat-icon">&#127860;</div><strong>5-Ply Steel</strong><p class="text-sm text-muted">Even heat distribution</p></div>
+        <div><div class="mat-icon">&#128293;</div><strong>Oven Safe 500F</strong><p class="text-sm text-muted">Stove to oven seamless</p></div>
+        <div><div class="mat-icon">&#127807;</div><strong>PFOA Free</strong><p class="text-sm text-muted">Non-toxic coating</p></div>
+        <div><div class="mat-icon">&#9851;</div><strong>Lifetime Warranty</strong><p class="text-sm text-muted">Buy once, cook forever</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bundles -->
+  <section class="section bg-light" id="bundles">
+    <div class="container">
+      <h2 class="text-center mb-xl">Choose Your Kitchen Setup</h2>
+      <div class="bundle-cards">
+        <div class="bun-card">
+          <h3>Essentials Kit</h3>
+          <p class="text-sm text-muted">Start cooking better</p>
+          <div class="bun-price">$149</div>
+          <div class="price-original">$199</div>
+          <span class="price-save" style="background:#fffbeb; color:#b45309;">Save 25%</span>
+          <ul class="bun-list">
+            <li><span class="yes">&#10003;</span> 10" Frying Pan</li>
+            <li><span class="yes">&#10003;</span> Chef's Knife 8"</li>
+            <li><span class="yes">&#10003;</span> Cutting Board</li>
+            <li><span class="no">&#10007;</span> Saucepan Set</li>
+            <li><span class="no">&#10007;</span> Dutch Oven</li>
+            <li><span class="no">&#10007;</span> Utensil Set</li>
+          </ul>
+          <a href="#" class="btn btn-block btn-pill" style="background:#b45309; color:#fff;" data-shopify-cart data-items="00000000000:1,00000000001:1,00000000002:1">Get Essentials</a>
+        </div>
+        <div class="bun-card featured">
+          <h3>Home Chef Kit</h3>
+          <p class="text-sm text-muted">Complete daily cooking</p>
+          <div class="bun-price">$349</div>
+          <div class="price-original">$499</div>
+          <span class="price-save" style="background:#fffbeb; color:#b45309;">Save 30%</span>
+          <ul class="bun-list">
+            <li><span class="yes">&#10003;</span> 10" & 12" Frying Pans</li>
+            <li><span class="yes">&#10003;</span> Chef's Knife 8" + Paring 4"</li>
+            <li><span class="yes">&#10003;</span> Cutting Board Set</li>
+            <li><span class="yes">&#10003;</span> Saucepan Set (1.5qt + 3qt)</li>
+            <li><span class="yes">&#10003;</span> 5.5qt Dutch Oven</li>
+            <li><span class="no">&#10007;</span> Utensil Set</li>
+          </ul>
+          <a href="#" class="btn btn-block btn-pill" style="background:#d97706; color:#fff;" data-shopify-cart data-items="00000000000:1,00000000001:1,00000000002:1,00000000003:1,00000000004:1">Get Home Chef</a>
+        </div>
+        <div class="bun-card">
+          <h3>Pro Kitchen</h3>
+          <p class="text-sm text-muted">Restaurant-grade setup</p>
+          <div class="bun-price">$599</div>
+          <div class="price-original">$849</div>
+          <span class="price-save" style="background:#fffbeb; color:#b45309;">Save 29%</span>
+          <ul class="bun-list">
+            <li><span class="yes">&#10003;</span> Full Pan Set (8/10/12")</li>
+            <li><span class="yes">&#10003;</span> 5-Piece Knife Block</li>
+            <li><span class="yes">&#10003;</span> Premium Board Set</li>
+            <li><span class="yes">&#10003;</span> Saucepan Set (1.5/3/5qt)</li>
+            <li><span class="yes">&#10003;</span> 7qt Dutch Oven</li>
+            <li><span class="yes">&#10003;</span> 12-Piece Utensil Set</li>
+          </ul>
+          <a href="#" class="btn btn-block btn-pill" style="background:#b45309; color:#fff;" data-shopify-cart data-items="00000000000:1,00000000001:1,00000000002:1,00000000003:1,00000000004:1,00000000005:1">Get Pro Kitchen</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Free Recipe Book -->
+  <section class="section">
+    <div class="container">
+      <h2 class="text-center mb-md">Free Recipe Book Included</h2>
+      <p class="text-center text-muted mb-xl">50 chef-crafted recipes to master with your new tools</p>
+      <div class="recipe-grid">
+        <div class="recipe-card card">
+          <img src="https://placehold.co/400x300/fef3c7/78350f?text=Pasta" alt="Fresh pasta recipe">
+          <div class="recipe-body">
+            <h3 style="font-size:1rem;">Hand-Made Fresh Pasta</h3>
+            <div class="recipe-meta"><span>&#9203; 45 min</span><span>&#127860; Intermediate</span></div>
+          </div>
+        </div>
+        <div class="recipe-card card">
+          <img src="https://placehold.co/400x300/fef2f2/dc2626?text=Steak" alt="Perfect steak recipe">
+          <div class="recipe-body">
+            <h3 style="font-size:1rem;">Restaurant-Style Seared Steak</h3>
+            <div class="recipe-meta"><span>&#9203; 25 min</span><span>&#127860; Easy</span></div>
+          </div>
+        </div>
+        <div class="recipe-card card">
+          <img src="https://placehold.co/400x300/ecfdf5/059669?text=Thai+Curry" alt="Thai curry recipe">
+          <div class="recipe-body">
+            <h3 style="font-size:1rem;">Authentic Thai Green Curry</h3>
+            <div class="recipe-meta"><span>&#9203; 35 min</span><span>&#127860; Intermediate</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section class="section bg-light">
+    <div class="container">
+      <h2 class="text-center mb-xl">Home Chefs Love It</h2>
+      <div class="grid grid-3">
+        <div class="testimonial" style="background:#fffbeb;">
+          <p class="testimonial-text">"Upgraded from cheap pans to the Home Chef Kit. The difference is night and day — even heat, no sticking, and they look gorgeous on the stove."</p>
+          <p class="testimonial-author">Michael B.</p><p class="testimonial-role">Home Chef Kit</p>
+          <div class="stars mt-md">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        </div>
+        <div class="testimonial" style="background:#fffbeb;">
+          <p class="testimonial-text">"The knife set alone is worth the Pro Kitchen price. Incredibly sharp, well-balanced, and the block keeps them organized."</p>
+          <p class="testimonial-author">Patricia H.</p><p class="testimonial-role">Pro Kitchen</p>
+          <div class="stars mt-md">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        </div>
+        <div class="testimonial" style="background:#fffbeb;">
+          <p class="testimonial-text">"Best gift I've ever received. My wife got me the Essentials Kit and I've been cooking every night since. The recipe book is fantastic."</p>
+          <p class="testimonial-author">Tom L.</p><p class="testimonial-role">Essentials Kit</p>
+          <div class="stars mt-md">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:linear-gradient(135deg, #78350f, #92400e); color:#fff; text-align:center;">
+    <div class="container">
+      <h2 class="mb-md">Upgrade Your Kitchen Today</h2>
+      <p style="opacity:0.85; max-width:450px; margin:0 auto 32px;">Save up to 30%. Lifetime warranty. Free recipe book. Free shipping.</p>
+      <a href="#bundles" class="btn btn-lg btn-pill" style="background:#fbbf24; color:#78350f;">Choose Your Bundle</a>
+    </div>
+  </section>
+
+  <footer class="section-sm" style="background:#1c1917; color:#fff;">
+    <div class="container text-center"><p class="text-sm" style="opacity:0.4;">&copy; 2025 Chef's Kitchen. Professional tools for passionate home cooks.</p></div>
+  </footer>
+
+  <script src="../shared/shopify-integration.js"></script>
+</body>
+</html>

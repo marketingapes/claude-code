@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elite Fitness Tracker — Train Smarter, Not Harder</title>
+  <link rel="stylesheet" href="../shared/base.css">
+  <style>
+    :root { --accent: #dc2626; --accent-light: #fef2f2; }
+    .hero { background: linear-gradient(160deg, #18181b 0%, #27272a 100%); color: #fff; padding: 80px 0; }
+    .hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+    .hero h1 span { color: #ef4444; }
+    .hero-img { filter: drop-shadow(0 30px 60px rgba(220,38,38,0.3)); }
+    .stat-bar { display: flex; gap: 40px; margin: 24px 0; }
+    .stat-item { text-align: center; }
+    .stat-num { font-size: 1.75rem; font-weight: 800; color: #ef4444; }
+    .feature-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .feature-card { background: #27272a; border-radius: 16px; padding: 32px; color: #fff; border: 1px solid #3f3f46; }
+    .feature-card h3 { margin-bottom: 8px; }
+    .feature-card p { color: #a1a1aa; }
+    .workout-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+    .workout-item { background: #f8fafc; border-radius: 12px; padding: 24px; text-align: center; }
+    .workout-icon { font-size: 2rem; margin-bottom: 8px; }
+    @media (max-width: 768px) { .hero-grid, .feature-cards, .workout-grid { grid-template-columns: 1fr; } .stat-bar { flex-wrap: wrap; gap: 20px; } }
+  </style>
+  <script>var SHOPIFY_DOMAIN = 'your-store.myshopify.com';</script>
+</head>
+<body>
+
+  <div class="announce-bar" style="background:#dc2626;">
+    Limited Time: <strong>25% OFF</strong> + Free Sport Band | Use code: FITLIFE
+  </div>
+
+  <section class="hero" data-sticky-trigger>
+    <div class="container">
+      <div class="hero-grid">
+        <div class="animate-fade-up">
+          <span class="badge badge-hot mb-md">Best Seller 2025</span>
+          <h1>Train Like a <span>Champion</span></h1>
+          <p style="color:#a1a1aa; font-size:1.1rem;">Advanced biometrics, GPS tracking, and AI-powered coaching on your wrist. Built for athletes who refuse to settle.</p>
+          <div class="stat-bar">
+            <div class="stat-item"><div class="stat-num">14</div><div class="text-sm" style="color:#a1a1aa;">Day Battery</div></div>
+            <div class="stat-item"><div class="stat-num">100+</div><div class="text-sm" style="color:#a1a1aa;">Workout Modes</div></div>
+            <div class="stat-item"><div class="stat-num">5ATM</div><div class="text-sm" style="color:#a1a1aa;">Water Proof</div></div>
+            <div class="stat-item"><div class="stat-num">GPS</div><div class="text-sm" style="color:#a1a1aa;">Built-In</div></div>
+          </div>
+          <div class="flex items-center gap-md mb-lg">
+            <span class="price" style="color:#fff;">$179.99</span>
+            <span class="price-original">$239.99</span>
+            <span class="price-save">Save 25%</span>
+          </div>
+          <a href="#" class="btn btn-danger btn-lg btn-pill" data-shopify-checkout data-variant="00000000000" data-qty="1">Get Yours — $179.99</a>
+        </div>
+        <div class="text-center animate-fade-up delay-2">
+          <img src="https://placehold.co/450x450/27272a/ef4444?text=Fitness+Watch" alt="Elite fitness tracker" class="hero-img" style="max-width:400px;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="section bg-dark">
+    <div class="container">
+      <h2 class="text-center mb-xl">Packed With Power</h2>
+      <div class="feature-cards">
+        <div class="feature-card">
+          <h3>&#128147; Heart Rate Zones</h3>
+          <p>Real-time continuous heart rate monitoring with zone-based training alerts to maximize every session.</p>
+        </div>
+        <div class="feature-card">
+          <h3>&#127939; GPS Tracking</h3>
+          <p>Built-in multi-band GPS for accurate route, pace, and distance tracking — no phone needed.</p>
+        </div>
+        <div class="feature-card">
+          <h3>&#128564; Sleep Analysis</h3>
+          <p>Track sleep stages, blood oxygen, and get personalized recovery recommendations every morning.</p>
+        </div>
+        <div class="feature-card">
+          <h3>&#129504; AI Coach</h3>
+          <p>Adaptive training plans that evolve with your fitness level. Get real-time form feedback during workouts.</p>
+        </div>
+        <div class="feature-card">
+          <h3>&#127911; Music Storage</h3>
+          <p>Store 500+ songs offline. Connect Bluetooth earbuds and leave your phone at home.</p>
+        </div>
+        <div class="feature-card">
+          <h3>&#128290; Body Composition</h3>
+          <p>Bioelectrical impedance analysis tracks muscle mass, body fat, and hydration levels.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Workout Modes -->
+  <section class="section">
+    <div class="container">
+      <h2 class="text-center mb-xl">100+ Workout Modes</h2>
+      <div class="workout-grid">
+        <div class="workout-item"><div class="workout-icon">&#127939;</div><strong>Running</strong></div>
+        <div class="workout-item"><div class="workout-icon">&#128692;</div><strong>Cycling</strong></div>
+        <div class="workout-item"><div class="workout-icon">&#127946;</div><strong>Swimming</strong></div>
+        <div class="workout-item"><div class="workout-icon">&#127947;</div><strong>Weights</strong></div>
+        <div class="workout-item"><div class="workout-icon">&#129336;</div><strong>Yoga</strong></div>
+        <div class="workout-item"><div class="workout-icon">&#128693;</div><strong>Hiking</strong></div>
+        <div class="workout-item"><div class="workout-icon">&#9917;</div><strong>Soccer</strong></div>
+        <div class="workout-item"><div class="workout-icon">&#127934;</div><strong>Tennis</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section class="section bg-light">
+    <div class="container">
+      <h2 class="text-center mb-xl">Athletes Love It</h2>
+      <div class="grid grid-3">
+        <div class="testimonial">
+          <p class="testimonial-text">"Replaced my $400 fitness watch with this. The AI coaching alone is worth it — my marathon time improved by 12 minutes."</p>
+          <p class="testimonial-author">Jake P.</p>
+          <p class="testimonial-role">Marathon Runner</p>
+          <div class="stars mt-md">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        </div>
+        <div class="testimonial">
+          <p class="testimonial-text">"14-day battery life is no joke. I charged it twice last month. The sleep tracking helped me optimize my recovery days."</p>
+          <p class="testimonial-author">Lisa M.</p>
+          <p class="testimonial-role">CrossFit Athlete</p>
+          <div class="stars mt-md">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        </div>
+        <div class="testimonial">
+          <p class="testimonial-text">"Finally a fitness tracker that handles swimming properly. Accurate lap counting and heart rate even underwater."</p>
+          <p class="testimonial-author">Carlos D.</p>
+          <p class="testimonial-role">Triathlete</p>
+          <div class="stars mt-md">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section" style="background: linear-gradient(135deg, #dc2626, #991b1b);">
+    <div class="container text-center">
+      <h2 style="color:#fff;" class="mb-md">Level Up Your Training</h2>
+      <p style="color:rgba(255,255,255,0.8); max-width:500px; margin:0 auto 32px;">Join 100K+ athletes who train smarter. 30-day money-back guarantee.</p>
+      <a href="#" class="btn btn-lg btn-pill" style="background:#fff; color:#dc2626;" data-shopify-checkout data-variant="00000000000" data-qty="1">Order Now — $179.99</a>
+    </div>
+  </section>
+
+  <footer class="section-sm bg-dark"><div class="container text-center"><p class="text-muted text-sm">&copy; 2025 YourBrand Fitness. All rights reserved.</p></div></footer>
+
+  <div data-sticky-bar>
+    <div class="container flex items-center justify-between">
+      <div class="flex items-center gap-md"><strong>Elite Fitness Tracker</strong> <span style="color:#dc2626; font-weight:700;">$179.99</span> <span class="price-original text-sm">$239.99</span></div>
+      <a href="#" class="btn btn-danger btn-pill" data-shopify-checkout data-variant="00000000000" data-qty="1">Buy Now</a>
+    </div>
+  </div>
+
+  <script src="../shared/shopify-integration.js"></script>
+</body>
+</html>

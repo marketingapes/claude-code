@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Earth-First Living — Sustainable Products That Matter</title>
+  <link rel="stylesheet" href="../shared/base.css">
+  <style>
+    :root { --accent: #059669; }
+    .hero { background: linear-gradient(180deg, #ecfdf5 0%, #d1fae5 100%); padding: 80px 0; }
+    .hero-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+    .hero h1 { color: #064e3b; }
+    .hero h1 span { color: #059669; }
+    .impact-counter { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; text-align: center; }
+    .impact-num { font-size: 2.5rem; font-weight: 800; color: #059669; }
+    .impact-label { color: #6b7280; font-size: 0.875rem; }
+    .mission-block { display: grid; grid-template-columns: 1fr 1fr; gap: 60px; align-items: center; }
+    .mission-block:nth-child(even) { direction: rtl; }
+    .mission-block:nth-child(even) > * { direction: ltr; }
+    .mission-img { border-radius: 20px; }
+    .pledge-card { background: linear-gradient(135deg, #064e3b, #059669); color: #fff; border-radius: 24px; padding: 48px; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+    .pledge-list li { padding: 12px 0; display: flex; align-items: flex-start; gap: 12px; font-size: 1.05rem; }
+    .pledge-check { color: #34d399; font-size: 1.25rem; margin-top: 2px; }
+    .product-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+    .eco-card { background: #fff; border-radius: 16px; overflow: hidden; }
+    .eco-card img { aspect-ratio: 1; object-fit: cover; width: 100%; }
+    .eco-body { padding: 20px; }
+    .eco-tag { display: inline-flex; align-items: center; gap: 4px; background: #ecfdf5; color: #059669; padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 600; }
+    @media (max-width: 768px) { .hero-grid, .mission-block, .mission-block:nth-child(even), .pledge-card, .product-grid { grid-template-columns: 1fr; direction: ltr; } .impact-counter { grid-template-columns: repeat(2, 1fr); } }
+  </style>
+  <script>var SHOPIFY_DOMAIN = 'your-store.myshopify.com';</script>
+</head>
+<body>
+
+  <div class="announce-bar" style="background:#064e3b;">
+    &#127807; 1% of every sale goes to ocean cleanup | <strong>Carbon-neutral shipping</strong>
+  </div>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="animate-fade-up">
+          <span class="badge badge-new mb-md">B Corp Certified</span>
+          <h1>Better Products for a <span>Better Planet</span></h1>
+          <p style="color:#374151; font-size:1.15rem; margin:20px 0 32px;">We make everyday essentials from recycled, biodegradable, and sustainably sourced materials. Because the planet isn't a trend — it's our responsibility.</p>
+          <a href="#shop" class="btn btn-success btn-lg btn-pill">Shop Sustainable</a>
+        </div>
+        <div class="animate-fade-up delay-2">
+          <img src="https://placehold.co/500x500/d1fae5/064e3b?text=Eco+Products" alt="Sustainable product collection" style="border-radius:24px;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Impact Numbers -->
+  <section class="section">
+    <div class="container">
+      <h2 class="text-center mb-xl">Our Impact So Far</h2>
+      <div class="impact-counter">
+        <div><div class="impact-num">2.4M</div><div class="impact-label">Plastic bottles diverted</div></div>
+        <div><div class="impact-num">50K</div><div class="impact-label">Trees planted</div></div>
+        <div><div class="impact-num">Zero</div><div class="impact-label">Waste to landfill</div></div>
+        <div><div class="impact-num">100%</div><div class="impact-label">Carbon neutral</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mission -->
+  <section class="section bg-light">
+    <div class="container">
+      <div class="mission-block" style="margin-bottom:80px;">
+        <div>
+          <h2>From Ocean Waste to Everyday Wonder</h2>
+          <p style="font-size:1.05rem; line-height:1.8; color:#4b5563;">Every year, 8 million tons of plastic enter our oceans. We intercept that waste before it reaches the sea and transform it into beautiful, functional products you'll use every day.</p>
+          <p style="font-size:1.05rem; line-height:1.8; color:#4b5563;">Our supply chain is fully transparent. We partner with coastal communities in Southeast Asia, providing fair-wage employment while cleaning up beaches and waterways.</p>
+        </div>
+        <img src="https://placehold.co/500x400/a7f3d0/064e3b?text=Ocean+Cleanup" alt="Beach cleanup operation" class="mission-img">
+      </div>
+      <div class="mission-block">
+        <div>
+          <h2>Designed to Disappear</h2>
+          <p style="font-size:1.05rem; line-height:1.8; color:#4b5563;">When our products reach the end of their long life, they don't sit in a landfill for centuries. Our packaging is 100% compostable. Our products are recyclable or biodegradable.</p>
+          <p style="font-size:1.05rem; line-height:1.8; color:#4b5563;">We believe the best products leave no trace — except the positive impact they create along the way.</p>
+        </div>
+        <img src="https://placehold.co/500x400/d1fae5/059669?text=Biodegradable" alt="Compostable packaging" class="mission-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- Pledge -->
+  <section class="section">
+    <div class="container">
+      <div class="pledge-card">
+        <div>
+          <h2>Our Planet Pledge</h2>
+          <ul class="pledge-list" style="margin-top:20px;">
+            <li><span class="pledge-check">&#10003;</span> 1% of revenue donated to environmental nonprofits</li>
+            <li><span class="pledge-check">&#10003;</span> 100% renewable energy in production</li>
+            <li><span class="pledge-check">&#10003;</span> Zero single-use plastic in packaging</li>
+            <li><span class="pledge-check">&#10003;</span> Carbon offset on every shipment</li>
+            <li><span class="pledge-check">&#10003;</span> Annual third-party sustainability audit</li>
+          </ul>
+        </div>
+        <div class="text-center">
+          <img src="https://placehold.co/350x350/047857/fff?text=B+Corp" alt="B Corp certification" style="border-radius:20px;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Products -->
+  <section class="section bg-light" id="shop">
+    <div class="container">
+      <h2 class="text-center mb-md">Shop With Purpose</h2>
+      <p class="text-center text-muted mb-xl">Every purchase makes a measurable impact</p>
+      <div class="product-grid">
+        <div class="eco-card card">
+          <img src="https://placehold.co/400x400/d1fae5/064e3b?text=Water+Bottle" alt="Recycled ocean plastic water bottle">
+          <div class="eco-body">
+            <span class="eco-tag mb-sm">&#127807; Recycled Ocean Plastic</span>
+            <h3 style="font-size:1.1rem; margin-top:8px;">Ocean Bottle 500ml</h3>
+            <p class="text-sm text-muted">Made from 5 intercepted ocean-bound bottles</p>
+            <div class="flex items-center justify-between mt-md">
+              <span class="product-price">$32.00</span>
+              <a href="#" class="btn btn-sm btn-success btn-pill" data-shopify-checkout data-variant="00000000000">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="eco-card card">
+          <img src="https://placehold.co/400x400/fef3c7/78350f?text=Tote+Bag" alt="Organic cotton tote">
+          <div class="eco-body">
+            <span class="eco-tag mb-sm">&#127807; Organic Cotton</span>
+            <h3 style="font-size:1.1rem; margin-top:8px;">Everyday Canvas Tote</h3>
+            <p class="text-sm text-muted">GOTS-certified organic cotton, plant-dyed</p>
+            <div class="flex items-center justify-between mt-md">
+              <span class="product-price">$28.00</span>
+              <a href="#" class="btn btn-sm btn-success btn-pill" data-shopify-checkout data-variant="00000000000">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="eco-card card">
+          <img src="https://placehold.co/400x400/e0e7ff/3730a3?text=Bamboo+Set" alt="Bamboo essentials kit">
+          <div class="eco-body">
+            <span class="eco-tag mb-sm">&#127807; Bamboo + Compostable</span>
+            <h3 style="font-size:1.1rem; margin-top:8px;">Zero-Waste Starter Kit</h3>
+            <p class="text-sm text-muted">Toothbrush, cutlery set, straw & cleaner</p>
+            <div class="flex items-center justify-between mt-md">
+              <span class="product-price">$24.00</span>
+              <a href="#" class="btn btn-sm btn-success btn-pill" data-shopify-checkout data-variant="00000000000">Add to Cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:#064e3b; color:#fff; text-align:center;">
+    <div class="container">
+      <h2 class="mb-md">Join the Movement</h2>
+      <p style="opacity:0.8; max-width:500px; margin:0 auto 32px;">Every purchase funds ocean cleanup, plants trees, and proves that business can be a force for good.</p>
+      <a href="#shop" class="btn btn-lg btn-pill" style="background:#34d399; color:#064e3b;">Shop Sustainable</a>
+    </div>
+  </section>
+
+  <footer class="section-sm" style="background:#064e3b; color:#fff; border-top:1px solid rgba(255,255,255,0.1);">
+    <div class="container text-center"><p class="text-sm" style="opacity:0.5;">&copy; 2025 YourBrand. Certified B Corp. 1% for the Planet member.</p></div>
+  </footer>
+
+  <script src="../shared/shopify-integration.js"></script>
+</body>
+</html>

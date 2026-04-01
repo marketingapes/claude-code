@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FLASH SALE — Up to 70% Off Everything</title>
+  <link rel="stylesheet" href="../shared/base.css">
+  <style>
+    :root { --accent: #dc2626; }
+    .flash-hero { background: linear-gradient(135deg, #1a1a2e 0%, #dc2626 50%, #1a1a2e 100%); color: #fff; padding: 60px 0; text-align: center; overflow: hidden; position: relative; }
+    .flash-hero::before { content: ''; position: absolute; top: 0; left: -50%; width: 200%; height: 100%; background: repeating-linear-gradient(90deg, transparent, transparent 45%, rgba(255,255,255,0.03) 45%, rgba(255,255,255,0.03) 55%); animation: slide 3s linear infinite; }
+    @keyframes slide { from { transform: translateX(0); } to { transform: translateX(50%); } }
+    .flash-hero h1 { font-size: clamp(3rem, 8vw, 5rem); font-weight: 900; letter-spacing: -2px; position: relative; }
+    .flash-hero .subtitle { font-size: 1.3rem; color: rgba(255,255,255,0.9); }
+    .urgency-bar { background: #fef2f2; border: 2px solid #fecaca; border-radius: 12px; padding: 16px 24px; display: flex; align-items: center; justify-content: center; gap: 16px; margin-bottom: 40px; }
+    .urgency-bar .dot { width: 10px; height: 10px; background: #dc2626; border-radius: 50%; animation: pulse 1s infinite; }
+    .deal-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    .deal-card { background: #fff; border-radius: 16px; overflow: hidden; position: relative; }
+    .deal-card img { aspect-ratio: 1; object-fit: cover; width: 100%; }
+    .deal-badge { position: absolute; top: 12px; right: 12px; background: #dc2626; color: #fff; padding: 6px 14px; border-radius: 50px; font-weight: 800; font-size: 0.9rem; }
+    .deal-body { padding: 20px; }
+    .deal-prices { display: flex; align-items: center; gap: 12px; margin: 12px 0; }
+    .stock-bar { margin-top: 12px; }
+    .stock-text { display: flex; justify-content: space-between; font-size: 0.8rem; color: #dc2626; font-weight: 600; margin-bottom: 6px; }
+    .mega-banner { background: #dc2626; color: #fff; text-align: center; padding: 40px 20px; }
+    .mega-banner h2 { font-size: clamp(1.5rem, 4vw, 2.5rem); }
+    @media (max-width: 768px) { .deal-grid { grid-template-columns: 1fr; } .urgency-bar { flex-direction: column; text-align: center; } }
+  </style>
+  <script>var SHOPIFY_DOMAIN = 'your-store.myshopify.com';</script>
+</head>
+<body>
+
+  <div class="announce-bar" style="background:#dc2626; font-size:1rem;">
+    &#9889; FLASH SALE LIVE NOW &#9889; Up to 70% OFF — Ends at midnight!
+  </div>
+
+  <!-- Hero -->
+  <section class="flash-hero">
+    <div class="container" style="position:relative; z-index:1;">
+      <h1 class="animate-fade-up">FLASH SALE</h1>
+      <p class="subtitle animate-fade-up delay-1">Up to 70% off select items — while stocks last</p>
+      <div style="margin: 32px auto; max-width: 500px;" class="animate-fade-up delay-2">
+        <p style="font-size:0.9rem; margin-bottom:12px; opacity:0.8;">Sale ends in:</p>
+        <div data-countdown="2025-12-31T23:59:59"></div>
+      </div>
+      <a href="#deals" class="btn btn-lg btn-pill animate-fade-up delay-3" style="background:#fff; color:#dc2626; font-size:1.1rem;">Shop the Sale</a>
+    </div>
+  </section>
+
+  <!-- Urgency -->
+  <section class="section-sm">
+    <div class="container">
+      <div class="urgency-bar">
+        <span class="dot"></span>
+        <strong style="color:#dc2626;">2,847 shoppers viewing this sale right now</strong>
+        <span class="text-sm text-muted">| Items selling fast — limited quantities remain</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Deals -->
+  <section class="section" id="deals">
+    <div class="container">
+      <h2 class="text-center mb-xl">Today's Best Deals</h2>
+      <div class="deal-grid">
+        <div class="deal-card card">
+          <div style="position:relative;">
+            <img src="https://placehold.co/400x400/fef2f2/dc2626?text=Deal+1" alt="Product deal 1">
+            <span class="deal-badge">-70%</span>
+          </div>
+          <div class="deal-body">
+            <h3 style="font-size:1.05rem;">Premium Wireless Headphones</h3>
+            <div class="deal-prices">
+              <span class="price price-sale" style="font-size:1.5rem;">$29.99</span>
+              <span class="price-original">$99.99</span>
+              <span class="price-save">Save $70</span>
+            </div>
+            <div class="stars text-sm">&#9733;&#9733;&#9733;&#9733;&#9733; <span class="rating-count">(1,243)</span></div>
+            <div class="stock-bar">
+              <div class="stock-text"><span>Selling fast!</span><span>Only 12 left</span></div>
+              <div class="progress-bar"><div class="progress-fill" style="width:85%; background:linear-gradient(90deg, #dc2626, #ef4444);"></div></div>
+            </div>
+            <a href="#" class="btn btn-danger btn-block btn-pill mt-md" data-shopify-checkout data-variant="00000000000">Grab This Deal</a>
+          </div>
+        </div>
+        <div class="deal-card card">
+          <div style="position:relative;">
+            <img src="https://placehold.co/400x400/eff6ff/2563eb?text=Deal+2" alt="Product deal 2">
+            <span class="deal-badge">-55%</span>
+          </div>
+          <div class="deal-body">
+            <h3 style="font-size:1.05rem;">Smart Fitness Watch Pro</h3>
+            <div class="deal-prices">
+              <span class="price price-sale" style="font-size:1.5rem;">$44.99</span>
+              <span class="price-original">$99.99</span>
+              <span class="price-save">Save $55</span>
+            </div>
+            <div class="stars text-sm">&#9733;&#9733;&#9733;&#9733;&#9734; <span class="rating-count">(876)</span></div>
+            <div class="stock-bar">
+              <div class="stock-text"><span>Almost gone!</span><span>Only 5 left</span></div>
+              <div class="progress-bar"><div class="progress-fill" style="width:92%; background:linear-gradient(90deg, #dc2626, #ef4444);"></div></div>
+            </div>
+            <a href="#" class="btn btn-danger btn-block btn-pill mt-md" data-shopify-checkout data-variant="00000000000">Grab This Deal</a>
+          </div>
+        </div>
+        <div class="deal-card card">
+          <div style="position:relative;">
+            <img src="https://placehold.co/400x400/ecfdf5/059669?text=Deal+3" alt="Product deal 3">
+            <span class="deal-badge">-60%</span>
+          </div>
+          <div class="deal-body">
+            <h3 style="font-size:1.05rem;">LED Desk Lamp with Charger</h3>
+            <div class="deal-prices">
+              <span class="price price-sale" style="font-size:1.5rem;">$19.99</span>
+              <span class="price-original">$49.99</span>
+              <span class="price-save">Save $30</span>
+            </div>
+            <div class="stars text-sm">&#9733;&#9733;&#9733;&#9733;&#9733; <span class="rating-count">(2,104)</span></div>
+            <div class="stock-bar">
+              <div class="stock-text"><span>Popular item!</span><span>34 left</span></div>
+              <div class="progress-bar"><div class="progress-fill" style="width:66%; background:linear-gradient(90deg, #dc2626, #ef4444);"></div></div>
+            </div>
+            <a href="#" class="btn btn-danger btn-block btn-pill mt-md" data-shopify-checkout data-variant="00000000000">Grab This Deal</a>
+          </div>
+        </div>
+        <div class="deal-card card">
+          <div style="position:relative;">
+            <img src="https://placehold.co/400x400/faf5ff/7c3aed?text=Deal+4" alt="Product deal 4">
+            <span class="deal-badge">-50%</span>
+          </div>
+          <div class="deal-body">
+            <h3 style="font-size:1.05rem;">Portable Bluetooth Speaker</h3>
+            <div class="deal-prices">
+              <span class="price price-sale" style="font-size:1.5rem;">$24.99</span>
+              <span class="price-original">$49.99</span>
+              <span class="price-save">Save $25</span>
+            </div>
+            <div class="stars text-sm">&#9733;&#9733;&#9733;&#9733;&#9733; <span class="rating-count">(1,567)</span></div>
+            <div class="stock-bar">
+              <div class="stock-text"><span>Going fast!</span><span>22 left</span></div>
+              <div class="progress-bar"><div class="progress-fill" style="width:73%; background:linear-gradient(90deg, #dc2626, #ef4444);"></div></div>
+            </div>
+            <a href="#" class="btn btn-danger btn-block btn-pill mt-md" data-shopify-checkout data-variant="00000000000">Grab This Deal</a>
+          </div>
+        </div>
+        <div class="deal-card card">
+          <div style="position:relative;">
+            <img src="https://placehold.co/400x400/fff7ed/ea580c?text=Deal+5" alt="Product deal 5">
+            <span class="deal-badge">-65%</span>
+          </div>
+          <div class="deal-body">
+            <h3 style="font-size:1.05rem;">Ceramic Pour-Over Coffee Set</h3>
+            <div class="deal-prices">
+              <span class="price price-sale" style="font-size:1.5rem;">$17.49</span>
+              <span class="price-original">$49.99</span>
+              <span class="price-save">Save $32</span>
+            </div>
+            <div class="stars text-sm">&#9733;&#9733;&#9733;&#9733;&#9734; <span class="rating-count">(689)</span></div>
+            <div class="stock-bar">
+              <div class="stock-text"><span>Selling fast!</span><span>8 left</span></div>
+              <div class="progress-bar"><div class="progress-fill" style="width:89%; background:linear-gradient(90deg, #dc2626, #ef4444);"></div></div>
+            </div>
+            <a href="#" class="btn btn-danger btn-block btn-pill mt-md" data-shopify-checkout data-variant="00000000000">Grab This Deal</a>
+          </div>
+        </div>
+        <div class="deal-card card">
+          <div style="position:relative;">
+            <img src="https://placehold.co/400x400/fce7f3/be185d?text=Deal+6" alt="Product deal 6">
+            <span class="deal-badge">-45%</span>
+          </div>
+          <div class="deal-body">
+            <h3 style="font-size:1.05rem;">Silk Pillowcase Set (2-Pack)</h3>
+            <div class="deal-prices">
+              <span class="price price-sale" style="font-size:1.5rem;">$21.99</span>
+              <span class="price-original">$39.99</span>
+              <span class="price-save">Save $18</span>
+            </div>
+            <div class="stars text-sm">&#9733;&#9733;&#9733;&#9733;&#9733; <span class="rating-count">(3,421)</span></div>
+            <div class="stock-bar">
+              <div class="stock-text"><span>Fan favorite!</span><span>41 left</span></div>
+              <div class="progress-bar"><div class="progress-fill" style="width:58%; background:linear-gradient(90deg, #dc2626, #ef4444);"></div></div>
+            </div>
+            <a href="#" class="btn btn-danger btn-block btn-pill mt-md" data-shopify-checkout data-variant="00000000000">Grab This Deal</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mega CTA -->
+  <section class="mega-banner">
+    <h2>Don't Miss Out — Sale Ends at Midnight!</h2>
+    <div style="margin: 24px auto; max-width: 400px;">
+      <div data-countdown="2025-12-31T23:59:59"></div>
+    </div>
+    <a href="#deals" class="btn btn-lg btn-pill" style="background:#fff; color:#dc2626;">Shop All Deals</a>
+  </section>
+
+  <!-- Trust -->
+  <section class="section-sm">
+    <div class="container">
+      <div class="trust-bar">
+        <span class="trust-item">&#10003; Free Shipping Over $25</span>
+        <span class="trust-item">&#10003; 30-Day Returns</span>
+        <span class="trust-item">&#10003; Secure Checkout</span>
+        <span class="trust-item">&#10003; 24/7 Support</span>
+      </div>
+    </div>
+  </section>
+
+  <footer class="section-sm bg-dark"><div class="container text-center"><p class="text-muted text-sm">&copy; 2025 YourBrand. All rights reserved.</p></div></footer>
+
+  <div data-sticky-bar style="background:#dc2626; color:#fff;">
+    <div class="container flex items-center justify-between">
+      <div class="flex items-center gap-md"><strong>&#9889; FLASH SALE</strong> <span style="opacity:0.8;">Up to 70% OFF</span></div>
+      <a href="#deals" class="btn btn-pill" style="background:#fff; color:#dc2626;">Shop Now</a>
+    </div>
+  </div>
+
+  <script src="../shared/shopify-integration.js"></script>
+</body>
+</html>
