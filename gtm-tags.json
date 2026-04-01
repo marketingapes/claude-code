@@ -1,0 +1,126 @@
+{
+  "description": "Google Tag Manager trigger & tag configuration for the retargeting system. Import these as custom triggers/tags in GTM.",
+  "triggers": [
+    {
+      "name": "RT - View Content",
+      "type": "customEvent",
+      "eventName": "view_content",
+      "firingCondition": "All custom events matching view_content"
+    },
+    {
+      "name": "RT - Scroll 50%",
+      "type": "customEvent",
+      "eventName": "scroll_50",
+      "firingCondition": "All custom events matching scroll_50"
+    },
+    {
+      "name": "RT - Affiliate Click",
+      "type": "customEvent",
+      "eventName": "affiliate_click",
+      "firingCondition": "All custom events matching affiliate_click"
+    },
+    {
+      "name": "RT - Soft Capture Submit",
+      "type": "customEvent",
+      "eventName": "soft_capture_submit",
+      "firingCondition": "All custom events matching soft_capture_submit"
+    },
+    {
+      "name": "RT - Session Abandon",
+      "type": "customEvent",
+      "eventName": "session_abandon",
+      "firingCondition": "All custom events matching session_abandon"
+    }
+  ],
+  "tags": [
+    {
+      "name": "Meta Pixel - View Content",
+      "type": "Meta Pixel Custom Event",
+      "trigger": "RT - View Content",
+      "pixelEvent": "ViewContent",
+      "parameters": {
+        "content_name": "{{Page Title}}",
+        "content_url": "{{Page URL}}"
+      }
+    },
+    {
+      "name": "Meta Pixel - Scroll 50",
+      "type": "Meta Pixel Custom Event",
+      "trigger": "RT - Scroll 50%",
+      "pixelEvent": "CustomEvent",
+      "customEventName": "Scroll50",
+      "parameters": {
+        "page_url": "{{Page URL}}"
+      }
+    },
+    {
+      "name": "Meta Pixel - Affiliate Click",
+      "type": "Meta Pixel Custom Event",
+      "trigger": "RT - Affiliate Click",
+      "pixelEvent": "InitiateCheckout",
+      "parameters": {
+        "content_name": "{{DLV - link_text}}",
+        "content_url": "{{DLV - link_url}}"
+      }
+    },
+    {
+      "name": "Meta Pixel - Soft Capture",
+      "type": "Meta Pixel Custom Event",
+      "trigger": "RT - Soft Capture Submit",
+      "pixelEvent": "Lead",
+      "parameters": {
+        "content_name": "Soft Capture"
+      }
+    },
+    {
+      "name": "GA4 - View Content",
+      "type": "Google Analytics 4 Event",
+      "trigger": "RT - View Content",
+      "eventName": "view_content",
+      "parameters": {
+        "page_title": "{{Page Title}}",
+        "session_id": "{{DLV - session_id}}"
+      }
+    },
+    {
+      "name": "GA4 - Scroll 50",
+      "type": "Google Analytics 4 Event",
+      "trigger": "RT - Scroll 50%",
+      "eventName": "scroll_50",
+      "parameters": {
+        "session_id": "{{DLV - session_id}}"
+      }
+    },
+    {
+      "name": "GA4 - Affiliate Click",
+      "type": "Google Analytics 4 Event",
+      "trigger": "RT - Affiliate Click",
+      "eventName": "affiliate_click",
+      "parameters": {
+        "link_url": "{{DLV - link_url}}",
+        "link_text": "{{DLV - link_text}}",
+        "session_id": "{{DLV - session_id}}"
+      }
+    },
+    {
+      "name": "GA4 - Session Abandon",
+      "type": "Google Analytics 4 Event",
+      "trigger": "RT - Session Abandon",
+      "eventName": "session_abandon",
+      "parameters": {
+        "session_id": "{{DLV - session_id}}",
+        "time_on_page_ms": "{{DLV - time_on_page_ms}}",
+        "events_fired": "{{DLV - events_fired}}"
+      }
+    }
+  ],
+  "dataLayerVariables": [
+    { "name": "DLV - session_id", "variableName": "session_id" },
+    { "name": "DLV - link_url", "variableName": "link_url" },
+    { "name": "DLV - link_text", "variableName": "link_text" },
+    { "name": "DLV - email", "variableName": "email" },
+    { "name": "DLV - time_on_page_ms", "variableName": "time_on_page_ms" },
+    { "name": "DLV - events_fired", "variableName": "events_fired" },
+    { "name": "DLV - page_url", "variableName": "page_url" }
+  ]
+}

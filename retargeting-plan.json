@@ -1,0 +1,107 @@
+{
+  "version": "1.0",
+  "description": "Lead capture & traffic recycling system — no visitor leaves without being trackable or retargetable",
+  "audiences": {
+    "hot_leads": {
+      "behavior": "affiliate_click",
+      "description": "Clicked an affiliate/CTA link — highest intent",
+      "messaging_angles": [
+        "Urgency: Limited-time offer reminder",
+        "Social proof: Others are signing up right now",
+        "Direct benefit recap: Here's what you're missing"
+      ],
+      "retargeting_window_days": 7,
+      "priority": 1
+    },
+    "warm_engaged": {
+      "behavior": "scroll_50_plus_time_on_site_gt_30s",
+      "description": "Scrolled 50%+ and spent 30s+ on page — engaged but didn't convert",
+      "messaging_angles": [
+        "Education: Deep-dive content on the topic they read",
+        "Comparison: Side-by-side with alternatives",
+        "Objection handling: FAQ / myth-busting ads"
+      ],
+      "retargeting_window_days": 14,
+      "priority": 2
+    },
+    "content_viewers": {
+      "behavior": "view_content",
+      "description": "Viewed page content but limited engagement",
+      "messaging_angles": [
+        "Curiosity: 'Did you see this?' angle with new content",
+        "Lead magnet: Free resource related to page topic",
+        "Testimonial-led: Real results from real users"
+      ],
+      "retargeting_window_days": 30,
+      "priority": 3
+    },
+    "email_captured": {
+      "behavior": "soft_capture_submit",
+      "description": "Submitted email via soft capture popup",
+      "messaging_angles": [
+        "Welcome sequence: Value-first email drip",
+        "Segmented offers: Based on page they were on",
+        "Re-engagement: 'We saved something for you'"
+      ],
+      "retargeting_window_days": 90,
+      "priority": 1
+    },
+    "abandoned_visitors": {
+      "behavior": "session_started_no_conversion",
+      "description": "Started session but left without any conversion event",
+      "messaging_angles": [
+        "Generic retargeting: Brand awareness reminder",
+        "Content-based: Blog/resource related to landing page",
+        "Incentive: Small discount or bonus to return"
+      ],
+      "retargeting_window_days": 60,
+      "priority": 4
+    }
+  },
+  "events": {
+    "view_content": {
+      "gtm_event": "view_content",
+      "trigger": "Page load + 3s dwell time",
+      "platforms": ["meta", "google", "tiktok"]
+    },
+    "scroll_50": {
+      "gtm_event": "scroll_50",
+      "trigger": "User scrolls past 50% of page height",
+      "platforms": ["meta", "google"]
+    },
+    "affiliate_click": {
+      "gtm_event": "affiliate_click",
+      "trigger": "Click on any affiliate/CTA link",
+      "platforms": ["meta", "google", "tiktok"]
+    },
+    "soft_capture_submit": {
+      "gtm_event": "soft_capture_submit",
+      "trigger": "Email submitted via soft capture popup",
+      "platforms": ["meta", "google", "klaviyo", "mailchimp"]
+    },
+    "session_abandon": {
+      "gtm_event": "session_abandon",
+      "trigger": "Beforeunload fires without conversion event",
+      "platforms": ["meta", "google"]
+    }
+  },
+  "sequences": {
+    "abandoned_visitor_recovery": {
+      "trigger": "session_abandon + no soft_capture_submit within session",
+      "steps": [
+        { "channel": "retargeting_ad", "delay": "1h", "message": "Curiosity ad referencing page content" },
+        { "channel": "retargeting_ad", "delay": "24h", "message": "Social proof / testimonial ad" },
+        { "channel": "retargeting_ad", "delay": "72h", "message": "Incentive / urgency ad" }
+      ]
+    },
+    "email_captured_nurture": {
+      "trigger": "soft_capture_submit",
+      "steps": [
+        { "channel": "email", "delay": "0m", "message": "Welcome + immediate value delivery" },
+        { "channel": "email", "delay": "24h", "message": "Educational content related to page topic" },
+        { "channel": "email", "delay": "72h", "message": "Case study / social proof" },
+        { "channel": "email", "delay": "7d", "message": "Direct offer with CTA" }
+      ]
+    }
+  }
+}
