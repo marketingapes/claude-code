@@ -1,0 +1,40 @@
+{
+  "description": "Mass Tort email outreach templates — covers full funnel from capture to conversion",
+  "sequences": {
+    "soft_capture_welcome": {
+      "trigger": "soft_capture_submit",
+      "emails": ["welcome-001", "education-002", "social-proof-003", "cta-004"]
+    },
+    "abandoned_visitor_recovery": {
+      "trigger": "session_abandon + no email captured",
+      "note": "Served via retargeting ads since no email was captured — see retargeting-plan.json"
+    },
+    "affiliate_click_followup": {
+      "trigger": "affiliate_click + soft_capture_submit (email known)",
+      "emails": ["urgency-followup-001", "comparison-followup-002"]
+    },
+    "re_engagement": {
+      "trigger": "no_open_14_days",
+      "emails": ["reengagement-001", "final-chance-002"]
+    },
+    "case_specific": {
+      "trigger": "manual_segment or page_url match",
+      "emails": [
+        "case-camp-lejeune",
+        "case-hair-relaxer",
+        "case-roundup",
+        "case-talcum-powder",
+        "case-earplug",
+        "case-hernia-mesh",
+        "case-pfas-water",
+        "case-generic"
+      ]
+    }
+  },
+  "sending_rules": {
+    "min_delay_between_emails_hours": 24,
+    "max_emails_per_week": 3,
+    "unsubscribe_required": true,
+    "suppression_on_conversion": true
+  }
+}

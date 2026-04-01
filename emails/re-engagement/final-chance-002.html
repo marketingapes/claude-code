@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Last Email — Should We Remove You?</title>
+<!--
+  TEMPLATE: final-chance-002
+  SEQUENCE: re_engagement
+  SEND: 7 days after reengagement-001 (if still no opens)
+  SUBJECT LINE: Should we remove you from our list?
+  PREVIEW TEXT: Last email from us unless you want to stay.
+-->
+<style>
+  body { margin:0; padding:0; background:#f5f5f5; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; }
+  .wrapper { max-width:600px; margin:0 auto; background:#ffffff; }
+  .body { padding:40px; }
+  .body h2 { color:#1a1a2e; font-size:20px; margin:0 0 16px; }
+  .body p { color:#444; font-size:15px; line-height:1.6; margin:0 0 16px; }
+  .choice-row { margin:24px 0; }
+  .choice-btn { display:inline-block; text-decoration:none; padding:14px 28px; border-radius:6px; font-weight:700; font-size:15px; margin:0 8px 8px 0; }
+  .choice-stay { background:#e63946; color:#ffffff; }
+  .choice-go { background:#f0f0f0; color:#666; }
+  .footer { padding:24px 40px; background:#f9f9f9; text-align:center; font-size:12px; color:#999; }
+  .footer a { color:#999; }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="body">
+    <h2>{{first_name|default:"Hi"}}, this is our last email.</h2>
+    <p>We respect your inbox. Since you haven't opened our recent emails, we're going to remove you from our list unless you'd like to stay.</p>
+
+    <p>Here's what you'd miss:</p>
+    <p>
+      <strong>Active lawsuit updates</strong> — including new cases and settlement increases<br/>
+      <strong>Filing deadline alerts</strong> — so you never miss your window<br/>
+      <strong>Free eligibility checks</strong> — for any new mass tort cases that open
+    </p>
+
+    <div class="choice-row">
+      <a href="{{cta_url}}?action=stay" class="choice-btn choice-stay">Keep Me Subscribed →</a>
+      <a href="{{unsubscribe_url}}" class="choice-btn choice-go">Unsubscribe Me</a>
+    </div>
+
+    <p style="font-size:13px; color:#888;">If we don't hear from you, we'll automatically remove you in 7 days. No hard feelings — and you can always come back.</p>
+  </div>
+  <div class="footer">
+    <p><a href="{{unsubscribe_url}}">Unsubscribe</a> · <a href="{{preferences_url}}">Email Preferences</a></p>
+    <p>{{company_name}} · {{company_address}}</p>
+  </div>
+</div>
+</body>
+</html>

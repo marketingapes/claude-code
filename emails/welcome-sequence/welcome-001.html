@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>You Could Be Owed Compensation</title>
+<!--
+  TEMPLATE: welcome-001
+  SEQUENCE: soft_capture_welcome
+  SEND: Immediately after soft capture submit
+  SUBJECT LINE: {{first_name|default:"Friend"}}, you may qualify for compensation
+  PREVIEW TEXT: Thousands have already filed. Here's what you need to know.
+-->
+<style>
+  body { margin:0; padding:0; background:#f5f5f5; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; }
+  .wrapper { max-width:600px; margin:0 auto; background:#ffffff; }
+  .header { background:#1a1a2e; padding:32px 40px; text-align:center; }
+  .header h1 { color:#ffffff; font-size:22px; margin:0; font-weight:700; }
+  .body { padding:32px 40px; }
+  .body h2 { color:#1a1a2e; font-size:20px; margin:0 0 16px; }
+  .body p { color:#444; font-size:15px; line-height:1.6; margin:0 0 16px; }
+  .cta-btn { display:inline-block; background:#e63946; color:#ffffff; text-decoration:none; padding:14px 32px; border-radius:6px; font-weight:700; font-size:16px; margin:8px 0 24px; }
+  .checklist { list-style:none; padding:0; margin:0 0 24px; }
+  .checklist li { padding:8px 0 8px 28px; position:relative; color:#333; font-size:15px; }
+  .checklist li::before { content:"✓"; position:absolute; left:0; color:#22c55e; font-weight:700; }
+  .divider { border:none; border-top:1px solid #eee; margin:24px 0; }
+  .footer { padding:24px 40px; background:#f9f9f9; text-align:center; font-size:12px; color:#999; }
+  .footer a { color:#999; }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header">
+    <h1>You May Be Entitled to Compensation</h1>
+  </div>
+  <div class="body">
+    <h2>Hi {{first_name|default:"there"}},</h2>
+    <p>Thank you for taking the first step. Thousands of people across the country are filing claims right now — and <strong>you could be one of them</strong>.</p>
+    <p>Mass tort cases have resulted in billions of dollars in settlements for people just like you. Here's what makes you potentially eligible:</p>
+    <ul class="checklist">
+      <li>You were exposed to a harmful product or substance</li>
+      <li>You experienced health issues or financial loss as a result</li>
+      <li>The responsible company knew about the risks</li>
+    </ul>
+    <p>The best part? <strong>There's no cost to you unless you win.</strong> Our partner attorneys work on a contingency basis.</p>
+    <a href="{{cta_url}}" class="cta-btn">Check Your Eligibility Now →</a>
+    <hr class="divider"/>
+    <p style="font-size:13px; color:#888;">Over the next few days, we'll send you important information about active cases, deadlines, and how to maximize your claim. Keep an eye on your inbox.</p>
+  </div>
+  <div class="footer">
+    <p>You're receiving this because you signed up at {{capture_page_url}}.</p>
+    <p><a href="{{unsubscribe_url}}">Unsubscribe</a> · <a href="{{preferences_url}}">Email Preferences</a></p>
+    <p>{{company_name}} · {{company_address}}</p>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Active Mass Tort Cases</title>
+<!--
+  TEMPLATE: case-generic
+  SEQUENCE: case_specific
+  SEND: When no specific case segment is identified
+  SUBJECT LINE: {{first_name|default:"You"}} may qualify for one of these active lawsuits
+  PREVIEW TEXT: 7 active cases paying out right now. See if any apply to you.
+-->
+<style>
+  body { margin:0; padding:0; background:#f5f5f5; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; }
+  .wrapper { max-width:600px; margin:0 auto; background:#ffffff; }
+  .header { background:#1a1a2e; padding:32px 40px; text-align:center; }
+  .header h1 { color:#ffffff; font-size:22px; margin:0 0 8px; font-weight:700; }
+  .body { padding:32px 40px; }
+  .body h2 { color:#1a1a2e; font-size:20px; margin:0 0 16px; }
+  .body p { color:#444; font-size:15px; line-height:1.6; margin:0 0 16px; }
+  .case-card { border:1px solid #e5e7eb; border-radius:12px; padding:20px; margin:0 0 16px; }
+  .case-card h3 { color:#1a1a2e; font-size:16px; margin:0 0 8px; }
+  .case-card p { font-size:14px; color:#666; margin:0 0 12px; }
+  .case-card a { color:#e63946; font-weight:600; text-decoration:none; font-size:14px; }
+  .footer { padding:24px 40px; background:#f9f9f9; text-align:center; font-size:12px; color:#999; }
+  .footer a { color:#999; }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header">
+    <h1>Active Mass Tort Cases — Accepting Claims Now</h1>
+  </div>
+  <div class="body">
+    <h2>{{first_name|default:"Hi there"}}, see if any of these apply to you.</h2>
+    <p>Billions of dollars are being paid out across these active cases. Each has a free case review and zero upfront cost. Check any that might apply:</p>
+
+    <div class="case-card">
+      <h3>Camp Lejeune Water Contamination</h3>
+      <p>Stationed at Camp Lejeune (1953–1987)? Toxic water exposure linked to cancer and other diseases.</p>
+      <a href="{{cta_url}}?case=camp-lejeune">Check Eligibility →</a>
+    </div>
+
+    <div class="case-card">
+      <h3>Hair Relaxer Cancer</h3>
+      <p>Used chemical hair straighteners? Linked to uterine cancer, ovarian cancer, and fibroids.</p>
+      <a href="{{cta_url}}?case=hair-relaxer">Check Eligibility →</a>
+    </div>
+
+    <div class="case-card">
+      <h3>Roundup Weed Killer</h3>
+      <p>Used Roundup at home or work? $11B+ paid out for non-Hodgkin lymphoma claims.</p>
+      <a href="{{cta_url}}?case=roundup">Check Eligibility →</a>
+    </div>
+
+    <div class="case-card">
+      <h3>Talcum Powder / Baby Powder</h3>
+      <p>Regular talc use linked to ovarian cancer. J&J set aside $8.9B for claims.</p>
+      <a href="{{cta_url}}?case=talcum-powder">Check Eligibility →</a>
+    </div>
+
+    <div class="case-card">
+      <h3>3M Military Earplugs</h3>
+      <p>Served 2003–2015? Defective earplugs caused hearing loss and tinnitus.</p>
+      <a href="{{cta_url}}?case=earplug">Check Eligibility →</a>
+    </div>
+
+    <div class="case-card">
+      <h3>Hernia Mesh Complications</h3>
+      <p>Had hernia mesh surgery with complications? Pain, infection, revision surgery.</p>
+      <a href="{{cta_url}}?case=hernia-mesh">Check Eligibility →</a>
+    </div>
+
+    <div class="case-card">
+      <h3>PFAS Water Contamination</h3>
+      <p>"Forever chemicals" in drinking water linked to cancer and thyroid disease.</p>
+      <a href="{{cta_url}}?case=pfas-water">Check Eligibility →</a>
+    </div>
+
+    <p style="font-size:13px; color:#888; margin-top:24px;">All case reviews are free. Attorneys work on contingency — you pay nothing unless you win.</p>
+  </div>
+  <div class="footer">
+    <p><a href="{{unsubscribe_url}}">Unsubscribe</a> · <a href="{{preferences_url}}">Email Preferences</a></p>
+    <p>{{company_name}} · {{company_address}}</p>
+  </div>
+</div>
+</body>
+</html>

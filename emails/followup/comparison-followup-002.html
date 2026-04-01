@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>What You Get vs. What It Costs</title>
+<!--
+  TEMPLATE: comparison-followup-002
+  SEQUENCE: affiliate_click_followup
+  SEND: +48 hours after urgency-followup-001
+  SUBJECT LINE: The math on filing a claim (it's simple)
+  PREVIEW TEXT: 2 minutes of your time vs. potential 5-6 figure payout.
+-->
+<style>
+  body { margin:0; padding:0; background:#f5f5f5; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; }
+  .wrapper { max-width:600px; margin:0 auto; background:#ffffff; }
+  .header { background:#1a1a2e; padding:28px 40px; text-align:center; }
+  .header h1 { color:#ffffff; font-size:20px; margin:0; font-weight:700; }
+  .body { padding:32px 40px; }
+  .body h2 { color:#1a1a2e; font-size:20px; margin:0 0 16px; }
+  .body p { color:#444; font-size:15px; line-height:1.6; margin:0 0 16px; }
+  .comparison-table { width:100%; border-collapse:collapse; margin:0 0 24px; }
+  .comparison-table th { background:#f0f0f0; padding:12px 16px; text-align:left; font-size:14px; color:#333; }
+  .comparison-table td { padding:12px 16px; border-bottom:1px solid #eee; font-size:14px; color:#555; }
+  .comparison-table .green { color:#22c55e; font-weight:700; }
+  .comparison-table .red { color:#e63946; font-weight:700; }
+  .cta-btn { display:inline-block; background:#e63946; color:#ffffff; text-decoration:none; padding:14px 32px; border-radius:6px; font-weight:700; font-size:16px; margin:8px 0 24px; }
+  .footer { padding:24px 40px; background:#f9f9f9; text-align:center; font-size:12px; color:#999; }
+  .footer a { color:#999; }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header">
+    <h1>The Simple Math of Filing a Claim</h1>
+  </div>
+  <div class="body">
+    <h2>Let's break it down, {{first_name|default:"friend"}}.</h2>
+    <p>We know you're busy. So here's the honest comparison of what filing takes vs. what it could give you:</p>
+
+    <table class="comparison-table" role="presentation">
+      <tr>
+        <th>What you invest</th>
+        <th>What you could get</th>
+      </tr>
+      <tr>
+        <td>2 minutes to check eligibility</td>
+        <td class="green">Free case evaluation</td>
+      </tr>
+      <tr>
+        <td>$0 upfront</td>
+        <td class="green">$10,000 – $500,000+ settlement</td>
+      </tr>
+      <tr>
+        <td>Zero paperwork (attorney handles it)</td>
+        <td class="green">Full legal representation</td>
+      </tr>
+      <tr>
+        <td>No courtroom visits</td>
+        <td class="green">Settlement negotiated for you</td>
+      </tr>
+    </table>
+
+    <p>And here's what happens if you don't:</p>
+
+    <table class="comparison-table" role="presentation">
+      <tr>
+        <th>If deadline passes</th>
+        <th>Result</th>
+      </tr>
+      <tr>
+        <td>Statute of limitations expires</td>
+        <td class="red">Claim barred — permanently</td>
+      </tr>
+      <tr>
+        <td>No attorney can help</td>
+        <td class="red">$0 recovery</td>
+      </tr>
+    </table>
+
+    <p><strong>The risk of checking is zero. The risk of not checking could be six figures.</strong></p>
+
+    <div style="text-align:center;">
+      <a href="{{cta_url}}" class="cta-btn">Take 60 Seconds — Check Now →</a>
+    </div>
+  </div>
+  <div class="footer">
+    <p><a href="{{unsubscribe_url}}">Unsubscribe</a> · <a href="{{preferences_url}}">Email Preferences</a></p>
+    <p>{{company_name}} · {{company_address}}</p>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Real People. Real Settlements.</title>
+<!--
+  TEMPLATE: social-proof-003
+  SEQUENCE: soft_capture_welcome
+  SEND: +72 hours after welcome-001
+  SUBJECT LINE: "$185,000 — I almost didn't file"
+  PREVIEW TEXT: Real settlement amounts from people who took 2 minutes to check.
+-->
+<style>
+  body { margin:0; padding:0; background:#f5f5f5; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif; }
+  .wrapper { max-width:600px; margin:0 auto; background:#ffffff; }
+  .header { background:#1a1a2e; padding:32px 40px; text-align:center; }
+  .header h1 { color:#ffffff; font-size:22px; margin:0; font-weight:700; }
+  .body { padding:32px 40px; }
+  .body h2 { color:#1a1a2e; font-size:20px; margin:0 0 16px; }
+  .body p { color:#444; font-size:15px; line-height:1.6; margin:0 0 16px; }
+  .testimonial { background:#fafafa; border:1px solid #eee; border-radius:12px; padding:24px; margin:0 0 20px; }
+  .testimonial .quote { font-style:italic; color:#333; font-size:15px; line-height:1.6; margin:0 0 12px; }
+  .testimonial .amount { font-size:28px; font-weight:800; color:#22c55e; margin:0 0 8px; }
+  .testimonial .attribution { font-size:13px; color:#888; margin:0; }
+  .cta-btn { display:inline-block; background:#e63946; color:#ffffff; text-decoration:none; padding:14px 32px; border-radius:6px; font-weight:700; font-size:16px; margin:8px 0 24px; }
+  .stat-row { display:flex; text-align:center; margin:0 0 24px; }
+  .stat-item { flex:1; padding:16px 8px; }
+  .stat-item .number { font-size:24px; font-weight:800; color:#1a1a2e; }
+  .stat-item .label { font-size:12px; color:#888; margin-top:4px; }
+  .footer { padding:24px 40px; background:#f9f9f9; text-align:center; font-size:12px; color:#999; }
+  .footer a { color:#999; }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <div class="header">
+    <h1>Real People. Real Settlements.</h1>
+  </div>
+  <div class="body">
+    <h2>{{first_name|default:"Friend"}}, these could be your numbers.</h2>
+    <p>Every day, we hear from people who almost didn't file. Here's what happened when they did:</p>
+
+    <div class="testimonial">
+      <div class="amount">$185,000</div>
+      <p class="quote">"I saw an ad about Camp Lejeune water contamination and almost scrolled past. My father was stationed there in the 70s and died of cancer. Filing took 5 minutes. I'm glad I didn't ignore it."</p>
+      <p class="attribution">— Sandra M., North Carolina · Camp Lejeune Case</p>
+    </div>
+
+    <div class="testimonial">
+      <div class="amount">$92,000</div>
+      <p class="quote">"I used hair relaxers for 20 years before being diagnosed. I had no idea I could file a claim until I got an email like this one. The whole process was handled by the lawyers."</p>
+      <p class="attribution">— Denise T., Georgia · Hair Relaxer Case</p>
+    </div>
+
+    <div class="testimonial">
+      <div class="amount">$250,000</div>
+      <p class="quote">"After years of using Roundup in my yard, I was diagnosed with non-Hodgkin lymphoma. My attorney got me a settlement without ever stepping in a courtroom."</p>
+      <p class="attribution">— James R., Ohio · Roundup Case</p>
+    </div>
+
+    <!--[if mso]><table role="presentation" width="100%"><tr><td width="33%" valign="top"><![endif]-->
+    <div style="text-align:center; margin:0 0 24px;">
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+        <tr>
+          <td style="text-align:center; padding:16px 8px;">
+            <div style="font-size:24px; font-weight:800; color:#1a1a2e;">$11B+</div>
+            <div style="font-size:12px; color:#888; margin-top:4px;">Total Mass Tort Settlements</div>
+          </td>
+          <td style="text-align:center; padding:16px 8px;">
+            <div style="font-size:24px; font-weight:800; color:#1a1a2e;">750K+</div>
+            <div style="font-size:12px; color:#888; margin-top:4px;">Claims Filed</div>
+          </td>
+          <td style="text-align:center; padding:16px 8px;">
+            <div style="font-size:24px; font-weight:800; color:#1a1a2e;">$0</div>
+            <div style="font-size:12px; color:#888; margin-top:4px;">Upfront Cost</div>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <!--[if mso]></td></tr></table><![endif]-->
+
+    <p><strong>Don't be the person who looks back and wishes they filed.</strong> It takes 2 minutes to check.</p>
+
+    <a href="{{cta_url}}" class="cta-btn">See If You Qualify →</a>
+  </div>
+  <div class="footer">
+    <p style="font-size:11px; color:#bbb;">Settlement amounts shown are based on publicly reported case outcomes and do not guarantee similar results. Every case is unique.</p>
+    <p><a href="{{unsubscribe_url}}">Unsubscribe</a> · <a href="{{preferences_url}}">Email Preferences</a></p>
+    <p>{{company_name}} · {{company_address}}</p>
+  </div>
+</div>
+</body>
+</html>
